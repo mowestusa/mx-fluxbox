@@ -1,5 +1,5 @@
 [begin] (Fluxbox) 
-    [exec] (Help) {featherpad ~/.fluxbox/mx-fb/mx-faq-fb}
+    [exec] (Help) {featherpad ~/.fluxbox/doc/mx-faq-fb}
     [exec] (Run...) {fbrun -nearmouse} 
     [separator]
     [exec] (Files) {thunar /home/$USER/.fluxbox} 
@@ -40,26 +40,29 @@
      	[exec] (Disks) {sudo disk-manager}
      	[exec] (Partitions) {sudo gparted}
      	[exec] (Power) {xfce4-power-manager}
-	[end]	 
+     	 
+   	[end]	 
      [submenu] (Settings)
      	[exec] (MX Tools) {mx-tools}
      	[exec] (Xfce Settings) {xfce4-settings-manager}
      	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indica tor/bin/touchpad-indicator}
-    [submenu] (Keyboards)
+     	[submenu] (Keyboard)
 		[exec] (DE) {setxkbmap de}
-		[exec] (ES) {setxkbmap es}
+		[exec] (ES) {setxkbmap es} 
 		[exec] (FR) {setxkbmap fr}
+		[exec] (GB) {setxkbmap gb|
 		[exec] (IT) {setxkbmap it}
+		[exec] (PL) {setxkbmap pl|
+		[exec] (PT) {setxkbmap pt|
 		[exec] (RU) {setxkbmap ru}
-		[exec] (UK) {setxkbmap uk}
-		[exec] (US) {setxkbmap us}
-	[end]
-       [end]
-     [submenu] (Accessories)
+			[exec] (US) {setxkbmap us}
+	[end] 
+   	[submenu] (Accessories)
          [exec] (Editor) {featherpad}
      	[exec] (Calculator) {galculator}
      	[exec] (Capture) {xfce4-screenshooter}
      	[exec] (Calendar) {orage}
+     [end]
      [end]        
      [separator]
      [restart] (Restart) {/usr/bin/startfluxbox}
