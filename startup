@@ -1,0 +1,59 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/demo/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+
+# add root access
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+#start a conky
+conky -c "~/.conky/MX-Conkyglass/conkys" &
+
+#put Xfce panel on desktop
+/home/$USER/.fluxbox/mx-fb/xfce4-panel-fb &
+
+#place network manager on the toolbar
+nm-applet &
+
+#place a volumeicon on the toolbar
+volumeicon &
+
+#place clipboard on the toolbar
+clipit &
+
+#put calendar on the toolbar
+orage &
+
+#add touchpad control to toolbar
+/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator &
+
+#put battery monitor on toolbar
+cd ~/.fluxbox/mx-fb/battery; python batteryTray.py &
+cd ~
+
+# Debian-local change:
+#   - fbautostart has been added with a quick hack to check to see if it
+#     exists. If it does, we'll start it up by default.
+which fbautostart > /dev/null
+if [ $? -eq 0 ]; then
+    fbautostart
+fi
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/demo/.fluxbox/log"

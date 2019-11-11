@@ -1,0 +1,72 @@
+[begin] (Fluxbox) 
+    [exec] (Help) {featherpad ~/.fluxbox/mx-fb/mx-faq-fb}
+    [exec] (Run...) {fbrun -nearmouse} 
+    [separator]
+    [exec] (Files) {thunar /home/$USER/.fluxbox} 
+    [exec] (Browser) {firefox} 
+    [exec] (Terminal) {xfce4-terminal --drop-down} 
+    [submenu] (Office) 
+    [exec] (Suite) {libreoffice}
+    [exec] (PDFs) {qpdfview}
+    [exec] (Notes) {xfce4-notes}
+    [end]
+    [submenu] (Communicate)
+    [exec] (Email) {thunderbird}
+    [exec] (Chat) {hexchat}
+    [exec] (Video) {skypeforlinux}
+    [end]
+    [submenu] (Multimedia)
+    [exec] (Music) {deadbeef} 
+    [exec] (Video) {vlc}
+    [exec] (Image) {nomacs}
+    [exec] (YouTube) {smtube}
+    [exec] (Mixer) {pavucontrol}
+    [end]
+     [separator]
+     [submenu] (Look) 
+     [submenu] (Style)
+      [stylesdir] (/usr/share/fluxbox/styles) 
+      [stylesdir] (~/.fluxbox/styles)
+     [end]
+     [submenu] (Background)
+		[wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+		[separator]
+		[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+	[end]
+	[end]
+	[submenu] (System)
+     	[exec] (Update) {xterm -e su -c 'apt-get update && apt-get dist-upgrade'}
+     	[exec] (Processes) {xfce4-taskmanager}
+     	[exec] (Conky) {mx-conky}
+     	[exec] (Disks) {sudo disk-manager}
+     	[exec] (Partitions) {sudo gparted}
+     	[exec] (Power) {xfce4-power-manager}
+	[end]	 
+     [submenu] (Settings)
+     	[exec] (MX Tools) {mx-tools}
+     	[exec] (Xfce Settings) {xfce4-settings-manager}
+     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indica tor/bin/touchpad-indicator}
+    [submenu] (Keyboards)
+		[exec] (DE) {setxkbmap de}
+		[exec] (ES) {setxkbmap es}
+		[exec] (FR) {setxkbmap fr}
+		[exec] (IT) {setxkbmap it}
+		[exec] (RU) {setxkbmap ru}
+		[exec] (UK) {setxkbmap uk}
+		[exec] (US) {setxkbmap us}
+	[end]
+       [end]
+     [submenu] (Accessories)
+         [exec] (Editor) {featherpad}
+     	[exec] (Calculator) {galculator}
+     	[exec] (Capture) {xfce4-screenshooter}
+     	[exec] (Calendar) {orage}
+     [end]        
+     [separator]
+     [restart] (Restart) {/usr/bin/startfluxbox}
+     [exec] (Suspend) {sudo 'pm-suspend'}
+     [exit] (Logout) 
+     [end]
+
+
+

@@ -1,0 +1,75 @@
+General
+NOTE: much of the documentation online is out-of-date or irrelevant to MX fluxbox.
+START: right-click anywhere on the desktop to get a menu
+
+Fluxbox panel 
+Default components L-R: pager, iconbar, systray, clock (change order ~/.fluxbox/init)
+Right-click empty iconbar section (no app open) for options, including visibility, length, placement and clock. 
+To adjust the clock, including whether 12h or 24h, click Edit clock format. 
+--24h: %H, 12h: %I.
+--Many other options available: https://mxlinux.org/wiki/other/time-formats-in-scripts/
+
+Xfce panel
+Components: Applications menu
+To change Panel features: right-click panel > Panel > Properties. 
+
+Menu
+The menu is set by ~/.fluxbox/mx-menu.
+A few alternative menus are available in ~/.fluxbox/menus_other/
+For other menus, do a web search on "fluxbox menu example"
+To edit a menu, 
+
+Windows
+Resize windows: Alt + right click near the corner you want to change
+Right-click title bar: menu of options, including remember...
+
+Workspaces
+Middle-click on open desktop enables change, rename, add/delete
+Number set to 3 by default, can go up to 12
+
+Styles
+
+Backgrounds
+Backgrounds will be determined by the style selected unless the following appears in ~/.fluxbox/overlay (no hash mark at beginning of second line):
+----------
+! The following line will prevent styles from setting the background.
+background: none
+----------
+The list that pops up includes user backgrounds (~/.fluxbox/backgrounds) and system backgrounds (/usr/share/backgrounds), separated by a horizontal line. This setup allows you to put your preferred backgrounds in the user folder and be able to select among the group with a simple click.
+
+Keystrokes 
+Many listed by default in ~/.fluxbox/keys, though not all of them work by default.
+Mod1 = Alt
+Mod4 = Logo key (Windows, Apple)
+Control = Control
+Shift = Shift
+
+Apps
+When an app is open, you can right-click the title bar and set any of the options available. For instance, you can select to remember workspace, size, etc. Your choices are recorded in ~/.fluxbox/apps.
+--Communicate > Video: for that to work Skype needs to be installed
+
+Links
+
+https://bbs.archlinux.org/viewtopic.php?id=77729
+Some good general explanations with examples
+
+https://wiki.archlinux.org/index.php/Fluxbox
+Comment: some commands are Arch-specific
+
+https://wiki.debian.org/FluxBox
+
+https://wiki.debian.org/FluxboxIcon
+
+
+
+
+
+
+Critical fluxbox files 
+
+Menu
+~/.fluxbox/mx-menu
+
+Panel
+~/.fluxbox/init
+
