@@ -39,9 +39,8 @@ orage &
 #add touchpad control to toolbar
 /opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator &
 
-#put battery monitor on toolbar
-cd ~/.fluxbox/mx-fb/battery; python batteryTray.py &
-cd ~
+#put brightness controller and battery monitor on toolbar
+xfce4-power-manager &
 
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
@@ -50,6 +49,9 @@ which fbautostart > /dev/null
 if [ $? -eq 0 ]; then
     fbautostart
 fi
+
+#put apt-notifier on the toolbar
+ionice -c3 nice -n19 python /usr/bin/apt-notifier.py& disown -h; deartifact-xfce-systray-icons 30 2>&1 1>/dev/null &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.

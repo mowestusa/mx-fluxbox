@@ -4,7 +4,7 @@
     [separator]
     [exec] (Files) {thunar /home/$USER/.fluxbox} 
     [exec] (Browser) {firefox} 
-    [exec] (Terminal) {xfce4-terminal --drop-down} 
+    [exec] (Terminal) {xfce4-terminal} 
     [submenu] (Office) 
     [exec] (Suite) {libreoffice}
     [exec] (PDFs) {qpdfview}
@@ -35,7 +35,6 @@
 	[end]
 	[end]
 	[submenu] (System)
-     	[exec] (Update) {xterm -e su -c 'apt-get update && apt-get dist-upgrade'}
      	[exec] (Processes) {xfce4-taskmanager}
      	[exec] (Conky) {mx-conky}
      	[exec] (Disks) {sudo disk-manager}

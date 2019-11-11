@@ -49,6 +49,9 @@ Apps
 When an app is open, you can right-click the title bar and set any of the options available. For instance, you can select to remember workspace, size, etc. Your choices are recorded in ~/.fluxbox/apps.
 --Communicate > Video: for that to work Skype needs to be installed
 
+Misc
+To adjust brightness, right-click the battery icon in the systray
+
 Links
 
 NOTE: much of the documentation online is out-of-date or irrelevant to MX fluxbox.
