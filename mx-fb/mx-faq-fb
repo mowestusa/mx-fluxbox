@@ -1,5 +1,5 @@
 General
-NOTE: much of the documentation online is out-of-date or irrelevant to MX fluxbox.
+This document accompanies the Xfce FAQs located in the Desktop folder.
 START: right-click anywhere on the desktop to get a menu
 
 Fluxbox panel 
@@ -7,7 +7,7 @@ Default components L-R: pager, iconbar, systray, clock (change order ~/.fluxbox/
 Right-click empty iconbar section (no app open) for options, including visibility, length, placement and clock. 
 To adjust the clock, including whether 12h or 24h, click Edit clock format. 
 --24h: %H, 12h: %I.
---Many other options available: https://mxlinux.org/wiki/other/time-formats-in-scripts/
+--Many other time/date options are available: https://mxlinux.org/wiki/other/time-formats-in-scripts/
 
 Xfce panel
 Components: Applications menu
@@ -28,14 +28,15 @@ Middle-click on open desktop enables change, rename, add/delete
 Number set to 3 by default, can go up to 12
 
 Styles
-
-Backgrounds
-Backgrounds will be determined by the style selected unless the following appears in ~/.fluxbox/overlay (no hash mark at beginning of second line):
+Styles are simple text files that tell fluxbox how to generate the appearance of different components of the window manager. Fluxbox ships with a large number, and many more can be found online with a web search on "fluxbox styles." They include a background image, but that is blocked in MXfb by a line in ~/.fluxbox/overlay. To allow the style to determine the background, place a hash mark in front to the line so that it looks like this:
 ----------
 ! The following line will prevent styles from setting the background.
-background: none
+#background: none
 ----------
-The list that pops up includes user backgrounds (~/.fluxbox/backgrounds) and system backgrounds (/usr/share/backgrounds), separated by a horizontal line. This setup allows you to put your preferred backgrounds in the user folder and be able to select among the group with a simple click.
+
+Backgrounds
+Backgrounds will be determined by the style selected unless the blocked by the overlay file (default).
+The list that pops up from the menu entry includes user backgrounds (~/.fluxbox/backgrounds) and system backgrounds (/usr/share/backgrounds), separated by a horizontal line. This setup allows you to put your preferred backgrounds in the user folder and be able to select among the group with a simple click.
 
 Keystrokes 
 Many listed by default in ~/.fluxbox/keys, though not all of them work by default.
@@ -50,6 +51,8 @@ When an app is open, you can right-click the title bar and set any of the option
 
 Links
 
+NOTE: much of the documentation online is out-of-date or irrelevant to MX fluxbox.
+
 https://bbs.archlinux.org/viewtopic.php?id=77729
 Some good general explanations with examples
 
@@ -63,12 +66,6 @@ https://wiki.debian.org/FluxboxIcon
 
 
 
-
-
-Critical fluxbox files 
-
-Menu
-~/.fluxbox/mx-menu
 
 Panel
 ~/.fluxbox/init

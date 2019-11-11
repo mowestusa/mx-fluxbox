@@ -1,5 +1,5 @@
 # mx-fluxbox
-a DE designed to be used on MX Linux
+a WM designed to be used on MX Linux
 This fluxbox version makes use of the Xfce tools and apps, creating an easily configurable product. 
 
 STATUS: alpha
