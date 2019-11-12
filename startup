@@ -42,10 +42,6 @@ orage &
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
 
-#start keyboard apps
-fbxkb-start &
-/usr/local/bin/kbd.sh &
-
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
 #     exists. If it does, we'll start it up by default.

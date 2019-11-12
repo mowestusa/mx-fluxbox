@@ -1,6 +1,12 @@
-#pull-down menu
-Mod1 F4 :Exec xfce4-terminal
+----------
+----------
+## MXfb additions ##
 
+# open a dropdown terminal
+none F4 :Exec xfce4-terminal --drop-down
+
+------------
+------------
 # Mouse1 :HideMenus
 OnDesktop Mouse2 :WorkspaceMenu
 OnDesktop Mouse3 :RootMenu
@@ -60,10 +66,10 @@ Mod4 8 :Tab 8
 Mod4 9 :Tab 9
 
 # open a terminal
-Mod4 ttt :Exec xfce4-terminal 
+Mod1 F2 :Exec xterm
 
-# open a dialog to run programs
-Mod1 F2 :Exec fbrun
+# open a dropdown terminal
+none F4 :Exec xfce4-terminal --drop-down
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes

@@ -2,24 +2,9 @@
   [Position]	(CENTER)	{0 0}
   [Layer]	{2}
 [end]
-[app] (name=Opera) (class=Opera)
-  [Workspace]	{2}
-[end]
-[app] (name=thunar) (class=Thunar) (role=Thunar-1573435599-316177529)
-  [Position]	(UPPERLEFT)	{19% 11%}
-[end]
-[app] (name=xterm) (class=XTerm)
-  [Position]	(UPPERLEFT)	{35% 25%}
-[end]
-[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1573472075-20187384)
-  [Position]	(UPPERLEFT)	{21% 23%}
-[end]
-[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1573472103-3306768217)
-  [Position]	(UPPERLEFT)	{18% 21%}
-[end]
-[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1573472281-2571790050)
-  [Position]	(UPPERLEFT)	{21% 20%}
-[end]
 [app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1573473243-414240751)
   [Position]	(UPPERLEFT)	{25% 25%}
+[end]
+[app] (name=thunar) (class=Thunar) (role=Thunar-1573508239-1868530880)
+  [Dimensions]	{56% 96%}
 [end]
