@@ -1,9 +1,13 @@
-General
-This document accompanies the Xfce FAQs located in the Desktop folder.
-START: right-click anywhere on the desktop to get a menu
+This document is restricted to Fluxbox. Use the Xfce Applications icon (in the lower left corner by default) to consult the MX Linux FAQs and Manual for Xfce components and processes.
 
-Files
-User configuration files are in ~/.fluxbox.
+What is Fluxbox?
+Fluxbox is a Window Manager that controls the placement and appearance of windows. (unlike Xfce, which is a Display Environment). 
+
+How do I start?
+Right-click anywhere on the desktop to get a menu.
+
+Where are the configuration files?
+User configuration files are in ~/.fluxbox. They include the following:
 
 init - the main Fluxbox resource configuration file. 
 menu - the Fluxbox menu config. 
@@ -13,16 +17,22 @@ overlay - a configuration file to override elements of styles.
 apps - a config file for remembering the window configuration of specific apps. 
 windowmenu - a configuration file for altering the Window Menu itself.
 
-Fluxbox panel 
-Default components L-R: pager, iconbar, systray, clock (change order ~/.fluxbox/init)
-Right-click empty iconbar section (no app open) for options, including visibility, length, placement and clock. 
-To adjust the clock, including whether 12h or 24h, click Edit clock format. 
---24h: %H, 12h: %I.
---Many other time/date options are available: https://mxlinux.org/wiki/other/time-formats-in-scripts/
-
+What is that dock across the top (by default)?
+That is called the toolbar. Right-click empty iconbar section (no app open) for options, including visibility, length, placement and clock (change in ~/.fluxbox/init). It contains the following default components (L-R): 
+pager 
+iconbar 
+systray 
+clock 
+ 
+It looks like there is another panel in the lower left corner. What is that?
 Xfce panel
 Components: Applications menu
 To change Panel features: right-click panel > Panel > Properties. 
+
+How do I change the clock?
+To adjust the clock, including whether 12h or 24h, right-click and click and select "Edit clock format." 
+--24h: %H, 12h: %I.
+--Many other time/date options are available: https://mxlinux.org/wiki/other/time-formats-in-scripts/
 
 Menu
 The menu is set by ~/.fluxbox/mx-menu.
@@ -35,7 +45,7 @@ Resize windows: Alt + right click near the corner you want to change
 Right-click title bar: menu of options, including remember...
 
 Tabs
-With at least two windows visible on your desktop use Ctrl click on the upper window tab of one window and drag it into the other open window. The two windows will now be grouped together with window tabs in the upper window tab bar. You may now perform a window operation that will affect the entire window "group". To reverse the tabbing use Ctrl+left click on a tab and drag it to an empty space on the desktop. (< Arch Wiki)
+With at least two windows visible on your desktop use Ctrl click on the upper window tab of one window and drag it into the other open window. The two windows will now be grouped together with window tabs in the upper window tab bar. You may now perform a window operation that will affect the entire window "group". To reverse the tabbing use Ctrl+left click on a tab and drag it to an empty space on the desktop. (< Arch Wiki) More: http://fluxbox.sourceforge.net/docbook/en/html/chap-tabs.html
 
 Workspaces
 Middle-click on open desktop enables change, rename, add/delete
@@ -49,7 +59,7 @@ Styles are simple text files that tell fluxbox how to generate the appearance of
 ----------
 
 Backgrounds
-Backgrounds will be determined by the style selected unless blocked (default) by the overlay file.
+Backgrounds will be determined by the style selected unless blocked (MXfb default) by the overlay file.
 The list that pops up from the menu entry includes user backgrounds (~/.fluxbox/backgrounds) and system backgrounds (/usr/share/backgrounds), separated by a horizontal line. This setup allows you to put your preferred backgrounds in the user folder and be able to select among the group with a simple click.
 
 Keystrokes 
@@ -58,6 +68,7 @@ Mod1 = Alt
 Mod4 = Logo key (Windows, Apple)
 Control = Control
 Shift = Shift
+More: http://fluxbox.sourceforge.net/docbook/en/html/c296.html
 
 Apps
 When an app is open, you can right-click the title bar and set any of the options available. For instance, you can select to remember workspace, size, etc. Your choices are recorded in ~/.fluxbox/apps.

@@ -5,7 +5,7 @@
 # Lines starting with a '#' are ignored.
 
 # Change your keymap:
-xmodmap "/home/demo/.Xmodmap"
+# xmodmap "/home/$USER/.Xmodmap"
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
@@ -19,7 +19,7 @@ xmodmap "/home/demo/.Xmodmap"
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 #start a conky
-conky -c "~/.conky/MX-Conkyglass/conkys" &
+sh .conky/conky-startup.sh &
 
 #put Xfce panel on desktop
 /home/$USER/.fluxbox/mx-fb/xfce4-panel-fb &
@@ -52,6 +52,9 @@ fi
 
 #put apt-notifier on the toolbar
 ionice -c3 nice -n19 python /usr/bin/apt-notifier.py& disown -h; deartifact-xfce-systray-icons 30 2>&1 1>/dev/null &
+
+#start fehbg to get last background
+~/.fehbg
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.

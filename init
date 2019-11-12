@@ -73,3 +73,4 @@ session.colorsPerChannel:	4
 session.menuFile:	~/.fluxbox/mx-menu
 session.appsFile:	~/.fluxbox/apps
 session.configVersion:	13
+session.screen0.rootCommand:	~/.fehbg -l

@@ -36,12 +36,11 @@
 	[end]
 	[submenu] (System)
      	[exec] (Processes) {xfce4-taskmanager}
-     	[exec] (Conky) {mx-conky}
+     	[exec] (Conky) {conky-manager}
      	[exec] (Disks) {sudo disk-manager}
      	[exec] (Partitions) {sudo gparted}
      	[exec] (Power) {xfce4-power-manager}
-     	 
-   	[end]	 
+     [end]	 
      [submenu] (Settings)
      	[exec] (MX Tools) {mx-tools}
      	[exec] (Xfce Settings) {xfce4-settings-manager}
@@ -56,13 +55,13 @@
 		[exec] (PT) {setxkbmap pt|
 		[exec] (RU) {setxkbmap ru}
 			[exec] (US) {setxkbmap us}
+	[end]
 	[end] 
    	[submenu] (Accessories)
          [exec] (Editor) {featherpad}
      	[exec] (Calculator) {galculator}
      	[exec] (Capture) {xfce4-screenshooter}
      	[exec] (Calendar) {orage}
-     [end]
      [end]        
      [separator]
      [restart] (Restart) {/usr/bin/startfluxbox}

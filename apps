@@ -8,3 +8,6 @@
 [app] (name=thunar) (class=Thunar) (role=Thunar-1573508239-1868530880)
   [Dimensions]	{56% 96%}
 [end]
+[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1573523736-2564458489)
+  [Position]	(UPPERLEFT)	{18% 19%}
+[end]
