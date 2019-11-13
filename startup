@@ -15,6 +15,9 @@
 # wmsmixer -w &
 # idesk &
 
+#put fluxbox Help on toolbar
+
+
 # add root access
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
@@ -22,7 +25,7 @@
 sh .conky/conky-startup.sh &
 
 #put Xfce panel on desktop
-/home/$USER/.fluxbox/mx-fb/xfce4-panel-fb &
+/home/$USER/.fluxbox/mxf/xfce4-panel-fb &
 
 #place network manager on the toolbar
 nm-applet &
@@ -42,6 +45,12 @@ orage &
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
 
+#put apt-notifier on the toolbar
+ionice -c3 nice -n19 python /usr/bin/apt-notifier.py& disown -h; deartifact-xfce-systray-icons 30 2>&1 1>/dev/null &
+
+#start fehbg to get last background
+~/.fehbg
+
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
 #     exists. If it does, we'll start it up by default.
@@ -49,12 +58,6 @@ which fbautostart > /dev/null
 if [ $? -eq 0 ]; then
     fbautostart
 fi
-
-#put apt-notifier on the toolbar
-ionice -c3 nice -n19 python /usr/bin/apt-notifier.py& disown -h; deartifact-xfce-systray-icons 30 2>&1 1>/dev/null &
-
-#start fehbg to get last background
-~/.fehbg
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
