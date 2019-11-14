@@ -1,7 +1,10 @@
 [begin] (Fluxbox) 
-    [exec] (Conky On/Off) {conkytoggle.sh}
+    [submenu] (Toggles)
+    [exec] (Conky) {conkytoggle.sh}
+    [exec] (Xfce panel) {mv '~/.fluxbox/mxf/xfce4-panel-fb ~/.fluxbox/mxf/xfce4-panel-fb_bak}
+    [end]
     [submenu] (Help) 
-    	[exec] (fluxbox) {qpdfview ~/.fluxbox/doc/FAQ.pdf}
+    	[exec] (fluxbox) {qpdfview ~/.fluxbox/doc/FAQ_fl.pdf}
     	[exec] (MX) {mx-faq}
     [end]
     [exec] (Run...) {fbrun -nearmouse} 
