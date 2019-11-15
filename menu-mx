@@ -1,10 +1,10 @@
 [begin] (Fluxbox) 
-    [submenu] (Toggles)
+    [submenu] (Toggle)
     [exec] (Conky) {conkytoggle.sh}
     [exec] (Xfce panel) {mv '~/.fluxbox/mxf/xfce4-panel-fb ~/.fluxbox/mxf/xfce4-panel-fb_bak}
     [end]
     [submenu] (Help) 
-    	[exec] (fluxbox) {qpdfview ~/.fluxbox/doc/FAQ_fl.pdf}
+    	[exec] (fluxbox) {xdg-open ~/.fluxbox/doc/mxf-faq.pdf}
     	[exec] (MX) {mx-faq}
     [end]
     [exec] (Run...) {fbrun -nearmouse} 
@@ -61,6 +61,7 @@
      	[exec] (MX Tools) {mx-tools}
      	[exec] (Xfce Settings) {xfce4-settings-manager}
      	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indica tor/bin/touchpad-indicator}
+     	[exec] (Bluetooth) {blueman-manager}
      	[submenu] (Keyboard)
 		[exec] (DE) {setxkbmap de}
 		[exec] (ES) {setxkbmap es} 

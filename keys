@@ -5,6 +5,9 @@
 # open a dropdown terminal
 none F4 :Exec xfce4-terminal --drop-down
 
+# take a screen capture
+none Print :ExecCommand /usr/bin/xfce4-screenshooter
+
 ------------
 ------------
 # Mouse1 :HideMenus
@@ -67,9 +70,6 @@ Mod4 9 :Tab 9
 
 # open a terminal
 Mod1 F2 :Exec xterm
-
-# open a dropdown terminal
-none F4 :Exec xfce4-terminal --drop-down
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
