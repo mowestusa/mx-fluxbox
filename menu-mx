@@ -60,7 +60,7 @@
      [submenu] (Settings)
      	[exec] (MX Tools) {mx-tools}
      	[exec] (Xfce Settings) {xfce4-settings-manager}
-     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indica tor/bin/touchpad-indicator}
+     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
      	[exec] (Bluetooth) {blueman-manager}
      	[submenu] (Keyboard)
 		[exec] (DE) {setxkbmap de}
