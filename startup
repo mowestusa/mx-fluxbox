@@ -13,19 +13,15 @@
 # unclutter -idle 2 &
 # wmnd &
 # wmsmixer -w &
-# idesk &
 
-#put fluxbox Help on toolbar
-
+# enable FAQ icon on desktop
+idesk &
 
 # add root access
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 #start a conky
 sh .conky/conky-startup.sh &
-
-#put Xfce panel on desktop
-/home/$USER/.fluxbox/mxf/xfce4-panel-fb &
 
 #place network manager on the toolbar
 nm-applet &

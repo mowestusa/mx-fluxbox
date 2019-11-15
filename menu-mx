@@ -42,6 +42,7 @@
 	[end]
 	[end]
 	[submenu] (System)
+		[exec] (All apps) {xfce4-appfinder}
 		[submenu] (Packages)
      		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
      		[exec] (Synaptic) {synaptic-pkexec}
