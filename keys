@@ -1,12 +1,25 @@
 ----------
 ----------
-## MXfb additions ##
+## MX-f additions ##
+
+# take a screen capture
+none Print :Exec /usr/bin/xfce4-screenshooter
+
+# open Help
+none F1 :Exec xdg-open ~/.fluxbox/doc/mxf-faq.pdf
+
+# open a run terminal
+none F2 :Exec fbrun
+
+# open a file manager
+none F3 :Exec thunar /home/$USER/.fluxbox
 
 # open a dropdown terminal
 none F4 :Exec xfce4-terminal --drop-down
 
-# take a screen capture
-none Print :ExecCommand /usr/bin/xfce4-screenshooter
+# open the MX Tools dashboard
+none F5 :Exec mx-tools
+
 
 ------------
 ------------

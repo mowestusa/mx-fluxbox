@@ -11,3 +11,6 @@
 [app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1573523736-2564458489)
   [Position]	(UPPERLEFT)	{18% 19%}
 [end]
+[app] (name=featherpad) (class=FeatherPad)
+  [Dimensions]	{56% 95%}
+[end]

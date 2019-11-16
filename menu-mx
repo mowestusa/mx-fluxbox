@@ -1,17 +1,13 @@
 [begin] (Fluxbox) 
-    [submenu] (Toggle)
-    [exec] (Conky) {conkytoggle.sh}
-    [exec] (Xfce panel) {mv '~/.fluxbox/mxf/xfce4-panel-fb ~/.fluxbox/mxf/xfce4-panel-fb_bak}
+    [exec] (Help  F1) {xdg-open ~/.fluxbox/doc/mxf-faq.pdf}
+    [submenu] (Out of sight)
+    	[exec] (Conky toggle)) {conkytoggle.sh}
+   		[exec] (FAQ icon) {featherpad ~/.fluxbox/startup}
     [end]
-    [submenu] (Help) 
-    	[exec] (fluxbox) {xdg-open ~/.fluxbox/doc/mxf-faq.pdf}
-    	[exec] (MX) {mx-faq}
-    [end]
-    [exec] (Run...) {fbrun -nearmouse} 
     [separator]
-    [exec] (Files) {thunar /home/$USER/.fluxbox} 
+    [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [exec] (Browser) {firefox} 
-    [exec] (Terminal) {xfce4-terminal} 
+    [exec] (Terminal  F4) {xfce4-terminal --drop-down} 
     [submenu] (Office) 
     	[exec] (Suite) {libreoffice}
     	[exec] (PDFs) {qpdfview}
@@ -29,6 +25,7 @@
     	[exec] (YouTube) {smtube}
     	[exec] (Mixer) {pavucontrol}
     [end]
+    [exec] (MX Tools F5) {mx-tools}
      [separator]
      [submenu] (Look) 
      	[submenu] (Style)
@@ -59,8 +56,7 @@
      [exec] (Power) {xfce4-power-manager}
      [end]	 
      [submenu] (Settings)
-     	[exec] (MX Tools) {mx-tools}
-     	[exec] (Xfce Settings) {xfce4-settings-manager}
+     	     	[exec] (Xfce Settings) {xfce4-settings-manager}
      	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
      	[exec] (Bluetooth) {blueman-manager}
      	[submenu] (Keyboard)
@@ -82,6 +78,7 @@
      	[exec] (Calendar) {orage}
      [end]        
      [separator]
+     [exec] (Run  F2) {fbrun -nearmouse} 
      [restart] (Restart) {/usr/bin/startfluxbox}
      [exec] (Suspend) {sudo 'pm-suspend'}
      [exit] (Logout) 

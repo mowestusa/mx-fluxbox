@@ -14,7 +14,8 @@
 # wmnd &
 # wmsmixer -w &
 
-# enable FAQ icon on desktop
+# enable FAQ icon on desktop: 
+#DISABLE with a "#" at the beginning and logout
 idesk &
 
 # add root access
