@@ -5,16 +5,17 @@ STATUS: beta
 
 DEPENDENCIES: idesk, MX-19 (only version tested so far)
 
-INSTALLATION: it will eventually be available as a deb file installed via MX Package Installer. These directions are aimed at 
+INSTALLATION: it will eventually be available as a deb file installed via MX Package Installer. These interim directions are valid for users of MX-19, the only version tested so far. 
 
 1) install fluxbox and idesk
 
-sudo apt install fluxbox idesk
+2) run fluxbox
 
-2) download the ZIP file and extract to /home, accepting to replace all
+3) run idesk
 
-3) open terminal inside ~/.fluxbox and move components, accepting to replace all
+4) download the ZIP file and extract to /home, accepting to replace all
 
+5) open terminal inside ~/.fluxbox and move the following components, accepting to replace all:
 
 mv ~/.fluxbox/mxf/idesk/fluxhelp.lnk ~/.idesktop/
 
@@ -24,4 +25,6 @@ mv ~/.fluxbox/mxf/BritPanel/conkyrc_fb ~/.conky/MX-BritPanel/
 
 mv ~/.fluxbox/mxf/conky-startup.sh ~/.conky/
 
-4) log out of Xfce, select fluxbox as the session, and log back in 
+mv ~/.fluxbox/backgrounds/mxlinuxwine_by_ant_ony-1080p.png /usr/share/backgrounds/
+
+6) log out of Xfce, select fluxbox as the session, and log back in 
