@@ -4,19 +4,18 @@
 #
 # Lines starting with a '#' are ignored.
 
-# Change your keymap:
-# xmodmap "/home/$USER/.Xmodmap"
-
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
-#
-# unclutter -idle 2 &
-# wmnd &
-# wmsmixer -w &
 
-# enable FAQ icon on desktop: 
-#DISABLE with a "#" at the beginning and logout
+===========================
+
+## DESKTOP FAQ ICON TOGGLE ##
+
+# FAQ ICON DISABLE: place a "#" at the beginning the following line
 idesk &
+#then log out and back in. Reverse to re-enable.
+
+===========================
 
 # add root access
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
@@ -45,7 +44,7 @@ xfce4-power-manager &
 #put apt-notifier on the toolbar
 ionice -c3 nice -n19 python /usr/bin/apt-notifier.py& disown -h; deartifact-xfce-systray-icons 30 2>&1 1>/dev/null &
 
-#start fehbg to get last background
+#start fehbg to get last background selected
 ~/.fehbg
 
 # Debian-local change:

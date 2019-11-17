@@ -1,7 +1,7 @@
 [begin] (Fluxbox) 
     [exec] (Help  F1) {xdg-open ~/.fluxbox/doc/mxf-faq.pdf}
     [submenu] (Out of sight)
-    	[exec] (Conky toggle)) {conkytoggle.sh}
+    	[exec] (Conky toggle) {conkytoggle.sh}
    		[exec] (FAQ icon) {featherpad ~/.fluxbox/startup}
     [end]
     [separator]
@@ -45,7 +45,7 @@
      		[exec] (Synaptic) {synaptic-pkexec}
      	[end]
      [submenu] (Disks)
-     	[exec] (Mount) {sudo disk-manager}
+     	[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
      	[exec] (Manage) {sudo gparted}
      [end]
      	[exec] (Processes) {xfce4-taskmanager}
@@ -53,23 +53,24 @@
      	[exec] (Conky Manager) {conky-manager}
      	[exec] (MX-Conky) {mx-conky}
      [end]
-     [exec] (Power) {xfce4-power-manager}
+   
      [end]	 
      [submenu] (Settings)
-     	     	[exec] (Xfce Settings) {xfce4-settings-manager}
+     	[exec] (Xfce Settings) {xfce4-settings-manager}
      	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
      	[exec] (Bluetooth) {blueman-manager}
+     	[exec] (Power) {xfce4-power-manager-settings}
      	[submenu] (Keyboard)
-		[exec] (DE) {setxkbmap de}
-		[exec] (ES) {setxkbmap es} 
-		[exec] (FR) {setxkbmap fr}
-		[exec] (GB) {setxkbmap gb|
-		[exec] (IT) {setxkbmap it}
-		[exec] (PL) {setxkbmap pl|
-		[exec] (PT) {setxkbmap pt|
-		[exec] (RU) {setxkbmap ru}
-		[exec] (US) {setxkbmap us}
-	[end]
+			[exec] (DE) {setxkbmap de}
+			[exec] (ES) {setxkbmap es} 
+			[exec] (FR) {setxkbmap fr}
+			[exec] (GB) {setxkbmap gb|
+			[exec] (IT) {setxkbmap it}
+			[exec] (PL) {setxkbmap pl|
+			[exec] (PT) {setxkbmap pt|
+			[exec] (RU) {setxkbmap ru}
+			[exec] (US) {setxkbmap us}
+		[end]
 	[end] 
    	[submenu] (Accessories)
         [exec] (Editor) {featherpad}
