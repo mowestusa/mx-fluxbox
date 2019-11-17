@@ -11,9 +11,10 @@ INSTALLATION: it will eventually be available as a deb file installed via MX Pac
 
 sudo apt install fluxbox idesk
 
-2) download the tarball .fluxbox.tar.gz and extract to /home, accepting to replace all
+2) download the ZIP file and extract to /home, accepting to replace all
 
-3) open terminal inside .fluxbox and move components
+3) open terminal inside ~/.fluxbox and move components, accepting to replace all
+
 
 mv ~/.fluxbox/mxf/idesk/fluxhelp.lnk ~/.idesktop/
 mv ~/.fluxbox/mxf/idesk/.ideskrc ~/
