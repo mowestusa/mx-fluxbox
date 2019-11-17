@@ -46,7 +46,7 @@
      	[end]
      [submenu] (Disks)
      	[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
-     	[exec] (Manage) {sudo gparted}
+     	[exec] (Manage) {/usr/sbin/gparted}
      [end]
      	[exec] (Processes) {xfce4-taskmanager}
      [submenu] (Conky)

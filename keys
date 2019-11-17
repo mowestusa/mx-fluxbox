@@ -20,6 +20,9 @@ none F4 :Exec xfce4-terminal --drop-down
 # open the MX Tools dashboard
 none F5 :Exec mx-tools
 
+# change volume with keys
+Control Up :Exec amixer -D pulse sset Master 5%+
+Control Down :Exec amixer -D pulse sset Master 5%-
 
 ------------
 ------------

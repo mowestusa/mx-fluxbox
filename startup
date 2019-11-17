@@ -23,6 +23,10 @@ idesk &
 #start a conky
 sh .conky/conky-startup.sh &
 
+# provide a screensaver
+xfce4-screensaver-command &
+xfce4-screensaver &
+
 #place network manager on the toolbar
 nm-applet &
 
