@@ -9,13 +9,9 @@ INSTALLATION: it will eventually be available as a deb file installed via MX Pac
 
 1) install fluxbox and idesk
 
-2) run fluxbox
+2) download the ZIP file and extract to /home, accepting to replace all
 
-3) run idesk
-
-4) download the ZIP file and extract to /home, accepting to replace all
-
-5) open terminal inside ~/.fluxbox and move the following components, accepting to replace all:
+3) open terminal inside ~/.fluxbox and move the following components, accepting to replace all:
 
 mv ~/.fluxbox/mxf/idesk/fluxhelp.lnk ~/.idesktop/
 
@@ -27,4 +23,4 @@ mv ~/.fluxbox/mxf/conky-startup.sh ~/.conky/
 
 mv ~/.fluxbox/backgrounds/mxlinuxwine_by_ant_ony-1080p.png /usr/share/backgrounds/
 
-6) log out of Xfce, select fluxbox as the session, and log back in 
+4) log out of Xfce, select fluxbox as the session, and log back in 
