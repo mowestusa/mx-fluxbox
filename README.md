@@ -17,8 +17,11 @@ sudo apt install fluxbox idesk
 
 
 mv ~/.fluxbox/mxf/idesk/fluxhelp.lnk ~/.idesktop/
+
 mv ~/.fluxbox/mxf/idesk/.ideskrc ~/
+
 mv ~/.fluxbox/mxf/BritPanel/conkyrc_fb ~/.conky/MX-BritPanel/
+
 mv ~/.fluxbox/mxf/conky-startup.sh ~/.conky/
 
 4) log out of Xfce, select fluxbox as the session, and log back in 
