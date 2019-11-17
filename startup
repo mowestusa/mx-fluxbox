@@ -7,15 +7,8 @@
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 
-===========================
-
-## DESKTOP FAQ ICON TOGGLE ##
-
-# FAQ ICON DISABLE: place a "#" at the beginning the following line
+# add FAQ icon to desktop
 idesk &
-#then log out and back in. Reverse to re-enable.
-
-===========================
 
 # add root access
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &

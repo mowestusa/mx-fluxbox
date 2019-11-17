@@ -2,7 +2,7 @@
     [exec] (Help  F1) {xdg-open ~/.fluxbox/doc/mxf-faq.pdf}
     [submenu] (Out of sight)
     	[exec] (Conky toggle) {conkytoggle.sh}
-   		[exec] (FAQ icon) {featherpad ~/.fluxbox/startup}
+   		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
     [end]
     [separator]
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
