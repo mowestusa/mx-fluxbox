@@ -21,6 +21,6 @@ mv ~/.fluxbox/mxf/BritPanel/conkyrc_fb ~/.conky/MX-BritPanel/
 
 mv ~/.fluxbox/mxf/conky-startup.sh ~/.conky/
 
-mv ~/.fluxbox/backgrounds/mxlinuxwine_by_ant_ony-1080p.png /usr/share/backgrounds/
+sudo mv ~/.fluxbox/backgrounds/mxlinuxwine_by_ant_ony-1080p.png /usr/share/backgrounds/
 
 4) log out of Xfce, select fluxbox as the session, and log back in 
