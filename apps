@@ -2,15 +2,3 @@
   [Position]	(CENTER)	{0 0}
   [Layer]	{2}
 [end]
-[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1573473243-414240751)
-  [Position]	(UPPERLEFT)	{25% 25%}
-[end]
-[app] (name=thunar) (class=Thunar) (role=Thunar-1573508239-1868530880)
-  [Dimensions]	{56% 96%}
-[end]
-[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1573523736-2564458489)
-  [Position]	(UPPERLEFT)	{18% 19%}
-[end]
-[app] (name=featherpad) (class=FeatherPad)
-  [Dimensions]	{56% 95%}
-[end]

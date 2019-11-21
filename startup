@@ -33,7 +33,7 @@ clipit &
 orage &
 
 #add touchpad control to toolbar
-/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator &
+#/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator &
 
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &

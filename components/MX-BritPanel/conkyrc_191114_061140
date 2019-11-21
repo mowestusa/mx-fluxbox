@@ -1,6 +1,6 @@
 # Use Xft?
 use_xft yes
-xftfont Roboto-Light:size=9
+xftfont Roboto-Light:size=8
 xftalpha 0.8
 text_buffer_size 2048
 
@@ -51,7 +51,7 @@ default_color white
 #default_shade_color black
 #default_outline_color white
 own_window_colour 000000
-color1 ff557f
+color1 aaffff
 
 # Text alignment, other possible values are commented
 alignment bottom_middle
@@ -88,5 +88,5 @@ use_spacer none
 own_window_argb_value 0
 own_window_argb_visual no
 TEXT
-${alignc}${color1}System:${color} $sysname $kernel $machine  |  ${color1}Hostname:${color} $nodename  |  ${color1}User:${color} $USER  |  ${color1}Time:${color} ${time %I:%M}  |  ${color1}Uptime:${color} ${uptime}  |  ${color1}CPU:${color} ${cpu cpu0}% ${cpugraph cpu0 8,60}  |  ${color1}CPU Temperature:${color} ${acpitemp}°C  |  ${color1}Highest CPU:${color} ${top name 1}${top name 2}${top name 3} |  ${color1}Processes:${color} $processes ($running_processes running)  |  ${color1}Load:${color} $loadavg  |  ${color1}RAM:${color} $memperc% ${memgraph 8,60}   
-${alignc}${color1}Highest MEM:${color} ${top_mem name 1}${top_mem name 2}${top name 3} | ${color1}Home:${color} ${fs_free /home} / ${fs_size /} ${fs_bar 8,60 /}  |  ${color1}Wireless ${color}(${addr wlan0})  |  ${color1}Down:${color} $color${downspeedf wlan0}KB/s ${downspeedgraph wlan0 8,60} $color  |  ${color1}Total Download:${color} ${totaldown wlan0}  |  ${color1}Up:${color} ${upspeedf wlan0}KB/s ${upspeedgraph wlan0 8,60}  |  ${color1}Total Upload:${color} ${totalup wlan0}
+${alignc}${color1}System:${color} $sysname $kernel $machine  |  ${color1}Hostname:${color} $nodename  |  ${color1}User:${color} $USER  |  ${color1}Time:${color} ${time %T}  |  ${color1}Uptime:${color} ${uptime}  |  ${color1}CPU:${color} ${cpu cpu0}% ${cpugraph cpu0 8,60}  |  ${color1}CPU Temperature:${color} ${acpitemp}°C  |  ${color1}Highest CPU:${color} ${top name 1}${top name 2}${top name 3} |  ${color1}Processes:${color} $processes ($running_processes running)  |  ${color1}Load:${color} $loadavg  |  ${color1}RAM:${color} $memperc% ${memgraph 8,60}   
+${alignc}${color1}Highest MEM:${color} ${top_mem name 1}${top_mem name 2}${top name 3} |  ${color1}SWAP:${color} $swapperc% ${swapbar 8,60}  |  ${color1}Home:${color} ${fs_free /home} / ${fs_size /} ${fs_bar 8,60 /}  |  ${color1}Wireless ${color}(${addr wlan0})  |  ${color1}Down:${color} $color${downspeedf wlan0}KB/s ${downspeedgraph wlan0 8,60} $color  |  ${color1}Total Download:${color} ${totaldown wlan0}  |  ${color1}Up:${color} ${upspeedf wlan0}KB/s ${upspeedgraph wlan0 8,60}  |  ${color1}Total Upload:${color} ${totalup wlan0}
