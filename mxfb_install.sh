@@ -2,6 +2,11 @@
 ##right-click the downloaded script > Properties > Permissions
 ##and check to allow to run as a program
 
+if [ ! "$UID" = "0" ]; then
+	echo "Run script as regular user"
+	exit 1
+fi
+
 wget https://github.com/jerry3904/mx-fluxbox/archive/master.zip -P ~/Downloads/
 
 cd ~/Downloads/	
