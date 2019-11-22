@@ -29,9 +29,6 @@ volumeicon &
 #place clipboard on the toolbar
 clipit &
 
-#put calendar on the toolbar
-orage &
-
 #add touchpad control to toolbar
 #/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator &
 
