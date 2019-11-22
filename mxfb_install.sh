@@ -24,10 +24,4 @@ mv ~/.fluxbox/components/MX-BritPanel/conkyrc_fb ~/.conky/MX-BritPanel/conkyrc_f
 
 mv ~/.fluxbox/components/conky-startup.sh ~/.conky/conky-startup.sh
 
-
-
-sleep 5
-
-killall idesk
-
 yad --text="To see the result: log out, select fluxbox from the pull-down menu in the upper right corner, and log back in." --title="All done!" --width=400 
