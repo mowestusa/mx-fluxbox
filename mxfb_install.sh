@@ -1,4 +1,6 @@
-##this script will set up fluxbox on the MX installation with MX defaults##
+##this script will set up fluxbox on the MX installation
+##right-click the downloaded script > Properties > Permissions
+##and check to allow to run as a program
 
 wget https://github.com/jerry3904/mx-fluxbox/archive/master.zip -P ~/Downloads/
 
@@ -20,8 +22,10 @@ mv ~/.fluxbox/mxf/conky-startup.sh ~/.conky/
 
 rm  ~/.idesk/default.lnk
 
+mkdir ~/.ideskrc
+
 idesk
 
-sleep 10
+sleep 5
 
 killall idesk
