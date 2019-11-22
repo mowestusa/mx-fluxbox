@@ -1,6 +1,12 @@
 ##this script will set up fluxbox on the MX installation with MX defaults##
 
-mv ~/Downloads/mx-master (?) ~/.fluxbox
+wget https://github.com/jerry3904/mx-fluxbox/archive/master.zip -P ~/Downloads/
+
+cd ~/Downloads/	
+
+unzip -d ~/ master.zip
+
+cd ~/ && mv mx-fluxbox-master/ .fluxbox/
 
 mv ~/.fluxbox/mxf/idesk/fluxhelp.lnk ~/.idesktop/
 
@@ -12,7 +18,7 @@ mv ~/.fluxbox/mxf/MX-BritPanel/conkyrc_fb ~/.conky/MX-BritPanel/
 
 mv ~/.fluxbox/mxf/conky-startup.sh ~/.conky/
 
-sudo mv ~/.fluxbox/backgrounds/mxlinuxwine_by_ant_ony-1080p.png /usr/share/backgrounds/
+rm  ~/.idesk/default.lnk
 
 idesk
 
