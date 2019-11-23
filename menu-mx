@@ -14,9 +14,8 @@
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {deadbeef} 
+       		[exec] (Music) {clementine} 
     		[exec] (Video) {vlc}
-    		[exec] (YouTube) {smtube}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
     [submenu] (Office) 
