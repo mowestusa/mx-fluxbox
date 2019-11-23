@@ -74,7 +74,6 @@
    	[submenu] (Accessories)
        	[exec] (Calculator) {galculator}
      	[exec] (Calendar) {orage}
-     	[exec] (Calendar) {orage}
      	[exec] (Capture) {xfce4-screenshooter}
      	[exec] (Editor) {featherpad}
      [end]
