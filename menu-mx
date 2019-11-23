@@ -17,7 +17,6 @@
        		[exec] (Music) {deadbeef} 
     		[exec] (Video) {vlc}
     		[exec] (YouTube) {smtube}
-    		[exec] (Mixer) {pavucontrol}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
     [submenu] (Office) 
@@ -67,6 +66,7 @@
 			[exec] (RU) {setxkbmap ru}
 			[exec] (US) {setxkbmap us}
 		[end]
+		[exec] (Mixer) {pavucontrol}
 		[exec] (Power) {xfce4-power-manager-settings}
 		[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
 		[exec] (Xfce Settings) {xfce4-settings-manager}
