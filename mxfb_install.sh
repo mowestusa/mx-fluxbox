@@ -8,16 +8,6 @@
 
 #set up fluxbox
 
-if [ ! -d "$HOME/.fluxbox" ]; then
-   yad --text="Before running this script you must install FLUXBOX and IDESK. 
-   
-Exiting..." --title="Before starting!" --geometry=400x10 --timeout=5
-fi
-
-if [ ! -d "$HOME/.fluxbox" ]; then
-exit
-fi
-
 wget https://github.com/jerry3904/mx-fluxbox/archive/master.zip -P ~/Downloads/
 
 cd ~/Downloads/	
