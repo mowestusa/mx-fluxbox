@@ -5,61 +5,57 @@
    		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
     [end]
     [separator]
+    [exec] (Browser) {firefox}
+    [submenu] (Communicate)
+    		[exec] (Email) {thunderbird}
+    		[exec] (Chat) {hexchat}
+    		[exec] (Video) {skypeforlinux}
+    [end]
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
-    [exec] (Browser) {firefox} 
-    [exec] (Terminal  F4) {xfce4-terminal --drop-down} 
+    [submenu] (Multimedia)
+        	[exec] (Image) {nomacs}
+       		[exec] (Music) {deadbeef} 
+    		[exec] (Video) {vlc}
+    		[exec] (YouTube) {smtube}
+    		[exec] (Mixer) {pavucontrol}
+    [end]
+    [exec] (MX Tools F5) {mx-tools} 
     [submenu] (Office) 
     	[exec] (Suite) {libreoffice}
     	[exec] (PDFs) {qpdfview}
     	[exec] (Notes) {xfce4-notes}
     [end]
-    [submenu] (Communicate)
-    	[exec] (Email) {thunderbird}
-    	[exec] (Chat) {hexchat}
-    	[exec] (Video) {skypeforlinux}
-    [end]
-    [submenu] (Multimedia)
-    	[exec] (Music) {deadbeef} 
-    	[exec] (Video) {vlc}
-    	[exec] (Image) {nomacs}
-    	[exec] (YouTube) {smtube}
-    	[exec] (Mixer) {pavucontrol}
-    [end]
-    [exec] (MX Tools F5) {mx-tools}
-     [separator]
-     [submenu] (Look) 
-     	[submenu] (Style)
+    [exec] (Terminal  F4) {xfce4-terminal --drop-down} 
+            [separator]
+    [submenu] (Look) 
+       [submenu] (Background)
+			[wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+			[separator]
+			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+		[end]
+    	[submenu] (Style)
       		[stylesdir] (/usr/share/fluxbox/styles) 
       		[stylesdir] (~/.fluxbox/styles)
      	[end]
-     [submenu] (Background)
-		[wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
-		[separator]
-		[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
-	[end]
-	[end]
+   	[end]
 	[submenu] (System)
 		[exec] (All apps) {xfce4-appfinder}
-		[submenu] (Packages)
+    	[submenu] (Conky)	
+     		[exec] (Conky Manager) {conky-manager}
+     		[exec] (MX-Conky) {mx-conky}
+		[end]
+	[submenu] (Disks)
+     		[exec] (Manage) {/usr/sbin/gparted}
+     		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
+     [end]
+     [submenu] (Packages)
      		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
      		[exec] (Synaptic) {synaptic-pkexec}
-     	[end]
-     [submenu] (Disks)
-     	[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
-     	[exec] (Manage) {/usr/sbin/gparted}
-     [end]
-     	[exec] (Processes) {xfce4-taskmanager}
-     [submenu] (Conky)
-     	[exec] (Conky Manager) {conky-manager}
-     	[exec] (MX-Conky) {mx-conky}
-     [end]
-   
-     [end]	 
-     [submenu] (Settings)
-     	[exec] (Xfce Settings) {xfce4-settings-manager}
-     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
+    [end]
+    [exec] (Processes) {xfce4-taskmanager}
+ 	[end]
+    [submenu] (Settings)
      	[exec] (Bluetooth) {blueman-manager}
-     	[exec] (Power) {xfce4-power-manager-settings}
      	[submenu] (Keyboard)
 			[exec] (DE) {setxkbmap de}
 			[exec] (ES) {setxkbmap es} 
@@ -71,14 +67,19 @@
 			[exec] (RU) {setxkbmap ru}
 			[exec] (US) {setxkbmap us}
 		[end]
+		[exec] (Power) {xfce4-power-manager-settings}
+		[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
+		[exec] (Xfce Settings) {xfce4-settings-manager}
 	[end] 
    	[submenu] (Accessories)
-        [exec] (Editor) {featherpad}
-     	[exec] (Calculator) {galculator}
-     	[exec] (Capture) {xfce4-screenshooter}
+       	[exec] (Calculator) {galculator}
      	[exec] (Calendar) {orage}
-     [end]        
+     	[exec] (Calendar) {orage}
+     	[exec] (Capture) {xfce4-screenshooter}
+     	[exec] (Editor) {featherpad}
+     [end]
      [separator]
+     [exec] (GIT) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Run  F2) {fbrun -nearmouse} 
      [restart] (Restart) {/usr/bin/startfluxbox}
      [exec] (Suspend) {sudo 'pm-suspend'}

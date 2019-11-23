@@ -1,6 +1,6 @@
-#################################################
-# make sure you first install fluxbox and idesk #
-#################################################
+    #################################################
+    # make sure you first install fluxbox and idesk #
+    #################################################
 
 #this script will set up fluxbox on the MX installation
 #right-click the downloaded script > Properties > Permissions
@@ -20,9 +20,7 @@ unzip -d ~/ master.zip
 
 cd ~/
 
-mv mx-fluxbox-master/ .fluxbox/ && mv .fluxbox/ ~/
-
-
+mv mx-fluxbox-master/ .fluxbox/ 
 
 #set up idesk
 
@@ -41,5 +39,7 @@ cp ~/.fluxbox/components/MX-BritPanel/conkyrc_fb ~/.conky/MX-BritPanel/conkyrc_f
 cp ~/.fluxbox/components/conky-startup.sh ~/.conky/conky-startup.sh
 
 sleep 2
+
+#finish
  
 yad --text="To see the result: log out, select fluxbox from the pull-down menu in the upper right corner, and log back in." --title="All done!" --width=400 
