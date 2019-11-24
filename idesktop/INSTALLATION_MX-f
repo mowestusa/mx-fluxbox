@@ -1,6 +1,0 @@
-sudo apt install idesktop
-mkdir ~/.idesktop
-rm ~/.idesktop/default.lnk
-cp ~/.fluxbox/idesktop/fluxhelp.lnk ~/.idesktop/
-cp ~/.fluxbox/idesktop/.deskrc ~/.ideskrc
-
