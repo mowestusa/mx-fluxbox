@@ -8,9 +8,6 @@ none Print :Exec /usr/bin/xfce4-screenshooter
 # open fluxbox FAQ
 none F1 :Exec xdg-open ~/.fluxbox/doc/mxf-faq.pdf
 
-# open MX FAQ 
-Mod1 F1 :Exec xdg-open https://mxlinux.org/wiki/help-files/mx-faqs/
-
 # open a run terminal
 none F2 :Exec fbrun
 
