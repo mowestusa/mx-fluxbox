@@ -9,7 +9,6 @@
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
     		[exec] (Chat) {hexchat}
-    		[exec] (Video) {skypeforlinux}
     [end]
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
