@@ -6,9 +6,7 @@ STATUS: 1.0
 
 DEPENDENCIES: idesk, fluxbox
 
-INSTALLATION: it will eventually be available as a deb file installed via MX Package Installer. These interim directions are valid for users of any version of MX-Linux. 
-
-##
+INSTALLATION: it will eventually be available as a deb file installed via MX Package Installer. These are interim directions for testing purposes. 
 
 install fluxbox and idesk
 
