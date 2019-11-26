@@ -5,6 +5,12 @@
 #and enter: sh mxfb_install.sh
 
 --------------
+#test that user is not root
+
+if [ "$(id -u)" = "0" ]; then
+   echo "You must run this script as regular user" 1>&2
+   exit 1
+fi
 
 #set up fluxbox
 
