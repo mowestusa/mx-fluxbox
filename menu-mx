@@ -36,8 +36,7 @@
      	[end]
    	[end]
 	[submenu] (System)
-		[exec] (All apps) {xfce4-appfinder}
-    	[submenu] (Conky)	
+		[submenu] (Conky)	
      		[exec] (Conky Manager) {conky-manager}
      		[exec] (MX-Conky) {mx-conky}
 		[end]
@@ -76,9 +75,10 @@
      	[exec] (Editor) {featherpad}
      [end]
      [separator]
+     [exec] (All apps F6) {xfce4-appfinder}
      [exec] (GIT) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Run  F2) {fbrun -nearmouse} 
-     [restart] (Restart) {/usr/bin/startfluxbox}
+     [restart] (Restart)
      [exec] (Suspend) {sudo 'pm-suspend'}
      [exit] (Logout) 
      [end]
