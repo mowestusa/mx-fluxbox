@@ -1,5 +1,5 @@
 [begin] (Fluxbox) 
-    [exec] (Help  F1) {xdg-open ~/.fluxbox/doc/mxf-faq.pdf}
+    [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mxf-faq.pdf}
     [submenu] (Out of sight)
     	[exec] (Conky [toggle]) {conkytoggle.sh}
    		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
