@@ -24,6 +24,8 @@ cd ~/
 
 mv mx-fluxbox-master/ .fluxbox/ 
 
+mv ~/.fluxbox/pixmaps/mxflux.png /usr/share/icons/
+
 #set up idesk
 
 mkdir ~/.idesktop/
