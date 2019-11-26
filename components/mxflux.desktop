@@ -5,5 +5,5 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
-Exec=/usr/local/bin/mxflux
+Exec=sh /usr/local/bin/mxflux_install.sh
 Icon=/usr/share/icons/mxflux.png
