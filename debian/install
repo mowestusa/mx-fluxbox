@@ -1,0 +1,5 @@
+dot-fluxbox/* usr/share/mxflux/.fluxbox
+pixmaps/*	usr/share/icons
+bin/* 		usr/bin
+*.desktop   usr/share/applications
+backgrounds/* usr/share/backgrounds
