@@ -4,6 +4,6 @@ Comment=Set up fluxbox on MX-Linux
 Exec=install-mx-fluxbox
 Icon=mxflux
 NoDisplay=false
-Terminal=false
+Terminal=true
 Categories=System;
 Type=Application

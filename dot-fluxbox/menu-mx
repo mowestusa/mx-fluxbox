@@ -5,7 +5,8 @@
    		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
     [end]
     [separator]
-    [exec] (Browser) {firefox}
+    [exec] (All apps F6) {xfce4-appfinder}
+    [exec] (Browser) {opera}
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
     		[exec] (Chat) {hexchat}
@@ -13,7 +14,7 @@
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {clementine} 
+       		[exec] (Music) {deadbeef}
     		[exec] (Video) {vlc}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
@@ -75,7 +76,6 @@
      	[exec] (Editor) {featherpad}
      [end]
      [separator]
-     [exec] (All apps F6) {xfce4-appfinder}
      [exec] (GIT) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Run  F2) {fbrun -nearmouse} 
      [restart] (Restart)
