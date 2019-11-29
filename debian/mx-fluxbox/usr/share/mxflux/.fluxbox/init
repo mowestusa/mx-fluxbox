@@ -47,7 +47,7 @@ session.screen0.focusNewWindows:	true
 session.screen0.fullMaximization:	false
 session.screen0.workspaceNames:	Workspace 1,Workspace 2,Workspace 3,Workspace 4,
 session.screen0.windowPlacement:	RowMinOverlapPlacement
-session.screen0.strftimeFormat:	%I:%M  %b %d
+session.screen0.strftimeFormat:	%I:%M
 session.screen0.defaultDeco:	NORMAL
 session.screen0.maxIgnoreIncrement:	true
 session.screen0.workspacewarping:	true

@@ -6,4 +6,4 @@ STATUS: 1.0
 
 DEPENDENCIES: idesk, fluxbox
 
-INSTALLATION: the mxflux.deb will install the necessary components except for those that go into the user's Home. A menu item MX-flux will set up the user's Home after receiving permission to install files. 
+INSTALLATION: the mxflux.deb will install the necessary components except for those that go into the user's Home. A menu item "MX-flux" will set up the user's Home after receiving permission to install files. 
