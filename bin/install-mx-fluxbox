@@ -8,7 +8,7 @@
 #3) that the tarball from https://github.com/jerry3904/mx-fluxbox has been extracted and placed in 
 #/usr/share/mxflux/
 
-MESSAGE=$"This will install into your Home folder components that MX-flux requires in order to run.  This will overwrite any existing fluxbox configuration."
+MESSAGE=$"This will install into your Home folder components that MX-flux requires in order to run.  Any existing fluxbox configuration will be backed up as <i>fluxbox_BAK</i>."
 END_MSG=$"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-down menu in the upper right corner, and log back in."
 
 ##begin message box
@@ -23,6 +23,8 @@ if [ ! "$?" = "0" ]; then
 fi
 
 #set up fluxbox
+
+mv $HOME/.fluxbox $HOME/.fluxbox_BAK
 
 cp -r /usr/share/mxflux/.fluxbox "$HOME"
 
@@ -47,6 +49,8 @@ fi
 cp /usr/share/mxflux/.fluxbox/components/MX-BritPanel/conkyrc_fb "$HOME"/.conky/MX-BritPanel/conkyrc_fb
 
 cp /usr/share/mxflux/.fluxbox/components/conky-startup.sh "$HOME"/.conky/conky-startup.sh
+
+sleep 2
 
 #start concluding message
 yad --text="
