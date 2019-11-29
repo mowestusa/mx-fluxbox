@@ -1,0 +1,10 @@
+table Icon
+  Caption: 
+  Command: qpdfview ~/.fluxbox/doc/mxf-faq.pdf
+  Icon: /usr/share/icons/HighContrast/48x48/apps/help-faq.png
+  Width: 36
+  Height: 36
+  X: 39
+  Y: 29
+end
+

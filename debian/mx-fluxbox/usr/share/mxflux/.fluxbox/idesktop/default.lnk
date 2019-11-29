@@ -1,0 +1,10 @@
+table Icon
+  Caption: Idesk
+  Command: /usr/bin/xmessage --msgbox "IDESK -- Icon Desktop Manager"
+  Icon: /usr/share/idesk/folder_home.xpm
+  Width: 48
+  Height: 48
+  X: 30
+  Y: 30
+end
+
