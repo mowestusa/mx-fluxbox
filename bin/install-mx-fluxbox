@@ -24,7 +24,9 @@ fi
 
 #set up fluxbox
 
-mv $HOME/.fluxbox $HOME/.fluxbox_BAK
+if [ -d "$HOME/.fluxbox" ]; then
+    mv $HOME/.fluxbox $HOME/.fluxbox_BAK
+fi
 
 cp -r /usr/share/mxflux/.fluxbox "$HOME"
 
