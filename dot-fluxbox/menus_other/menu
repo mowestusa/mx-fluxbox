@@ -1,3 +1,4 @@
+#this is set up by the installation of fluxbox--not being used in MX-flux
 [begin] (fluxbox)
 [include] (/etc/X11/fluxbox/fluxbox-menu)
 [end]
