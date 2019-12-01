@@ -13,8 +13,8 @@ idesk &
 # add root access
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
-#start a conky
-sh .conky/conky-startup.sh &
+#start a particular conky -- for example
+#conky -p 5 -c ~/.conky/MX-BritPanel/conkyrc_fb &
 
 # provide a screensaver
 xfce4-screensaver-command &
@@ -25,6 +25,9 @@ nm-applet &
 
 #place a volumeicon on the toolbar
 volumeicon &
+
+#start the browser
+firefox &
 
 #place clipboard on the toolbar
 clipit &
@@ -54,4 +57,4 @@ fi
 
 exec fluxbox
 # or if you want to keep a log:
-# exec fluxbox -log "/home/demo/.fluxbox/log"
+# exec fluxbox -log "~/.fluxbox/log"
