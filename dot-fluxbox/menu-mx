@@ -14,7 +14,7 @@
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {deadbeef}
+       		[exec] (Music) {clementine}
     		[exec] (Video) {vlc}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
@@ -74,6 +74,7 @@
      	[exec] (Calendar) {orage}
      	[exec] (Capture) {xfce4-screenshooter}
      	[exec] (Editor) {featherpad}
+     	[exec] (Screensaver) {xfce4-screensaver-preferences}
      [end]
      [separator]
      [exec] (GIT) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
