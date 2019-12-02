@@ -74,7 +74,7 @@
      	[exec] (Screensaver) {xfce4-screensaver-preferences}
      [end]
      [separator]
-     [exec] (GIT) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
+     [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Run  F2) {fbrun -nearmouse} 
      [restart] (Restart)
      [exec] (Suspend) {sudo 'pm-suspend'}
