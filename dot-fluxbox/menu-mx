@@ -1,12 +1,12 @@
 [begin] (Fluxbox) 
     [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mxf-faq.pdf}
     [submenu] (Out of sight)
-    	[exec] (Conky [toggle]) {conkytoggle.sh}
+    	[exec] (Conky) {killall conky}
    		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
     [end]
     [separator]
     [exec] (All apps F6) {xfce4-appfinder}
-    [exec] (Browser) {opera}
+    [exec] (Browser) {firefox}
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
     		[exec] (Chat) {hexchat}
@@ -14,7 +14,7 @@
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {deadbeef}
+       		[exec] (Music) {clementine}
     		[exec] (Video) {vlc}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
@@ -37,10 +37,7 @@
      	[end]
    	[end]
 	[submenu] (System)
-		[submenu] (Conky)	
-     		[exec] (Conky Manager) {conky-manager}
-     		[exec] (MX-Conky) {mx-conky}
-		[end]
+	[exec] (Conky) {mx-conky}
 	[submenu] (Disks)
      		[exec] (Manage) {/usr/sbin/gparted}
      		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
@@ -74,9 +71,10 @@
      	[exec] (Calendar) {orage}
      	[exec] (Capture) {xfce4-screenshooter}
      	[exec] (Editor) {featherpad}
+     	[exec] (Screensaver) {xfce4-screensaver-preferences}
      [end]
      [separator]
-     [exec] (GIT) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
+     [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Run  F2) {fbrun -nearmouse} 
      [restart] (Restart)
      [exec] (Suspend) {sudo 'pm-suspend'}
