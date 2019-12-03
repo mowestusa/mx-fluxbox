@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=MX-flux
 Comment=Set up fluxbox on MX-Linux
-Exec=sh /usr/local/bin/mxflux_install.sh
+Exec=mxflux_install.sh
 Icon=mxflux
 NoDisplay=false
 Terminal=true
