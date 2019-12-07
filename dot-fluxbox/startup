@@ -26,9 +26,6 @@ nm-applet &
 #place a volumeicon on the toolbar
 volumeicon &
 
-#start the browser
-firefox &
-
 #place clipboard on the toolbar
 clipit &
 

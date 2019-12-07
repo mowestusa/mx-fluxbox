@@ -45,7 +45,7 @@
      		[exec] (Manage) {/usr/sbin/gparted}
      		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
      [end]
-     [exec] (Monitors F7) {gkrellm}
+     [exec] (Monitors) {gkrellm}
      [submenu] (Packages)
      		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
      		[exec] (Synaptic) {synaptic-pkexec}
