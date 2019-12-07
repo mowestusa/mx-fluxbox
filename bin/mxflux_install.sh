@@ -53,6 +53,9 @@ fi
 
 cp /usr/share/mxflux/.fluxbox/components/MX-BritPanel/conkyrc_fb "$HOME"/.conky/MX-BritPanel/conkyrc_fb
 
+#set up the system monitors
+cp -r /usr/share/mxflux/.fluxbox/components/.gkrellm2 "$HOME"/.gkrellm2
+
 sleep 2
 
 #start concluding message

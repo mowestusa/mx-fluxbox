@@ -6,16 +6,18 @@
     [end]
     [separator]
     [exec] (All apps F6) {xfce4-appfinder}
-    [exec] (Browser) {firefox}
+    [exec] (Browser) {opera}
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
-    		[exec] (Chat) {hexchat}
+    		[exec] (Chat) {slack}
+    		[exec] (Video) {skypeforlinux}
     [end]
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {clementine}
+       		[exec] (Music) {deadbeef}
     		[exec] (Video) {vlc}
+    		[exec] (YouTube) {smtube}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
     [submenu] (Office) 
@@ -37,12 +39,12 @@
      	[end]
    	[end]
 	[submenu] (System)
-	[exec] (Conky) {mx-conky}
-	[submenu] (Disks)
+		[exec] (Conky){mx-conky}
+  	[submenu] (Disks)
      		[exec] (Manage) {/usr/sbin/gparted}
      		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
      [end]
-     [exec] (Monitors) {grkellm}
+     [exec] (Monitors F7) {gkrellm}
      [submenu] (Packages)
      		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
      		[exec] (Synaptic) {synaptic-pkexec}
