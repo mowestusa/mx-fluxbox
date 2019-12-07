@@ -3,6 +3,7 @@
     [submenu] (Out of sight)
     	[exec] (Conky) {killall conky}
    		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
+   		[exec] (Monitors) {killall gkrellm}
     [end]
     [separator]
     [exec] (All apps F6) {xfce4-appfinder}
