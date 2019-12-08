@@ -1,14 +1,14 @@
 ### GKrellM user config.  Auto written, do not edit (usually) ###
 ### Version 2.3.10 ###
-enable_hostname 1
+enable_hostname 0
 hostname_short 0
 enable_sysname 1
 mbmon_port 0
-sticky_state 0
+sticky_state 1
 dock_type 0
 decorated 0
 skip_taskbar 1
-skip_pager 0
+skip_pager 1
 above 0
 below 0
 track_gtk_theme_name 0
@@ -18,7 +18,7 @@ chart_width 120
 update_HZ 10
 allow_multiple_instances 0
 float_factor 1000
-hostname sysname_mode 1
+hostname sysname_mode 0
 clock_cal clock_launch 
 clock_cal clock_tooltip 
 clock_cal cal_launch 
@@ -27,8 +27,8 @@ clock_cal hour_chime_command
 clock_cal quarter_chime_command 
 clock_cal loop_chime_enable 0
 clock_cal clock_options 1
-clock_cal cal_options 0
-clock_cal cal_format %a <span foreground="$A"><big><big>%e</big></big></span> %b
+clock_cal cal_options 1
+clock_cal cal_format %a <span foreground="cyan2"><span font_desc="16.5"><i>%e</i></span></span> %b
 clock_cal clock_format %l:%M <span foreground="$A"><small>%S</small></span>
 cpu enable 0
 cpu smp_mode 0
@@ -60,7 +60,7 @@ proc text_format \w88\a$p\f procs\n\e$u\f users
 proc chart_config 40 100 0 0 0 0 : 1 0 0 0 500 : 0 0 0 0 500
 disk assign_method 2
 disk device Disk 0 0 0 1 1 0 0 Disk
-disk chart_config Disk 40 70000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+disk chart_config Disk 40 700000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
 disk device nvme0n1 0 0 12 0 1 -1 0 nvme0n1
 disk chart_config nvme0n1 40 2000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
 disk device nvme0n1p1 0 0 12 0 1 1 0 nvme0n1p1
@@ -77,7 +77,7 @@ inet update_interval all 1
 net enables eth0 0 1 0
 net enables lo 0 1 0
 net enables wlan0 1 1 1
-net chart_config wlan0 40 100 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+net chart_config wlan0 30 7000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
 net timer_enabled 0
 net timer_seconds 1
 net timer_iface none
@@ -102,10 +102,7 @@ fs nfs_check_timeout 16
 fs auto_eject 0
 fs binary_units 0
 fs data_format $t - $f free
-mail mailbox-local mbox /var/mail/jb
-mail mailbox-remote IMAP https://mail.google.com/mail/u/0/?shva=1#inbox "stormyjerry@gmail.com" "WD144569267" 993 "u/0/?shva=1#inbox"
-mail mailbox-remote-use-ssl 1
-mail mua https://mail.google.com/
+mail mua 
 mail notify 
 mail fetch_command 
 mail remote_check_timeout 5
@@ -116,7 +113,7 @@ mail animation_select_mode 1
 mail fetch_check_only_mode 0
 mail reset_remote_mode 0
 mail unseen_is_new 0
-mail enable 1 0 0 0
+mail enable 0 0 0 0
 mail animation_continuous 1
 mail show_tooltip 1
 mail mh_seq_ignore 0
