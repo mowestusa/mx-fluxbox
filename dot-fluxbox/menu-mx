@@ -7,7 +7,7 @@
     [end]
     [separator]
     [exec] (All apps F6) {xfce4-appfinder}
-    [exec] (Browser) {opera}
+    [exec] (Browser) {firefox}
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
     		[exec] (Chat) {slack}
