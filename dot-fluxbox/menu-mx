@@ -10,15 +10,13 @@
     [exec] (Browser) {firefox}
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
-    		[exec] (Chat) {slack}
-    		[exec] (Video) {skypeforlinux}
+    		[exec] (Chat) {hexchat}
     [end]
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {deadbeef}
+       		[exec] (Music) {clementine}
     		[exec] (Video) {vlc}
-    		[exec] (YouTube) {smtube}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
     [submenu] (Office) 
@@ -41,10 +39,10 @@
    	[end]
 	[submenu] (System)
 		[exec] (Conky){mx-conky}
-  	[submenu] (Disks)
+  		[submenu] (Disks)
      		[exec] (Manage) {/usr/sbin/gparted}
      		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
-     [end]
+     	[end]
      [exec] (Monitors) {gkrellm}
      [submenu] (Packages)
      		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
@@ -67,7 +65,6 @@
 		[end]
 		[exec] (Mixer) {pavucontrol}
 		[exec] (Power) {xfce4-power-manager-settings}
-		[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
 		[exec] (Xfce Settings) {xfce4-settings-manager}
 	[end] 
    	[submenu] (Accessories)
@@ -80,10 +77,14 @@
      [separator]
      [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Run  F2) {fbrun -nearmouse} 
-     [restart] (Restart)
-     [exec] (Suspend) {sudo 'pm-suspend'}
-     [exit] (Logout) 
+     [submenu] (Leave)
+     	[restart] (Restart)
+     	[exec] (Suspend) {sudo 'pm-suspend'}
+     	[exit] (Logout) 
+     	[exec] (Reboot) {sudo /sbin/reboot} 
+		[exec] (Shutdown) {sudo /sbin/halt}
      [end]
+[end]
 
 
 
