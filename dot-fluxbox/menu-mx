@@ -4,6 +4,7 @@
     	[exec] (Conky) {killall conky}
    		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
    		[exec] (Monitors) {killall gkrellm}
+   		[exec] (Window) {xkill}
     [end]
     [separator]
     [exec] (All apps F6) {xfce4-appfinder}
@@ -52,6 +53,14 @@
  	[end]
     [submenu] (Settings)
      	[exec] (Bluetooth) {blueman-manager}
+     	[submenu] (Configure)
+     		[exec] (Styles) {thunar ~/.fluxbox/styles/}
+     		[exec] (Keys) {featherpad ~/.fluxbox/keys}
+     		[exec] (Startup) {featherpad ~/.fluxbox/startup}
+     		[exec] (Init) {featherpad ~/.fluxbox/init}
+     		[exec] (Overlay) {featherpad ~/.fluxbox/overlay}
+     		[exec] (Apps) {featherpad ~/.fluxbox/apps}
+     	[end]
      	[submenu] (Keyboard)
 			[exec] (DE) {setxkbmap de}
 			[exec] (ES) {setxkbmap es} 
@@ -71,6 +80,7 @@
        	[exec] (Calculator) {galculator}
      	[exec] (Calendar) {orage}
      	[exec] (Capture) {xfce4-screenshooter}
+     	[exec] (Clock) {xclock}
      	[exec] (Editor) {featherpad}
      	[exec] (Screensaver) {xfce4-screensaver-preferences}
      [end]
