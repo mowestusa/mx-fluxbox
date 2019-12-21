@@ -5,7 +5,7 @@ background: none
 
 menu.frame.font: PT Sans-12:regular 
 menu.title.font: PT Sans-12:regular 
-toolbar.clock.font: PT Sans-12:regular 
+toolbar.clock.font: PT Sans-12:bold 
 toolbar.workspace.font: PT Sans-11:regular 
 toolbar.iconbar.focused.font: PT Sans-11:regular 
 toolbar.iconbar.unfocused.font: PT Sans-11:regular 
