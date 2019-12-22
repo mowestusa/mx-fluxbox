@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-17 21:51-0600\n"
+"PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/anticapitalista/teams/10162/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: mxflux_install.sh:14
+msgid ""
+"This will install into your Home folder components that MX-flux requires in "
+"order to run.  Any existing fluxbox configuration will be backed up as "
+"<i>fluxbox_BAK</i>."
+msgstr ""
+
+#: mxflux_install.sh:15
+msgid ""
+"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
+"down menu in the upper right corner, and log back in."
+msgstr ""
+
+#: mxflux_install.sh:21
+msgid "OK to proceed?"
+msgstr ""
+
+#: mxflux_install.sh:65
+msgid "All done!"
+msgstr ""

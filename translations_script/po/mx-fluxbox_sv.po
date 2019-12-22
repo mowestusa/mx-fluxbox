@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Henry Oquist <henryoquist@comhem.se>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-17 21:51-0600\n"
+"PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"Last-Translator: Henry Oquist <henryoquist@comhem.se>, 2019\n"
+"Language-Team: Swedish (https://www.transifex.com/anticapitalista/teams/10162/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: mxflux_install.sh:14
+msgid ""
+"This will install into your Home folder components that MX-flux requires in "
+"order to run.  Any existing fluxbox configuration will be backed up as "
+"<i>fluxbox_BAK</i>."
+msgstr ""
+"Detta kommer att installera komponenter i din Hemkatalog som MX-flux behöver"
+" för att fungera.  Existerande fluxbox-konfiguration kommer att sparas som "
+"<i>fluxbox_BAK</i>."
+
+#: mxflux_install.sh:15
+msgid ""
+"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
+"down menu in the upper right corner, and log back in."
+msgstr ""
+"För att starta en fluxbox-session: logga ut, välj <i>fluxbox</i> i rullmenyn"
+" i övre högra hörnet, och logga in igen."
+
+#: mxflux_install.sh:21
+msgid "OK to proceed?"
+msgstr "OK att fortsätta?"
+
+#: mxflux_install.sh:65
+msgid "All done!"
+msgstr "Allt klart!"
