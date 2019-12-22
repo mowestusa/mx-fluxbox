@@ -9,7 +9,7 @@
 #/usr/share/mxflux/
 
 TEXTDOMAINDIR=/usr/share/locale 
-export TEXTDOMAIN="mxflux"
+export TEXTDOMAIN="mx-fluxbox"
 
 MESSAGE=$"This will install into your Home folder components that MX-flux requires in order to run.  Any existing fluxbox configuration will be backed up as <i>fluxbox_BAK</i>."
 END_MSG=$"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-down menu in the upper right corner, and log back in."
