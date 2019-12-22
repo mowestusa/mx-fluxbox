@@ -29,7 +29,8 @@ Control Down :Exec amixer -D pulse sset Master 5%-
 
 ------------
 ------------
-# Mouse1 :HideMenus
+# hide menus
+OnDesktop Mouse1 :HideMenus
 OnDesktop Mouse2 :WorkspaceMenu
 OnDesktop Mouse3 :RootMenu
 

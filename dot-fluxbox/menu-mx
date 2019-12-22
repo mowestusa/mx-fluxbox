@@ -4,21 +4,20 @@
     	[exec] (Conky) {killall conky}
    		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
    		[exec] (Monitors) {killall gkrellm}
+   		[exec] (Window) {xkill}
     [end]
     [separator]
     [exec] (All apps F6) {xfce4-appfinder}
-    [exec] (Browser) {opera}
+    [exec] (Browser) {firefox}
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
-    		[exec] (Chat) {slack}
-    		[exec] (Video) {skypeforlinux}
+    		[exec] (Chat) {hexchat}
     [end]
     [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {deadbeef}
+       		[exec] (Music) {clementine}
     		[exec] (Video) {vlc}
-    		[exec] (YouTube) {smtube}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
     [submenu] (Office) 
@@ -41,10 +40,10 @@
    	[end]
 	[submenu] (System)
 		[exec] (Conky){mx-conky}
-  	[submenu] (Disks)
+  		[submenu] (Disks)
      		[exec] (Manage) {/usr/sbin/gparted}
      		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
-     [end]
+     	[end]
      [exec] (Monitors) {gkrellm}
      [submenu] (Packages)
      		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
@@ -54,6 +53,14 @@
  	[end]
     [submenu] (Settings)
      	[exec] (Bluetooth) {blueman-manager}
+     	[submenu] (Configure)
+     		[exec] (Styles) {thunar ~/.fluxbox/styles/}
+     		[exec] (Keys) {featherpad ~/.fluxbox/keys}
+     		[exec] (Startup) {featherpad ~/.fluxbox/startup}
+     		[exec] (Init) {featherpad ~/.fluxbox/init}
+     		[exec] (Overlay) {featherpad ~/.fluxbox/overlay}
+     		[exec] (Apps) {featherpad ~/.fluxbox/apps}
+     	[end]
      	[submenu] (Keyboard)
 			[exec] (DE) {setxkbmap de}
 			[exec] (ES) {setxkbmap es} 
@@ -67,23 +74,27 @@
 		[end]
 		[exec] (Mixer) {pavucontrol}
 		[exec] (Power) {xfce4-power-manager-settings}
-		[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
 		[exec] (Xfce Settings) {xfce4-settings-manager}
 	[end] 
    	[submenu] (Accessories)
        	[exec] (Calculator) {galculator}
      	[exec] (Calendar) {orage}
      	[exec] (Capture) {xfce4-screenshooter}
+     	[exec] (Clock) {xclock}
      	[exec] (Editor) {featherpad}
      	[exec] (Screensaver) {xfce4-screensaver-preferences}
      [end]
      [separator]
      [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Run  F2) {fbrun -nearmouse} 
-     [restart] (Restart)
-     [exec] (Suspend) {sudo 'pm-suspend'}
-     [exit] (Logout) 
+     [submenu] (Leave)
+     	[restart] (Restart)
+     	[exec] (Suspend) {sudo 'pm-suspend'}
+     	[exit] (Logout) 
+     	[exec] (Reboot) {sudo /sbin/reboot} 
+		[exec] (Shutdown) {sudo /sbin/halt}
      [end]
+[end]
 
 
 
