@@ -13,7 +13,7 @@
 #start a compositor if using complicated conkies
 #compton &
 
-#add monitors in hidden mode (remove -w to always be visible)
+#add system monitors 
 #gkrellm &
 
 # add FAQ icon to desktop
