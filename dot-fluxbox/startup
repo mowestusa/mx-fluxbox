@@ -7,18 +7,40 @@
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 
+# add an app in the slit
+#wmweather -s KPEO & 
+
+#start a compositor if using complicated conkies
+#compton &
+
+#add monitors in hidden mode (remove -w to always be visible)
+#gkrellm &
+
 # add FAQ icon to desktop
-idesk &
+#idesk &
+
+# export Qt variables
+export QT_QPA_PLATFORMTHEME=gtk2
+export QT_PLATFORMTHEME=gtk2
+export QT_PLATFORM_PLUGIN=gtk2
 
 # add root access
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
-#start a particular conky -- for example
+#start a particular conky — example
 #conky -p 5 -c ~/.conky/MX-BritPanel/conkyrc_fb &
 
 # provide a screensaver
 xfce4-screensaver-command &
 xfce4-screensaver &
+
+# start a chat program
+#slack &
+
+#add gtk2 variables
+gtk-theme-name="Adwaita"
+gtk-icon-theme-name="hicolor"
+gtk-font-name="Sans 12"
 
 #place network manager on the toolbar
 nm-applet &
@@ -30,7 +52,7 @@ volumeicon &
 clipit &
 
 #add touchpad control to toolbar
-#/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator &
+/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator &
 
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
