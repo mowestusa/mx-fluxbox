@@ -23,9 +23,6 @@ none F5 :Exec mx-tools
 # open full menu
 none F6 :Exec xfce4-appfinder
 
-# open email
-none F7 :Exec thunderbird
-
 # change volume with keys
 Control Up :Exec amixer -D pulse sset Master 5%+
 Control Down :Exec amixer -D pulse sset Master 5%-
