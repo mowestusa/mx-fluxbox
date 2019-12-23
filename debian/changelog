@@ -1,5 +1,12 @@
+mx-fluxbox (19.12.17mx19) mx; urgency=medium
+
+  * Adjust various packages to match the MX defaults.
+
+ -- Steven Pusser <stevep@mxlinux.org>  Tue, 17 Dec 2019 16:08:36 -0800
+
 mx-fluxbox (19.11.01) mx; urgency=medium
 
   * Initial release
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 27 Nov 2019 15:34:19 -0500
+ 
