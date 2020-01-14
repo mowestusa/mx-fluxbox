@@ -7,17 +7,17 @@
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 
-# add an app in the slit
-#wmweather -s KPEO & 
-
 #start a compositor if using complicated conkies
 #compton &
+
+# add launcher for legacy toolbar
+#wmalauncher
 
 #add system monitors 
 #gkrellm &
 
 # add FAQ icon to desktop
-#idesk &
+idesk &
 
 # export Qt variables
 export QT_QPA_PLATFORMTHEME=gtk2
@@ -34,8 +34,8 @@ export QT_PLATFORM_PLUGIN=gtk2
 xfce4-screensaver-command &
 xfce4-screensaver &
 
-# start a chat program
-#slack &
+# start a chat program -- example
+#skype &
 
 #add gtk2 variables
 gtk-theme-name="Adwaita"
@@ -50,9 +50,6 @@ volumeicon &
 
 #place clipboard on the toolbar
 clipit &
-
-#add touchpad control to toolbar
-/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator &
 
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
