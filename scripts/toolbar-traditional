@@ -1,0 +1,56 @@
+#! /bin/bash
+
+#this script was written by Jerry3904 January 2020
+#its function is to change the default toolbar to a traditional look
+#and to establish the means of return
+
+#dependency: wmalauncher (installed by default in MX-Fluxbox versions
+#higher than 1.2
+
+MSG=$"This will make changes required for a traditional toolbar layout. Your current settings will be backed up and can be restored by clicking Menu > Settings > Toolbar > User last"
+END_MSG=$"In order for the changes to take effect, you need now to log out and back in"
+
+##begin msg box
+yad --text="
+
+
+<b>$MSG</b>" --title=$"OK to proceed?" --window-icon=/usr/share/icons/mxflux.png --geometry=400x30 --text-align=center 
+##end message box
+
+#Make sure wmalauncher is available
+if ! hash wmalauncher > /dev/null ; then
+    echo "ERROR: wmalauncher not installed or not in path. Will exit"
+    exit
+else
+	echo "wmalauncher found"
+fi
+
+#create a backup for "userlast" entry
+mkdir $HOME/.restore-fluxbox
+cd $HOME/.fluxbox	
+cp  init apps startup $HOME/.restore-fluxbox/
+
+#set up wmalauncher 
+sed -i "s/#wmalauncher/wmalauncher/" $HOME/.fluxbox/startup
+$HOME/.fluxbox/scripts/wmalauncher
+
+#set location of xfce4-appfinder above menu icon 
+cd $HOME/.fluxbox/toolbars/traditional
+cat apps_add >> $HOME/.fluxbox/apps 
+
+#make init changes
+sed -i 's/^session.screen0.toolbar.tools:.*/session.screen0.toolbar.tools:  nextworkspace, workspacename, prevworkspace, iconbar, systemtray, clock/' $HOME/.fluxbox/init
+sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: BottomLeft/' $HOME/.fluxbox/init
+sed -i 's/^session.screen0.toolbar.widthPercent:.*/session.screen0.toolbar.widthPercent: 97/' $HOME/.fluxbox/init
+sed -i 's/^session.screen0.toolbar.placement:.*/session.screen0.toolbar.placement: BottomRight/' $HOME/.fluxbox/init
+
+##begin end_msg box
+yad --text="
+
+
+<b>$END_MSG</b>" --title=$"All done!" --window-icon=/usr/share/icons/mxflux.png --geometry=400x40 --text-align=center 
+##end end_msg box
+
+
+exit
+
