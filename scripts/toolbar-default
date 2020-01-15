@@ -13,9 +13,13 @@ yad --text="
 <b>$MSG</b>" --title=$"OK to proceed?" --window-icon=/usr/share/icons/mxflux.png --geometry=400x30 --text-align=center 
 ##end message box
 
-#restore the default files
+#restore the default files-- needs testing
 cd /usr/share/mxflux/.fluxbox
-cp apps init startup $HOME/.fluxbox/
+
+cp /init/session.screen0.toolbar.tools:.* $HOME/.fluxbox/init/
+cp /init/session.screen0.slit.placement:.* $HOME/.fluxbox/init/
+cp /init/session.screen0.toolbar.widthPercent:.* $HOME/.fluxbox/init/
+cp /init/session.screen0.toolbar.placement:.* $HOME/.fluxbox/init/
 
 #disable wmalauncher
 if grep -q "#wmalauncher" $HOME/.fluxbox/startup
