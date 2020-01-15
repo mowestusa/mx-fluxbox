@@ -14,12 +14,16 @@ yad --text="
 ##end message box
 
 #restore the default files-- needs testing
-cd /usr/share/mxflux/.fluxbox
 
-cp /init/session.screen0.toolbar.tools:.* $HOME/.fluxbox/init/
-cp /init/session.screen0.slit.placement:.* $HOME/.fluxbox/init/
-cp /init/session.screen0.toolbar.widthPercent:.* $HOME/.fluxbox/init/
-cp /init/session.screen0.toolbar.placement:.* $HOME/.fluxbox/init/
+STRING1=grep -o 'session.screen0.toolbar.tools:.*' /usr/share/mxflux/.fluxbox/init 
+STRING2=grep -o 'session.screen0.slit.placement:.*' /usr/share/mxflux/.fluxbox/init 
+STRING3=grep -o 'session.screen0.toolbar.widthPercent:.*' /usr/share/mxflux/.fluxbox/init 
+STRING4=grep -o 'session.screen0.toolbar.placement:.*' /usr/share/mxflux/.fluxbox/init 
+
+sed -i "s/session.screen0.toolbar.tools:.*/$STRING1/" $HOME/.fluxbox/init/
+sed -i "s/session.screen0.slit.placement:.*/$STRING2/" $HOME/.fluxbox/init/
+sed -i "s/session.screen0.toolbar.widthPercent:.*/$STRING3/" $HOME/.fluxbox/init/
+sed -i "s/session.screen0.toolbar.placement:.*/$STRING4/" $HOME/.fluxbox/init/
 
 #disable wmalauncher
 if grep -q "#wmalauncher" $HOME/.fluxbox/startup
