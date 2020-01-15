@@ -7,5 +7,6 @@ Standards-Version: 3.9.4
 Homepage: https://mxlinux.org
 
 Package: mx-fluxbox
+Depends: fluxbox, idesk, mx-idesktool, wmalauncher
 Architecture: all
 Description: mx configuration defaults for fluxbox
