@@ -1,0 +1,37 @@
+#! /bin/bash
+
+#this script was written by Jerry3904 January 2020
+#its function is to restore the default toolbar settings 
+
+MSG=$"This will restore the default toolbar settings."
+END_MSG=$"In order for the changes to take effect, you need now to log out and back in."
+
+##begin msg box
+yad --text="
+
+
+<b>$MSG</b>" --title=$"OK to proceed?" --window-icon=/usr/share/icons/mxflux.png --geometry=400x30 --text-align=center 
+##end message box
+
+#restore the default files
+cd /usr/share/mxflux/.fluxbox
+cp apps init startup $HOME/.fluxbox/
+
+#disable wmalauncher
+if grep -q "#wmalauncher" $HOME/.fluxbox/startup
+then 
+echo "#wmalauncher found"
+else 
+sed -i "s/wmalauncher/#wmalauncher/" $HOME/.fluxbox/startup
+
+exit
+fi
+
+##begin end_msg box
+yad --text="
+
+
+<b>$END_MSG</b>" --title=$"All done!" --window-icon=/usr/share/icons/mxflux.png --geometry=400x40 --text-align=center 
+##end end_msg box
+
+exit
