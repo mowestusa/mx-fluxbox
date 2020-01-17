@@ -38,7 +38,7 @@ sed -i "s/#wmalauncher/wmalauncher/" $HOME/.fluxbox/startup
 $HOME/.fluxbox/scripts/wmalauncher
 
 #set location of xfce4-appfinder above menu icon 
-cd $HOME/.fluxbox/toolbars/traditional
+cd $HOME/.fluxbox/toolbars/legacy
 cat apps_add >> $HOME/.fluxbox/apps 
 
 #make init changes
