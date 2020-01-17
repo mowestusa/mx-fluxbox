@@ -7,7 +7,7 @@
 #dependency: wmalauncher (installed by default in MX-Fluxbox versions > 1.2
 
 TITLE1=$"OK to proceed?"
-MSG=$"This will make changes required for a traditional toolbar layout. Your current settings will be backed up and can be restored by clicking Menu > Settings > Toolbar > User last"
+MSG=$"This will make changes required for a legacy toolbar layout. Your current settings will be backed up and can be restored by clicking Menu > Settings > Toolbar > User last"
 ERROR=$"ERROR: wmalauncher not installed or not in path. Will exit"
 ECHO=$"wmalauncher found"
 TITLE2=$"All done!"
