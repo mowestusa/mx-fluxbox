@@ -2,7 +2,7 @@
     [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mxf-faq.pdf}
     [submenu] (Out of sight)
     	[exec] (Conky) {killall conky}
-   		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
+   		[exec] (iDesk icons) {kill allidesk}
    		[exec] (Monitors) {killall gkrellm}
    		[exec] (Window) {xkill}
     [end]
@@ -25,7 +25,7 @@
     	[exec] (PDFs) {qpdfview}
     	[exec] (Notes) {xfce4-notes}
     [end]
-    [exec] (Terminal  F4) {xfce4-terminal --drop-down} 
+    [exec] (Terminal  F4) {xfce4-terminal} 
             [separator]
     [submenu] (Look) 
        [submenu] (Background)
