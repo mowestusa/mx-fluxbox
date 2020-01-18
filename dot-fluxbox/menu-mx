@@ -90,6 +90,7 @@
      	[exec] (Clock) {xclock}
      	[exec] (Editor) {geany}
      	[exec] (Screensaver) {xfce4-screensaver-preferences}
+     	[exec] (Touchpad) {touchpad-indicator}
      [end]
      [separator]
      [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
