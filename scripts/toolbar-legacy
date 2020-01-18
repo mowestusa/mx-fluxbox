@@ -34,11 +34,15 @@ cd $HOME/.fluxbox
 cp  init apps startup $HOME/.restore-fluxbox/
 
 #set up wmalauncher 
-sed -i "s/#wmalauncher/wmalauncher/" $HOME/.fluxbox/startup
-$HOME/.fluxbox/scripts/wmalauncher
+if grep -q "#wmalauncher-menu" $HOME/.fluxbox/startup
+then 
+sed -i "s/#wmalauncher-menu/wmalauncher-menu/" $HOME/.fluxbox/startup
+else
+exit
+fi
 
 #set location of xfce4-appfinder above menu icon 
-cd $HOME/.fluxbox/toolbars/legacy
+cd $HOME/.fluxbox/toolbars/traditional
 cat apps_add >> $HOME/.fluxbox/apps 
 
 #make init changes

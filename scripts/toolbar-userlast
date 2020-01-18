@@ -21,7 +21,7 @@ cd $HOME/.restore-fluxbox
 mv apps init startup $HOME/.fluxbox/
 
 #disable wmalauncher
-sed -i "s/wmalauncher/#wmalauncher/" $HOME/.fluxbox/startup
+sed -i "s/wmalauncher-menu/#wmalauncher-menu/" $HOME/.fluxbox/startup
 
 ##begin end_msg box
 yad --text="

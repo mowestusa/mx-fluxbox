@@ -1,0 +1,3 @@
+#! /bin/bash
+
+wmalauncher --command xfce4-appfinder --icon /usr/local/share/icons/mxfcelogo-rounded.png -w 48  &
