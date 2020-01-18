@@ -45,6 +45,7 @@
      	[end]
    	[end]
 	[submenu] (System)
+		[exec] (Bluetooth) {blueman-manager}
 		[exec] (Conky){mx-conky}
   		[submenu] (Disks)
      		[exec] (Manage) {/usr/sbin/gparted}
@@ -58,7 +59,6 @@
     [exec] (Processes) {xfce4-taskmanager}
  	[end]
     [submenu] (Settings)
-     	[exec] (Bluetooth) {blueman-manager}
      	[submenu] (Configure)
      		[exec] (Apps) {featherpad ~/.fluxbox/apps}
      		[exec] (Init) {featherpad ~/.fluxbox/init}
