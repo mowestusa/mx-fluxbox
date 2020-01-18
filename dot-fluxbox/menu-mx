@@ -2,8 +2,9 @@
     [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mxf-faq.pdf}
     [submenu] (Out of sight)
     	[exec] (Conky) {killall conky}
-   		[exec] (iDesk icons) {kill allidesk}
+   		[exec] (iDesk icons) {killall idesk}
    		[exec] (Monitors) {killall gkrellm}
+   		[exec] (Slit) {killall wmalauncher}
    		[exec] (Window) {xkill}
     [end]
     [separator]
@@ -25,13 +26,18 @@
     	[exec] (PDFs) {qpdfview}
     	[exec] (Notes) {xfce4-notes}
     [end]
-    [exec] (Terminal  F4) {xfce4-terminal} 
+    [exec] (Terminal) {xfce4-terminal} 
             [separator]
     [submenu] (Look) 
        [submenu] (Background)
 			[wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
 			[separator]
 			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+		[end]
+		[submenu] (Toolbar)
+			[exec] (Default) {toolbar-default}
+			[exec] (Legacy) {toolbar-legacy}
+			[exec] (User last) {toolbar-userlast}
 		[end]
     	[submenu] (Style)
       		[stylesdir] (/usr/share/fluxbox/styles) 
@@ -54,12 +60,13 @@
     [submenu] (Settings)
      	[exec] (Bluetooth) {blueman-manager}
      	[submenu] (Configure)
-     		[exec] (Styles) {thunar ~/.fluxbox/styles/}
-     		[exec] (Keys) {featherpad ~/.fluxbox/keys}
-     		[exec] (Startup) {featherpad ~/.fluxbox/startup}
-     		[exec] (Init) {featherpad ~/.fluxbox/init}
-     		[exec] (Overlay) {featherpad ~/.fluxbox/overlay}
      		[exec] (Apps) {featherpad ~/.fluxbox/apps}
+     		[exec] (Init) {featherpad ~/.fluxbox/init}
+     		[exec] (Keys) {featherpad ~/.fluxbox/keys}
+     		[exec] (Menu) {featherpad ~/.fluxbox/menu-mx}
+     		[exec] (Overlay) {featherpad ~/.fluxbox/overlay}
+       		[exec] (Startup) {featherpad ~/.fluxbox/startup}
+     		[exec] (Styles) {thunar ~/.fluxbox/styles/}
      	[end]
      	[submenu] (Keyboard)
 			[exec] (DE) {setxkbmap de}
@@ -81,7 +88,7 @@
      	[exec] (Calendar) {orage}
      	[exec] (Capture) {xfce4-screenshooter}
      	[exec] (Clock) {xclock}
-     	[exec] (Editor) {featherpad}
+     	[exec] (Editor) {geany}
      	[exec] (Screensaver) {xfce4-screensaver-preferences}
      [end]
      [separator]
