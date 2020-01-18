@@ -6,6 +6,7 @@
 TITLE1=$"OK to proceed?"
 MSG=$"This will restore the default toolbar settings."
 ECHO1=$"#wmalauncher-menu found"
+ECHO2="There is no /usr/share/mxflux directory"
 TITLE2=$"All done!"
 END_MSG=$"In order for the changes to take effect, you must now log out and back in."
 
@@ -16,7 +17,7 @@ yad --text="
 <b>$MSG</b>" --title="$TITLE1" --window-icon=/usr/share/icons/mxflux.png --geometry=400x30 --text-align=center 
 ##end message box
 
-#restore the default files-- needs testing
+#restore the default files
 
 if grep -q "init" /usr/share/mxflux/.fluxbox/ 2>/dev/null
 then
@@ -32,7 +33,7 @@ sed -i "s/session.screen0.toolbar.widthPercent:.*/$STRING3/" $HOME/.fluxbox/init
 sed -i "s/session.screen0.toolbar.placement:.*/$STRING4/" $HOME/.fluxbox/init
 
 else
-echo "There is no /usr/share/mxflux directory"
+echo "$ECHO2"
 exit 
 fi
 
