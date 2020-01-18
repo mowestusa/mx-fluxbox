@@ -5,7 +5,7 @@
 
 TITLE1=$"OK to proceed?"
 MSG=$"This will restore the default toolbar settings."
-ECHO1=$"#wmalauncher found"
+ECHO1=$"#wmalauncher-menu found"
 TITLE2=$"All done!"
 END_MSG=$"In order for the changes to take effect, you must now log out and back in."
 
@@ -18,10 +18,10 @@ yad --text="
 
 #restore the default files-- needs testing
 
-STRING1=grep -o 'session.screen0.toolbar.tools:.*' /usr/share/mxflux/.fluxbox/init 
-STRING2=grep -o 'session.screen0.slit.placement:.*' /usr/share/mxflux/.fluxbox/init 
-STRING3=grep -o 'session.screen0.toolbar.widthPercent:.*' /usr/share/mxflux/.fluxbox/init 
-STRING4=grep -o 'session.screen0.toolbar.placement:.*' /usr/share/mxflux/.fluxbox/init 
+STRING1=$(grep -o 'session.screen0.toolbar.tools:.*' /usr/share/mxflux/.fluxbox/init) 
+STRING2=$(grep -o 'session.screen0.slit.placement:.*' /usr/share/mxflux/.fluxbox/init) 
+STRING3=$(grep -o 'session.screen0.toolbar.widthPercent:.*' /usr/share/mxflux/.fluxbox/init) 
+STRING4=$(grep -o 'session.screen0.toolbar.placement:.*' /usr/share/mxflux/.fluxbox/init) 
 
 sed -i "s/session.screen0.toolbar.tools:.*/$STRING1/" $HOME/.fluxbox/init
 sed -i "s/session.screen0.slit.placement:.*/$STRING2/" $HOME/.fluxbox/init
