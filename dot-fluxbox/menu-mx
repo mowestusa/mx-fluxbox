@@ -34,20 +34,24 @@
 			[separator]
 			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
 		[end]
+		[exec] (Conky){mx-conky}
+		[submenu] (Icons)
+    		[exec] (Idesk) {mx-idesktool}
+    		[exec] (Wmalauncher) {qpdfview ~/.fluxbox/doc/wmalauncher.pdf}
+    	[end]
+    		[submenu] (Style)
+      		[stylesdir] (/usr/share/fluxbox/styles) 
+      		[stylesdir] (~/.fluxbox/styles)
+     	[end]
 		[submenu] (Toolbar)
 			[exec] (Default) {toolbar-default}
 			[exec] (Legacy) {toolbar-legacy}
 			[exec] (User last) {toolbar-userlast}
 		[end]
-    	[submenu] (Style)
-      		[stylesdir] (/usr/share/fluxbox/styles) 
-      		[stylesdir] (~/.fluxbox/styles)
-     	[end]
    	[end]
 	[submenu] (System)
 		[exec] (Bluetooth) {blueman-manager}
-		[exec] (Conky){mx-conky}
-  		[submenu] (Disks)
+		  		[submenu] (Disks)
      		[exec] (Manage) {/usr/sbin/gparted}
      		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
      	[end]
@@ -81,7 +85,7 @@
 		[end]
 		[exec] (Mixer) {pavucontrol}
 		[exec] (Power) {xfce4-power-manager-settings}
-		[exec] (Xfce Settings) {xfce4-settings-manager}
+		[exec] (Xfce) {xfce4-settings-manager}
 	[end] 
    	[submenu] (Accessories)
        	[exec] (Calculator) {galculator}
