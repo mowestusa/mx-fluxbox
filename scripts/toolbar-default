@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#this script was written by Jerry3904 January 2020
+#this script was written by the MX Linux Dev Team in January 2020
 #its function is to restore the default toolbar settings 
 
 TITLE1=$"OK to proceed?"
