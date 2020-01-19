@@ -39,7 +39,8 @@
     		[exec] (Idesk) {mx-idesktool}
     		[exec] (Wmalauncher) {qpdfview ~/.fluxbox/doc/wmalauncher.pdf}
     	[end]
-    		[submenu] (Style)
+    	[exec] (Monitors) {gkrellm}
+    	[submenu] (Style)
       		[stylesdir] (/usr/share/fluxbox/styles) 
       		[stylesdir] (~/.fluxbox/styles)
      	[end]
@@ -55,7 +56,6 @@
      		[exec] (Manage) {/usr/sbin/gparted}
      		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
      	[end]
-     [exec] (Monitors) {gkrellm}
      [submenu] (Packages)
      		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
      		[exec] (Synaptic) {synaptic-pkexec}
