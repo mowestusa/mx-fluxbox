@@ -20,8 +20,7 @@ yad --text="
 cd $HOME/.restore-fluxbox
 mv apps init startup $HOME/.fluxbox/
 
-#disable wmalauncher
-sed -i "s/wmalauncher-menu/#wmalauncher-menu/" $HOME/.fluxbox/startup
+sleep 2
 
 ##begin end_msg box
 yad --text="

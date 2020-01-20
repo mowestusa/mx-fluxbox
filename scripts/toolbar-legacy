@@ -51,6 +51,8 @@ sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: Bot
 sed -i 's/^session.screen0.toolbar.widthPercent:.*/session.screen0.toolbar.widthPercent: 97/' $HOME/.fluxbox/init
 sed -i 's/^session.screen0.toolbar.placement:.*/session.screen0.toolbar.placement: BottomRight/' $HOME/.fluxbox/init
 
+sleep 2
+
 ##begin end_msg box
 yad --text="
 
