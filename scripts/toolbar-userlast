@@ -7,7 +7,7 @@
 TITLE1=$"OK to proceed?"
 MSG=$"This will restore the settings that were in place when you selected a legacy toolbar layout."
 TITLE2=$"All done!"
-END_MSG=$"In order for the changes to take effect, you must now log out and back in"
+END_MSG=$"Log out and back in to complete the change."
 
 ##begin msg box
 yad --text="
@@ -19,8 +19,6 @@ yad --text="
 #restore the archived files, clearing out the folder
 cd $HOME/.restore-fluxbox
 mv apps init startup $HOME/.fluxbox/
-
-sleep 2
 
 ##begin end_msg box
 yad --text="
