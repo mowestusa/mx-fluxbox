@@ -4,11 +4,9 @@
 #its function is to restore the default toolbar settings 
 
 TITLE1=$"OK to proceed?"
-MSG=$"This will restore the default toolbar settings."
-ECHO1=$"#wmalauncher-menu found"
-ECHO2="There is no /usr/share/mxflux directory"
+MSG=$"This will restore the default settings for init, startup and menu-mx. That will overwrite what is currently in your fluxbox folder."
 TITLE2=$"All done!"
-END_MSG=$"In order for the changes to take effect, you must now log out and back in."
+END_MSG=$"Log out and back in to complete the change."
 
 ##begin msg box
 yad --text="
@@ -17,32 +15,11 @@ yad --text="
 <b>$MSG</b>" --title="$TITLE1" --window-icon=/usr/share/icons/mxflux.png --geometry=400x30 --text-align=center 
 ##end message box
 
-#restore the default files
+#restore default files
+cd /usr/share/mxflux/.fluxbox/
+cp startup init menu-mx  "$HOME/.fluxbox/"
 
-STRING1=$(grep -o 'session.screen0.toolbar.tools:.*' /usr/share/mxflux/.fluxbox/init) 
-STRING2=$(grep -o 'session.screen0.slit.placement:.*' /usr/share/mxflux/.fluxbox/init) 
-STRING3=$(grep -o 'session.screen0.toolbar.widthPercent:.*' /usr/share/mxflux/.fluxbox/init) 
-STRING4=$(grep -o 'session.screen0.toolbar.placement:.*' /usr/share/mxflux/.fluxbox/init) 
-
-sed -i "s/session.screen0.toolbar.tools:.*/$STRING1/" $HOME/.fluxbox/init
-sed -i "s/session.screen0.slit.placement:.*/$STRING2/" $HOME/.fluxbox/init
-sed -i "s/session.screen0.toolbar.widthPercent:.*/$STRING3/" $HOME/.fluxbox/init
-sed -i "s/session.screen0.toolbar.placement:.*/$STRING4/" $HOME/.fluxbox/init
-
-
-#disable wmalauncher
-if grep -q "#wmalauncher-menu" $HOME/.fluxbox/startup
-then 
-echo "$ECHO1"
-else 
-sed -i "s/wmalauncher-menu/#wmalauncher-menu/" $HOME/.fluxbox/startup
-
-exit
-fi
-
-sleep 2
-
-##begin end_msg box
+##start end_msg box
 yad --text="
 
 
