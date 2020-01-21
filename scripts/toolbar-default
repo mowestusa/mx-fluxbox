@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #this script was written by the MX Linux Dev Team in January 2020
-#its function is to restore the default toolbar settings 
+#its function is to restore the default settings for init, startup and menu-mx
 
 TITLE1=$"OK to proceed?"
 MSG=$"This will restore the default settings for init, startup and menu-mx. That will overwrite what is currently in your fluxbox folder."

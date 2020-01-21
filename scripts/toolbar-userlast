@@ -18,7 +18,7 @@ yad --text="
 
 #restore the archived files, clearing out the folder
 cd $HOME/.restore-fluxbox
-mv apps init startup $HOME/.fluxbox/
+mv init startup $HOME/.fluxbox/
 
 ##begin end_msg box
 yad --text="
