@@ -36,6 +36,11 @@
 			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
 		[end]
 		[exec] (Conky){mx-conky}
+		[submenu] (Docks)
+			[exec] (Small) {wml-dock3}
+			[exec] (Medium) {wml-dock5}
+			[exec] (Large) {wml-dock7}
+		[end]
 		[submenu] (Icons)
     		[exec] (Idesk) {mx-idesktool}
     		[exec] (Wmalauncher) {qpdfview ~/.fluxbox/doc/wmalauncher.pdf}
@@ -95,7 +100,7 @@
      	[exec] (Clock) {xclock}
      	[exec] (Editor) {geany}
      	[exec] (Screensaver) {xfce4-screensaver-preferences}
-     	[exec] (Touchpad) {touchpad-indicator}
+     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
      [end]
      [separator]
      [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
