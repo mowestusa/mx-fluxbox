@@ -11,7 +11,7 @@
 #compton &
 
 # add launcher for legacy toolbar
-#wmalauncher
+#wmalauncher-menu
 
 #add system monitors 
 #gkrellm &
