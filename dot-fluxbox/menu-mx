@@ -46,7 +46,6 @@
       		[stylesdir] (~/.fluxbox/styles)
      	[end]
 		[submenu] (Toolbar)
-			[exec] (Default) {toolbar-default}
 			[exec] (Legacy) {toolbar-legacy}
 			[exec] (User last) {toolbar-userlast}
 		[end]
@@ -73,6 +72,7 @@
        		[exec] (Startup) {featherpad ~/.fluxbox/startup}
      		[exec] (Styles) {thunar ~/.fluxbox/styles/}
      	[end]
+     	[exec] (Default) {toolbar-default}
      	[submenu] (Keyboard)
 			[exec] (DE) {setxkbmap de}
 			[exec] (ES) {setxkbmap es} 
