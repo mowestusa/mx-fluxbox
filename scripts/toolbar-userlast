@@ -4,6 +4,9 @@
 #its function is to restore the toolbar settings that were in place
 #before the user selected the legacy look
 
+TEXTDOMAINDIR=/usr/share/locale
+export TEXTDOMAIN="mx-fluxbox"
+
 TITLE1=$"OK to proceed?"
 MSG=$"This will restore the settings that were in place when you selected a legacy toolbar layout."
 TITLE2=$"All done!"

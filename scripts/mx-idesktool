@@ -3,6 +3,9 @@
 #mx-mx-idesktool v1.0, released January 2020. 
 #A script by the MX Linux Dev Team, user spidermouse and others to configure the idesk app. Based on mx-mx-idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
 
+TEXTDOMAINDIR=/usr/share/locale
+export TEXTDOMAIN="mx-fluxbox"
+
 TEXT1=$"ERROR: Yad not installed or not in path."
 TEXT2=$"Yad found. So far so good.."
 TEXT3=$"ERROR: idesk not installed or not in path. Try http://sourceforge.net/projects/idesk/"
@@ -17,11 +20,11 @@ TEXT11=$"NOTE: The default right-click command \n
    runs this configuration tool (recommended)."
 TEXT12=$"Left-Click Command:"
 TEXT13=$"Right-Click Command:"
-TEXT14=$"\t<b>Current icon: ${iconplaceholder##*'/'}</b>" 
+TEXT14=$"Current icon" 
 TEXT15=$"Oops!"
 TEXT16=$"Error: Icon Image File Not Found."
 TEXT17=$"Quit"
-TEXT18=$"Error: Unknown Filetype. The icon should be be a png image."
+TEXT18=$"Error: Unknown Filetype. The icon should be a png image."
 TEXT19=$"Please choose a file"
 TEXT20=$"Error: You need to select a valid file"
 TEXT21=$"Finished!" 
@@ -304,8 +307,8 @@ cd "${iconplaceholder%/*}"
 icon="$($DIALOG --width=500 --height=500 \
                 --button="$TEXT7":3 --button="$TEXT8":1 \
                 --button="$TEXT9":0 --title "$TEXT23" \
-                --text="$TEXT14" \
-                --file-selection "${iconplaceholder}" \
+                --text="$TEXT14": \
+                --file-selection" "${iconplaceholder}" \
                 --file-filter="png | *.png *.PNG" \
                 --filename="${iconplaceholder}" 
        )"

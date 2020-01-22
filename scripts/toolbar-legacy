@@ -6,6 +6,9 @@
 
 #dependency: wmalauncher (installed by default in MX-Fluxbox versions > 1.2
 
+TEXTDOMAINDIR=/usr/share/locale
+export TEXTDOMAIN="mx-fluxbox"
+
 TITLE1=$"OK to proceed?"
 MSG=$"This will make changes required for a legacy toolbar layout. Your current settings will be backed up and can be restored by clicking Menu > Settings > Toolbar > Userlast"
 TITLE2=$"All done!"

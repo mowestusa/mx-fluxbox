@@ -3,6 +3,9 @@
 #this script was written by the MX Linux Dev Team in January 2020
 #its function is to restore the default settings for init, startup and menu-mx
 
+TEXTDOMAINDIR=/usr/share/locale
+export TEXTDOMAIN="mx-fluxbox"
+
 TITLE1=$"OK to proceed?"
 MSG=$"This will restore the default settings for init, startup and menu-mx. That will overwrite what is currently in your fluxbox folder."
 TITLE2=$"All done!"
