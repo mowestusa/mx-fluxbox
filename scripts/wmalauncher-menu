@@ -1,3 +1,9 @@
 #! /bin/bash
 
+#set up slit location 
+sed -i "s/^session.screen0.slit.placement:.*/session.screen0.slit.placement: BottomLeft/" $HOME/.fluxbox/init
+
+fluxbox-remote restart
+
 wmalauncher --command fluxbox-remote rootmenu --icon /usr/local/share/icons/mxfcelogo-rounded.png -w 48  &
+
