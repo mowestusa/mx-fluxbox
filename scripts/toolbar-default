@@ -15,8 +15,17 @@ END_MSG=$"Log out and back in to complete the change."
 yad --text="
 
 
-<b>$MSG</b>" --title="$TITLE1" --window-icon=/usr/share/icons/mxflux.png --geometry=400x30 --text-align=center 
+<b>$MSG</b>" --title="$TITLE1" --window-icon=/usr/share/icons/mxflux.png --geometry=400x30 --text-align=center --button=gtk-cancel:1 --button=gtk-yes:0
+
 ##end message box
+ 
+ case $? in
+            0)     do_task
+
+            1)     exit 0    ;;
+
+	  252)     exit 0    ;;
+esac
 
 #restore default files
 cd /usr/share/mxflux/.fluxbox/
