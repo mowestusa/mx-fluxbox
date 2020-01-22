@@ -1,6 +1,21 @@
 #! /bin/bash
 
-##############################  DIRECTIONS  #############################
+##########################  LOCATION DIRECTIONS  ########################
+## Select where you want your dock to be located                       ##
+## Location options:                                                   ##
+##       TopCenter, TopLeft, TopRight                                  ##
+##       LeftCenter, RightCenter                                       ##
+##       BottomCenter, BottomLeft, BottomRight                         ##
+## Copy/paste selection to replace "LeftCenter" (if necessary) below   ##
+#########################################################################
+
+
+#set up slit location
+sed -i "s/^session.screen0.slit.placement:.*/session.screen0.slit.placement: LeftCenter/" $HOME/.fluxbox/init
+
+fluxbox-remote restart
+
+##########################  LAUNCHER DIRECTIONS  ########################
 ## STEP 1                                                              ##
 ## Copy/remove the lines below for the number of launchers you want    ##
 ## Substitute for "[NAME]" the name of the application, e.g. "firefox" ##
@@ -20,11 +35,7 @@
 #########################################################################
 
 
-
-
-
 wmalauncher --desktop-file [NAME] -w 48 &
 wmalauncher --desktop-file [NAME] -w 48 &
 wmalauncher --desktop-file [NAME] -w 48 &  
 wmalauncher --desktop-file [NAME] -w 48 &
-
