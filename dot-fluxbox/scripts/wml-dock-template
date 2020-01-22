@@ -2,16 +2,17 @@
 
 ##############################  DIRECTIONS  #############################
 ## STEP 1                                                              ##
-## Copy the lines below to get the number of launchers you need        ##
+## Copy/remove the lines below for the number of launchers you want    ##
 ## Substitute for "[NAME]" the name of the application, e.g. "firefox" ##
+## Make the icon smaller (-w 32) or larger (-w 64) if you want         ##
 ## Save the file to $HOME/.fluxbox/script                              ##
 ## STEP 2                                                              ##
 ## Right-click the file and rename it as you like                      ##
-## Right-click the file > Properties, Permissions tab:                 ##
-## Check "Allow this file to run as a program"                         ##
+## Right-click the file again > Properties, Permissions tab:           ##
+##      Check "Allow this file to run as a program"                    ##
 ## STEP 3                                                              ##
 ## Create a Menu entry under Look > Docks like this:                   ##
-## [exec] (My dock) {#HOME/.fluxbox/scripts/NAME}                      ##
+##      [exec] (My dock) {#HOME/.fluxbox/scripts/NAME}                 ##
 ## To start it automatically on login:                                 ##
 ## Open the startup file and create two new lines:                     ##
 ##     #start my dock                                                  ##

@@ -19,12 +19,15 @@ yad --text="
 
 ##end message box
  
- case $? in
-            0)     do_task
+case $? in
 
-            1)     exit 0    ;;
+             0)     ;;
+
+             1)     exit 0    ;;
 
 	  252)     exit 0    ;;
+
+             
 esac
 
 #restore default files
