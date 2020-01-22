@@ -1,0 +1,3 @@
+#! /bin/bash
+
+wmalauncher --command fluxbox-remote rootmenu --icon /usr/local/share/icons/mxfcelogo-rounded.png -w 48  &

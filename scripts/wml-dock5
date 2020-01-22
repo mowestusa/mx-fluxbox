@@ -1,0 +1,9 @@
+#! /bin/bash
+
+
+
+wmalauncher --desktop-file firefox.desktop -w 48 &  
+wmalauncher --desktop-file thunar.desktop -w 48 &
+wmalauncher --command fluxbox-remote rootmenu --icon /usr/local/share/icons/mxfcelogo-rounded.png -w 48  &
+wmalauncher --desktop-file clementine.desktop -w 48 &
+wmalauncher --desktop-file thunderbird.desktop -w 48 &
