@@ -7,7 +7,7 @@ session.screen0.tabs.intitlebar:	true
 session.screen0.titlebar.left:	Stick 
 session.screen0.titlebar.right:	Minimize Maximize Close 
 session.screen0.toolbar.tools:	clock, nextworkspace, workspacename, prevworkspace, iconbar, systemtray
-session.screen0.toolbar.maxOver:	false
+session.screen0.toolbar.maxOver:	true
 session.screen0.toolbar.alpha:	252
 session.screen0.toolbar.placement:	TopCenter
 session.screen0.toolbar.layer:	Dock
