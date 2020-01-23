@@ -40,7 +40,7 @@
 			[exec] (Small) {wml-dock3}
 			[exec] (Medium) {wml-dock5}
 			[exec] (Large) {wml-dock7}
-			[exec] (Template) {featherpad ~/.fluxbox/scripts/wml-dock-template}
+			[exec] (Make your own) {featherpad ~/.fluxbox/scripts/wml-dock-template}
 		[end]
 		[submenu] (Icons)
     		[exec] (Idesk) {mx-idesktool}
