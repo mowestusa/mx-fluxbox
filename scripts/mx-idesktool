@@ -308,7 +308,7 @@ icon="$($DIALOG --width=500 --height=500 \
                 --button="$TEXT7":3 --button="$TEXT8":1 \
                 --button="$TEXT9":0 --title "$TEXT23" \
                 --text="$TEXT14": \
-                --file-selection" "${iconplaceholder}" \
+                --file-selection "${iconplaceholder}" \
                 --file-filter="png | *.png *.PNG" \
                 --filename="${iconplaceholder}" 
        )"
