@@ -6,7 +6,6 @@ sed -i "s/^session.screen0.slit.placement:.*/session.screen0.slit.placement: Lef
 fluxbox-remote restart
 
 
-wmalauncher --desktop-file firefox.desktop -w 48 &  
-wmalauncher --desktop-file thunar.desktop -w 48 &
-wmalauncher --command fluxbox-remote rootmenu --icon /usr/local/share/icons/mxfcelogo-rounded.png -w 48  &
-Center
+wmalauncher --desktop-file firefox.desktop -w 48 -x &
+wmalauncher --desktop-file thunar.desktop -w 48 -x &
+wmalauncher --command fluxbox-remote rootmenu --icon /usr/local/share/icons/mxfcelogo-rounded.png -w 48  -x &
