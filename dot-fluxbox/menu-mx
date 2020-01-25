@@ -43,7 +43,7 @@
 			[exec] (Make your own) {featherpad ~/.fluxbox/scripts/wml-dock-template}
 		[end]
 		[submenu] (Icons)
-    		[exec] (Idesk) {mx-idesktool}
+    		[exec] (Idesktool) {mx-idesktool}
     		[exec] (Wmalauncher) {qpdfview ~/.fluxbox/doc/wmalauncher.pdf}
     	[end]
     	[exec] (Monitors) {gkrellm}
