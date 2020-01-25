@@ -34,8 +34,8 @@ fluxbox-remote restart
 ##     HOME/.fluxbox/scripts/NAME                                      ##
 #########################################################################
 
-
-wmalauncher --desktop-file NAME -w 48 &
-wmalauncher --desktop-file NAME -w 48 &
-wmalauncher --desktop-file NAME -w 48 &  
-wmalauncher --desktop-file NAME -w 48 &
+#the -x at the end allows the user to delete a launcher with a right click
+wmalauncher --desktop-file NAME -w 48 -x &
+wmalauncher --desktop-file NAME -w 48 -x &
+wmalauncher --desktop-file NAME -w 48 -x &  
+wmalauncher --desktop-file NAME -w 48 -x &
