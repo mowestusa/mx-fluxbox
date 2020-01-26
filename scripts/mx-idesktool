@@ -551,7 +551,7 @@ case $retval in
                 ;;
                 Refresh)     refresh
                 ;;
-                Add)         cap=""
+                New)         cap=""
                              command=""
 	                     newcaption
                 ;;
