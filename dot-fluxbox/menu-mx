@@ -107,7 +107,7 @@
      [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Wiki) {xdg-open https://mxlinux.org/wiki/help-files/help-mx-fluxbox/} 
      [submenu] (Leave)
-     	[restart] (Restart)
+     	[restart] (Refresh)
      	[exec] (Suspend) {sudo 'pm-suspend'}
      	[exit] (Logout) 
      	[exec] (Reboot) {sudo /sbin/reboot} 
