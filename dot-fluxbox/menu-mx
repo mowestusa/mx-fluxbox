@@ -1,8 +1,12 @@
 [begin] (Fluxbox) 
     [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mxf-faq.pdf}
+    [exec] (Run  F2) {fbrun -nearmouse} 
     [submenu] (Out of sight)
     	[exec] (Conky) {killall conky}
-   		[exec] (FAQ icon) {sed -i 's/idesk/#idesk/' ~/.fluxbox/startup}
+   		[exec] (iDesk icons) {killall idesk}
+   		[exec] (Monitors) {killall gkrellm}
+   		[exec] (Slit) {killall wmalauncher}
+   		[exec] (Window) {xkill}
     [end]
     [separator]
     [exec] (All apps F6) {xfce4-appfinder}
@@ -23,7 +27,7 @@
     	[exec] (PDFs) {qpdfview}
     	[exec] (Notes) {xfce4-notes}
     [end]
-    [exec] (Terminal  F4) {xfce4-terminal --drop-down} 
+    [exec] (Terminal) {xfce4-terminal} 
             [separator]
     [submenu] (Look) 
        [submenu] (Background)
@@ -31,18 +35,33 @@
 			[separator]
 			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
 		[end]
+		[exec] (Conky){mx-conky}
+		[submenu] (Docks)
+			[exec] (Small) {wml-dock3}
+			[exec] (Medium) {wml-dock5}
+			[exec] (Large) {wml-dock7}
+			[exec] (Make your own) {featherpad ~/.fluxbox/scripts/wml-dock-template}
+		[end]
+		[submenu] (Icons)
+    		[exec] (Idesktool) {mx-idesktool}
+    		[exec] (Wmalauncher) {qpdfview ~/.fluxbox/doc/wmalauncher.pdf}
+    	[end]
+    	[exec] (Monitors) {gkrellm}
     	[submenu] (Style)
       		[stylesdir] (/usr/share/fluxbox/styles) 
       		[stylesdir] (~/.fluxbox/styles)
      	[end]
+		[submenu] (Toolbar)
+			[exec] (Legacy) {toolbar-legacy}
+			[exec] (User last) {toolbar-userlast}
+		[end]
    	[end]
 	[submenu] (System)
-	[exec] (Conky) {mx-conky}
-	[submenu] (Disks)
+		[exec] (Bluetooth) {blueman-manager}
+		  		[submenu] (Disks)
      		[exec] (Manage) {/usr/sbin/gparted}
      		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
-     [end]
-     [exec] (Monitors) {grkellm}
+     	[end]
      [submenu] (Packages)
      		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
      		[exec] (Synaptic) {synaptic-pkexec}
@@ -50,7 +69,16 @@
     [exec] (Processes) {xfce4-taskmanager}
  	[end]
     [submenu] (Settings)
-     	[exec] (Bluetooth) {blueman-manager}
+     	[submenu] (Configure)
+     		[exec] (Apps) {featherpad ~/.fluxbox/apps}
+     		[exec] (Init) {featherpad ~/.fluxbox/init}
+     		[exec] (Keys) {featherpad ~/.fluxbox/keys}
+     		[exec] (Menu) {featherpad ~/.fluxbox/menu-mx}
+     		[exec] (Overlay) {featherpad ~/.fluxbox/overlay}
+       		[exec] (Startup) {featherpad ~/.fluxbox/startup}
+     		[exec] (Styles) {thunar ~/.fluxbox/styles/}
+     	[end]
+     	[exec] (Default) {toolbar-default}
      	[submenu] (Keyboard)
 			[exec] (DE) {setxkbmap de}
 			[exec] (ES) {setxkbmap es} 
@@ -64,23 +92,28 @@
 		[end]
 		[exec] (Mixer) {pavucontrol}
 		[exec] (Power) {xfce4-power-manager-settings}
-		[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
-		[exec] (Xfce Settings) {xfce4-settings-manager}
+		[exec] (Xfce) {xfce4-settings-manager}
 	[end] 
    	[submenu] (Accessories)
        	[exec] (Calculator) {galculator}
      	[exec] (Calendar) {orage}
      	[exec] (Capture) {xfce4-screenshooter}
-     	[exec] (Editor) {featherpad}
+     	[exec] (Clock) {xclock}
+     	[exec] (Editor) {geany}
      	[exec] (Screensaver) {xfce4-screensaver-preferences}
+     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
      [end]
      [separator]
      [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
-     [exec] (Run  F2) {fbrun -nearmouse} 
-     [restart] (Restart)
-     [exec] (Suspend) {sudo 'pm-suspend'}
-     [exit] (Logout) 
+     [exec] (Wiki) {xdg-open https://mxlinux.org/wiki/help-files/help-mx-fluxbox/} 
+     [submenu] (Leave)
+     	[restart] (Restart)
+     	[exec] (Suspend) {sudo 'pm-suspend'}
+     	[exit] (Logout) 
+     	[exec] (Reboot) {sudo /sbin/reboot} 
+		[exec] (Shutdown) {sudo /sbin/halt}
      [end]
+[end]
 
 
 
