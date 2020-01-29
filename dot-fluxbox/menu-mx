@@ -25,7 +25,6 @@
     [submenu] (Office) 
     	[exec] (Suite) {libreoffice}
     	[exec] (PDFs) {qpdfview}
-    	[exec] (Notes) {xfce4-notes}
     [end]
     [exec] (Terminal) {xfce4-terminal} 
             [separator]
