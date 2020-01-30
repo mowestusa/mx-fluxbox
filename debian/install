@@ -1,6 +1,12 @@
 dot-fluxbox/* usr/share/mxflux/.fluxbox
+dot-fluxbox/* etc/skel/.fluxbox
+components/*  usr/share/mxflux/.fluxbox/components
 pixmaps/*	usr/share/icons
 bin/* 		usr/bin
-*.desktop   usr/share/applications
+#*.desktop   usr/share/applications
 backgrounds/* usr/share/backgrounds
 scripts/*   usr/bin
+components/idesk/fluxhelp.lnk etc/skel/.idesktop
+components/idesk/.ideskrc etc/skel/.ideskrc
+components/.fehbg  etc/skel/.fehbg
+components/.gkrellm2 etc/skel/.gkrellm2

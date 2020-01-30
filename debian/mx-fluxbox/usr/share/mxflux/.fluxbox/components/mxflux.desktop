@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=mxflux
-Comment=Setup
-Encoding=UTF-8
-Version=1.0
-Type=Application
-Terminal=true
-Exec=sh /usr/local/bin/mxflux_install.sh
-Icon=/usr/share/icons/mxflux.png
