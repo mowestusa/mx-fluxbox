@@ -6,7 +6,7 @@
 none Print :Exec /usr/bin/xfce4-screenshooter
 
 # open fluxbox FAQ
-none F1 :Exec xdg-open ~/.fluxbox/doc/mx-docs.pdf
+none F1 :Exec xdg-open ~/.fluxbox/doc/mxfl-docs.pdf
 
 # open a little run terminal
 none F2 :Exec fbrun
