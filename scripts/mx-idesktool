@@ -269,7 +269,7 @@ if [ "$modcaption" = "" ]; then
 fi
 
 
-mod_commands="$($DIALOG --form --separator="\n" --title $TEXT5 \
+mod_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
                         --text="$TEXT11" \
                         --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
 	                --field="$TEXT12" "$command" \
