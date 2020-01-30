@@ -1,12 +1,12 @@
 [begin] (Fluxbox) 
-    [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mxf-faq.pdf}
+    [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mx-docs.pdf}
     [exec] (Run  F2) {fbrun -nearmouse} 
     [submenu] (Out of sight)
     	[exec] (Conky) {killall conky}
    		[exec] (iDesk icons) {killall idesk}
    		[exec] (Monitors) {killall gkrellm}
-   		[exec] (Slit) {killall wmalauncher}
-   		[exec] (Window) {xkill}
+   		[exec] (Slit launchers) {killall wmalauncher}
+   		[exec] (Any window) {xkill}
     [end]
     [separator]
     [exec] (All apps F6) {xfce4-appfinder}
@@ -25,7 +25,6 @@
     [submenu] (Office) 
     	[exec] (Suite) {libreoffice}
     	[exec] (PDFs) {qpdfview}
-    	[exec] (Notes) {xfce4-notes}
     [end]
     [exec] (Terminal) {xfce4-terminal} 
             [separator]
@@ -36,16 +35,13 @@
 			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
 		[end]
 		[exec] (Conky){mx-conky}
-		[submenu] (Docks)
+		[submenu] (Docks and launchers)
 			[exec] (Small) {wml-dock3}
 			[exec] (Medium) {wml-dock5}
 			[exec] (Large) {wml-dock7}
 			[exec] (Make your own) {featherpad ~/.fluxbox/scripts/wml-dock-template}
 		[end]
-		[submenu] (Icons)
-    		[exec] (Idesktool) {mx-idesktool}
-    		[exec] (Wmalauncher) {qpdfview ~/.fluxbox/doc/wmalauncher.pdf}
-    	[end]
+		[exec] (Desktop icons) {mx-idesktool}
     	[exec] (Monitors) {gkrellm}
     	[submenu] (Style)
       		[stylesdir] (/usr/share/fluxbox/styles) 
@@ -92,6 +88,7 @@
 		[end]
 		[exec] (Mixer) {pavucontrol}
 		[exec] (Power) {xfce4-power-manager-settings}
+		[config] (Window, slit, toolbar)
 		[exec] (Xfce) {xfce4-settings-manager}
 	[end] 
    	[submenu] (Accessories)
@@ -107,7 +104,7 @@
      [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
      [exec] (Wiki) {xdg-open https://mxlinux.org/wiki/help-files/help-mx-fluxbox/} 
      [submenu] (Leave)
-     	[restart] (Restart)
+     	[restart] (Refresh)
      	[exec] (Suspend) {sudo 'pm-suspend'}
      	[exit] (Logout) 
      	[exec] (Reboot) {sudo /sbin/reboot} 

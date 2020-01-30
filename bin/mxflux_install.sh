@@ -45,13 +45,7 @@ cp /usr/share/mxflux/.fluxbox/components/idesk/.ideskrc "$HOME"/.ideskrc
 
 cp /usr/share/mxflux/.fluxbox/components/.fehbg "$HOME"/.fehbg
 
-#set up the conky
 
-if [ ! -d "$HOME/.conky/MX-BritPanel/" ]; then
-    mkdir -p "$HOME/.conky/MX-BritPanel/"
-fi
-
-cp /usr/share/mxflux/.fluxbox/components/MX-BritPanel/conkyrc_fb "$HOME"/.conky/MX-BritPanel/conkyrc_fb
 
 #set up the system monitors
 cp -r /usr/share/mxflux/.fluxbox/components/.gkrellm2 "$HOME"/.gkrellm2
