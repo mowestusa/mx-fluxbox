@@ -88,7 +88,7 @@
 		[end]
 		[exec] (Mixer) {pavucontrol}
 		[exec] (Power) {xfce4-power-manager-settings}
-		[config] (Window and toolbar)
+		[config] (Window, slit, toolbar)
 		[exec] (Xfce) {xfce4-settings-manager}
 	[end] 
    	[submenu] (Accessories)
