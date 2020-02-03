@@ -11,7 +11,7 @@
 TEXTDOMAINDIR=/usr/share/locale 
 export TEXTDOMAIN="mx-fluxbox"
 
-MESSAGE=$"This will install into your Home folder components that MX-flux requires in order to run.  Any existing fluxbox configuration will be backed up as <i>fluxbox_BAK</i>."
+MESSAGE=$"This will install into your Home folder components that MX-flux requires in order to run.  Any existing fluxbox configuration will be backed up as <i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
 END_MSG=$"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-down menu in the upper right corner, and log back in."
 
 ##begin message box
@@ -28,7 +28,11 @@ fi
 #set up fluxbox
 
 if [ -d "$HOME/.fluxbox" ]; then
-    mv $HOME/.fluxbox $HOME/.fluxbox_BAK
+    mv $HOME/.fluxbox $HOME/.restore/fluxbox/fluxbox_bak_.$(date +%Y%m%H%M%S) 
+fi
+
+if [ ! "$?" = "0" ]; then
+	exit 1
 fi
 
 cp -r /usr/share/mxflux/.fluxbox "$HOME"
@@ -37,6 +41,9 @@ cp -r /usr/share/mxflux/.fluxbox "$HOME"
 
 if [ ! -d "$HOME/.idesktop/" ]; then
     mkdir -p "$HOME"/.idesktop/
+    else 
+    cp -r $HOME/.idesktop $HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)
+    cp $HOME/.ideskrc $HOME/.restore/fluxbox/ideskrc_.$(date +%Y%m%H%M%S)
 fi
 
 cp /usr/share/mxflux/.fluxbox/components/idesk/fluxhelp.lnk "$HOME"/.idesktop/fluxhelp.lnk
