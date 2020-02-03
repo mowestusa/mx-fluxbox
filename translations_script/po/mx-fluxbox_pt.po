@@ -5,23 +5,25 @@
 # 
 # Translators:
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2019
-# José Vieira <jvieira33@sapo.pt>, 2019
+# Geoff Gigg <geoffgigg@hotmail.com>, 2020
+# José Vieira <jvieira33@sapo.pt>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 21:51-0600\n"
+"POT-Creation-Date: 2020-01-22 19:19-0600\n"
 "PO-Revision-Date: 2019-12-18 03:57+0000\n"
-"Last-Translator: José Vieira <jvieira33@sapo.pt>, 2019\n"
+"Last-Translator: José Vieira <jvieira33@sapo.pt>, 2020\n"
 "Language-Team: Portuguese (https://www.transifex.com/anticapitalista/teams/10162/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: mxflux_install.sh:14
+#: bin/mxflux_install.sh:14
 msgid ""
 "This will install into your Home folder components that MX-flux requires in "
 "order to run.  Any existing fluxbox configuration will be backed up as "
@@ -31,7 +33,7 @@ msgstr ""
 "flux requer para ser executado. Qualquer configuração existente do fluxbox "
 "será copiada como <i>fluxbox_BAK</i>."
 
-#: mxflux_install.sh:15
+#: bin/mxflux_install.sh:15
 msgid ""
 "To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
 "down menu in the upper right corner, and log back in."
@@ -39,10 +41,253 @@ msgstr ""
 "Para iniciar uma sessão fluxbox: sair da sessão, seleccionar <i>fluxbox</i> "
 "no menu suspenso no canto superior direito e entrar novamente no sistema."
 
-#: mxflux_install.sh:21
+#: bin/mxflux_install.sh:21 scripts/toolbar-default:9
+#: scripts/toolbar-legacy:12 scripts/toolbar-userlast:10
 msgid "OK to proceed?"
 msgstr "Prosseguir?"
 
-#: mxflux_install.sh:65
+#: bin/mxflux_install.sh:65 scripts/toolbar-default:11
+#: scripts/toolbar-legacy:14 scripts/toolbar-legacy:56
+#: scripts/toolbar-userlast:12
 msgid "All done!"
 msgstr "Tudo pronto!"
+
+#: scripts/mx-idesktool:9
+msgid "ERROR: Yad not installed or not in path."
+msgstr "ERRO: Yad não instalado ou em falta no endereço."
+
+#: scripts/mx-idesktool:10
+msgid "Yad found. So far so good.."
+msgstr "Yad encontrado. Tudo bem até aqui..."
+
+#: scripts/mx-idesktool:11
+msgid ""
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
+msgstr ""
+"ERRO: idesk não instalado ou em falta no endereço. Tentar "
+"http://sourceforge.net/projects/idesk/"
+
+#: scripts/mx-idesktool:12
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk encontrado - tudo a correr bem :)"
+
+#: scripts/mx-idesktool:13
+msgid "Icon Management Tool"
+msgstr "Ferramenta de gestão de ícones"
+
+#: scripts/mx-idesktool:14
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Legenda do ícone:\\n(Deixar em branco se não tiver legenda)"
+
+#: scripts/mx-idesktool:15
+msgid "Back"
+msgstr "Voltar atrás"
+
+#: scripts/mx-idesktool:16
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: scripts/mx-idesktool:17
+msgid "Next"
+msgstr "Seguinte"
+
+#: scripts/mx-idesktool:18
+msgid "Caption"
+msgstr "Legenda"
+
+#: scripts/mx-idesktool:19
+msgid ""
+"NOTE: The default right-click command \\n\n"
+"   runs this configuration tool (recommended)."
+msgstr ""
+"NOTA: O comando predefinido do clique-direito \\n\n"
+"   executa a ferramenta de configuração (recomendado)."
+
+#: scripts/mx-idesktool:21 scripts/mx-idesktool:59
+msgid "Left-Click Command:"
+msgstr "Comando do clique-esquerdo:"
+
+#: scripts/mx-idesktool:22
+msgid "Right-Click Command:"
+msgstr "Comando do clique-direito:"
+
+#: scripts/mx-idesktool:23
+msgid "Current icon"
+msgstr "Ícone em uso"
+
+#: scripts/mx-idesktool:24
+msgid "Oops!"
+msgstr "Ups!"
+
+#: scripts/mx-idesktool:25
+msgid "Error: Icon Image File Not Found."
+msgstr "Erro: não foi encontrado o ficheiro de imagem do ícone."
+
+#: scripts/mx-idesktool:26
+msgid "Quit"
+msgstr "Sair"
+
+#: scripts/mx-idesktool:27
+msgid "Error: Unknown Filetype. The icon should be a png image."
+msgstr "Erro: Tipo de ficheiro desconhecido. O ícone deve ser uma imagem png."
+
+#: scripts/mx-idesktool:28
+msgid "Please choose a file"
+msgstr "Escolher um ficheiro"
+
+#: scripts/mx-idesktool:29
+msgid "Error: You need to select a valid file"
+msgstr "Erro: tem que ser seleccionado um ficheiro válido"
+
+#: scripts/mx-idesktool:30
+msgid "Finished!"
+msgstr "Terminado!"
+
+#: scripts/mx-idesktool:31
+msgid "All done. Restarting idesk now..."
+msgstr "Tudo concluído. A reiniciar o idesk..."
+
+#: scripts/mx-idesktool:32 scripts/mx-idesktool:58
+msgid "Choose a .png icon image"
+msgstr "Escolher uma imagem de ícone .png"
+
+#: scripts/mx-idesktool:33
+msgid "View or Edit an Icon"
+msgstr "Ver ou editar um ícone"
+
+#: scripts/mx-idesktool:34
+msgid "Remove an Icon"
+msgstr "Remover um ícone"
+
+#: scripts/mx-idesktool:35
+msgid "Add a New Icon"
+msgstr "Adicionar um novo ícone"
+
+#: scripts/mx-idesktool:36
+msgid "Reload the Desktop"
+msgstr "Recarregar o ambiente de trabalho"
+
+#: scripts/mx-idesktool:37
+msgid "Edit iDesk's config file"
+msgstr "Editar o ficheiro de configuração do iDesk"
+
+#: scripts/mx-idesktool:38
+msgid "MX-idesktool Help"
+msgstr "Ajuda do MX-idesktool"
+
+#: scripts/mx-idesktool:39
+msgid "USE: double-click entry to select a management action"
+msgstr ""
+"USO: clicar duas vezes na entrada para seleccionar uma acção de gestão"
+
+#: scripts/mx-idesktool:40
+msgid "iDesk Configuration"
+msgstr "Configuração do iDesk"
+
+#: scripts/mx-idesktool:41
+msgid "Config. file  found - excellent!"
+msgstr "Encontrado o ficheiro de configuração - excelente!"
+
+#: scripts/mx-idesktool:42
+msgid ""
+"WARNING: No ideskrc file was found.\\nWould you like to have this "
+"file\\nadded now?"
+msgstr ""
+"AVISO: Não foi encontrado nenhum\\nficheiro ideskrc. Adicionar agora\\neste "
+"ficheiro?"
+
+#: scripts/mx-idesktool:43
+msgid "No!"
+msgstr "Não!"
+
+#: scripts/mx-idesktool:44
+msgid "Yes!"
+msgstr "Sim!"
+
+#: scripts/mx-idesktool:45
+msgid ""
+"\\tThe configuration file has been written. \\n\n"
+"                Drag any icons you create to the\n"
+"                desired locations and they will\n"
+"                be remembered between sessions \\n\\n \n"
+"                Would you like to run the icon wizard now?"
+msgstr ""
+"\\tO ficheiro de configuração foi criado. \\n\n"
+"                Arrastar quaisquer ícones criados\n"
+"                para os locais desejados e eles\n"
+"                serão memorizados entre sessões \\n\\n \n"
+"                Executar o assistente de ícones agora?"
+
+#: scripts/mx-idesktool:50
+msgid "Properties"
+msgstr "Propriedades"
+
+#: scripts/mx-idesktool:51
+msgid "Delete"
+msgstr "Eliminar"
+
+#: scripts/mx-idesktool:52
+msgid "New"
+msgstr "Novo"
+
+#: scripts/mx-idesktool:53
+msgid "Refresh"
+msgstr "Recarregar"
+
+#: scripts/mx-idesktool:54
+msgid "Configure"
+msgstr "Configurar"
+
+#: scripts/mx-idesktool:55
+msgid "Help"
+msgstr "Ajuda"
+
+#: scripts/mx-idesktool:56
+msgid "ACTION"
+msgstr "ACÇÃO"
+
+#: scripts/mx-idesktool:57
+msgid "DESCRIPTION"
+msgstr "DESCRIÇÃO"
+
+#: scripts/mx-idesktool:60
+msgid "Right-Click Command"
+msgstr "Comando do clique-direito"
+
+#: scripts/mx-idesktool:574
+msgid " > "
+msgstr " > "
+
+#: scripts/toolbar-default:10
+msgid ""
+"This will restore the default settings for init, startup and menu-mx. That "
+"will overwrite what is currently in your fluxbox folder."
+msgstr ""
+"Esta acção irá restaurar as configurações predefinidas em init, startup e "
+"menu-mx, o que irá sobrescrever o que está presentamente na pasta fluxbox "
+"pessoal."
+
+#: scripts/toolbar-default:12 scripts/toolbar-legacy:15
+#: scripts/toolbar-userlast:13
+msgid "Log out and back in to complete the change."
+msgstr "Sair e voltar a entrar para completar a alteração."
+
+#: scripts/toolbar-legacy:13
+msgid ""
+"This will make changes required for a legacy toolbar layout. Your current "
+"settings will be backed up and can be restored by clicking Menu > Settings >"
+" Toolbar > Userlast"
+msgstr ""
+"Esta acção irá fazer alterações necessárias ao esquema de barra de "
+"ferramentas antigo. As configurações presentemente definidas serão "
+"guardadas. Podem ser restauradas clicando em Menu > Definições > Barra de "
+"ferramentas > Última"
+
+#: scripts/toolbar-userlast:11
+msgid ""
+"This will restore the settings that were in place when you selected a legacy"
+" toolbar layout."
+msgstr ""
+"Esta acção irá restaurar as configurações que estavam definidas quando foi "
+"seleccionado o esquema de barra de ferramentas antigo."
