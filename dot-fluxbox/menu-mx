@@ -1,5 +1,5 @@
 [begin] (Fluxbox) 
-    [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mx-docs.pdf}
+    [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mxfl-docs.pdf}
     [exec] (Run  F2) {fbrun -nearmouse} 
     [submenu] (Out of sight)
     	[exec] (Conky) {killall conky}
