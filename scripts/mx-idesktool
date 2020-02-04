@@ -96,7 +96,7 @@ fi
 argu="${1}"
 
 #set this icon directory because it has most available
-icondir=/usr/share/icons/Faenza/apps
+icondir=/usr/share/icons/Moka/48x48/apps/
 
 DIALOG=yad
 
