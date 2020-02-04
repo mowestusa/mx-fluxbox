@@ -182,16 +182,21 @@ if [ "${modcaption}" = "" ]; then
 fi
 
 
+#new_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
+                        #--text="$TEXT11"\
+                        #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+	                #--field="$TEXT46": "$command" \
+                        #--field="$TEXT47": "mx-idesktool ${modcaption}.lnk" )"
+                        
 new_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
-                        --text="$TEXT11"\
-                        --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
-	                --field="$TEXT46": "$command" \
-                        --field="$TEXT47": "mx-idesktool ${modcaption}.lnk" )"
+        --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+        --field="$TEXT46": "$command")"
+        
 retval=$?
 
 case $retval in
         0) command="$(echo "${new_commands}" | sed -n "1p")"
-	   rightclick="$(echo "${new_commands}"  | sed -n "2p")"
+	   #rightclick="$(echo "${new_commands}"  | sed -n "2p")"
            geticon
            ;;
         3) newcaption
@@ -216,7 +221,7 @@ echo "getting current values"
 #get the left click command
 	command=`cat $currentlnkfile | grep "Command\[0\]:" | sed "s/Command\[0\]:\ //" | sed "s/^[ \t]*//"`
 #get the right click command
-	currentrightclick=`cat $currentlnkfile | grep "Command\[1\]:" | sed "s/Command\[1\]:\ //" | sed "s/^[ \t]*//"`
+#	currentrightclick=`cat $currentlnkfile | grep "Command\[1\]:" | sed "s/Command\[1\]:\ //" | sed "s/^[ \t]*//"`
 #get the X value
 	currentxvalue=`cat $currentlnkfile | grep "X:" | sed "s/X://" | sed "s/^[ \t]*//"`
 #get the Y value
@@ -276,17 +281,21 @@ if [ "$modcaption" = "" ]; then
 fi
 
 
-mod_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
-                        --text="$TEXT11" \
-                        --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
-	                --field="$TEXT12" "$command" \
-                        --field="$TEXT13" "mx-idesktool $modcaption.lnk")"
+#mod_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
+                    #--text="$TEXT11" \
+                        #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+	                #--field="$TEXT12" "$command" \
+                        #--field="$TEXT13" "mx-idesktool $modcaption.lnk")"
 
+mod_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
+                        --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+	                --field="$TEXT12" "$command")"
+                        
 retval=$?
 
 case $retval in
         0) command="$(echo "${mod_commands}" | sed -n "1p")"
-	   rightclick="$(echo "${mod_commands}"  | sed -n "2p")"
+	   #rightclick="$(echo "${mod_commands}"  | sed -n "2p")"
            geticon
            ;;
         3) currentcaption="${cap}"
@@ -460,7 +469,7 @@ echo "  Icon: ${icon}" >> "${HOME}/.idesktop/${modcaption}.lnk"
 echo "  X: ${currentxvalue}" >> "${HOME}/.idesktop/${modcaption}.lnk"
 echo "  Y: ${currentyvalue}" >> "${HOME}/.idesktop/${modcaption}.lnk"
 echo "  Command[0]: ${command}" >> "${HOME}/.idesktop/${modcaption}.lnk"
-echo "  Command[1]: ${rightclick}" >> "${HOME}/.idesktop/${modcaption}.lnk"
+#echo "  Command[1]: ${rightclick}" >> "${HOME}/.idesktop/${modcaption}.lnk"
 echo "end" >> "${HOME}/.idesktop/${modcaption}.lnk"
 
 $DIALOG --no-buttons --width 500 --title="$TEXT21" \
