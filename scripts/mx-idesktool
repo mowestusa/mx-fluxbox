@@ -64,6 +64,8 @@ TEXT44=$"DESCRIPTION"
 TEXT45=$"Choose a .png icon image"
 TEXT46=$"Left-Click Command:"
 TEXT47=$"Right-Click Command"
+LOCK_TOGGLE=$"Lock-unlock"
+LOCK_TOGGLE_TEXT=$"Toogle lock/unlock of icon grid"
 
 #First make sure yad is available
 if ! hash yad > /dev/null ; then
@@ -495,6 +497,7 @@ choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 300 \
                 "$PROPERTIES" "$TEXT24"  \
                 "$DELETE" "$TEXT25"  \
                 "$NEW" "$TEXT26"  \
+                "$LOCK_TOGGLE"  "$LOCK_TOGGLE_TEXT" \
                 "$REFRESH" "$TEXT27"  \
 				"$CONFIGURE" "$TEXT28" \
 				" "   " " \
@@ -518,6 +521,8 @@ case $retval in
 	        "$NEW")         cap=""
                              command=""
 	                     newcaption
+                ;;
+                "$LOCK_TOGGLE")  unlock_icons
                 ;;
                 "$CONFIGURE")   editconfig
                 ;;
@@ -545,6 +550,7 @@ choice=$($DIALOG  --title "$TEXT5" --width 450 --height 300 \
                 "$PROPERTIES" "$TEXT24"  \
                 "$DELETE" "$TEXT25"  \
                 "$NEW" "$TEXT26"  \
+                "$LOCK_TOGGLE"  "$LOCK_TOGGLE_TEXT" \
                 "$REFRESH" "$TEXT27"  \
 				"$CONFIGURE" "$TEXT28" \
 				" "   " " \
@@ -572,6 +578,8 @@ case $retval in
                 "$NEW")         cap=""
                              command=""
 	                     newcaption
+                ;;
+                "$LOCK_TOGGLE")  unlock_icons
                 ;;
                 "$CONFIGURE")   editconfig
                 ;;
@@ -624,6 +632,25 @@ $browser $url &
 argynope
 
 }
+
+unlock_icons()
+{
+#grep for Locked: true and if present change to Locked: false
+
+local test toggle
+
+test="$(grep Locked: "${HOME}/.ideskrc" |grep true)"
+
+if [ -n "$test" ]; then
+    sed -i s/Locked.*/'Locked: false'/ "${HOME}/.ideskrc"
+    else
+    sed -i s/Locked.*/'Locked: true'/ "${HOME}/.ideskrc"
+fi
+
+refresh
+
+}
+
 
 ##########################################################
 ##########################################################
