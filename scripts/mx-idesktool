@@ -65,7 +65,7 @@ TEXT45=$"Choose a .png icon image"
 TEXT46=$"Left-Click Command:"
 TEXT47=$"Right-Click Command"
 LOCK_TOGGLE=$"Lock-unlock"
-LOCK_TOGGLE_TEXT=$"Toogle lock/unlock of icon grid"
+LOCK_TOGGLE_TEXT=$"Permit/prevent icon movement"
 
 #First make sure yad is available
 if ! hash yad > /dev/null ; then
@@ -98,7 +98,7 @@ fi
 argu="${1}"
 
 #set this icon directory because it has most available
-icondir=/usr/share/icons/Faenza/apps
+icondir=/usr/share/icons/Moka/48x48/apps/
 
 DIALOG=yad
 
@@ -646,6 +646,10 @@ if [ -n "$test" ]; then
     else
     sed -i s/Locked.*/'Locked: true'/ "${HOME}/.ideskrc"
 fi
+
+$DIALOG  --title "$TEXT5" --width 250 --height 30 \
+		 --text="$TEXT22"	\
+		 --button="OK"
 
 refresh
 

@@ -25,6 +25,7 @@
     [submenu] (Office) 
     	[exec] (Suite) {libreoffice}
     	[exec] (PDFs) {qpdfview}
+    	[exec] (Printer) {system-config-printer}
     [end]
     [exec] (Terminal) {xfce4-terminal} 
             [separator]
@@ -101,9 +102,7 @@
      	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
      [end]
      [separator]
-     [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
-     [exec] (Wiki) {xdg-open https://mxlinux.org/wiki/help-files/help-mx-fluxbox/} 
-     [submenu] (Leave)
+      [submenu] (Leave)
      	[restart] (Refresh)
      	[exec] (Suspend) {sudo 'pm-suspend'}
      	[exit] (Logout) 
