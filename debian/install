@@ -8,7 +8,7 @@ bin/* 		usr/bin
 #*.desktop   usr/share/applications
 backgrounds/* usr/share/backgrounds
 scripts/*   usr/bin
-components/idesk/fluxhelp.lnk etc/skel/.idesktop
+components/idesk/*.lnk etc/skel/.idesktop
 components/idesk/.ideskrc etc/skel/
 components/.fehbg  etc/skel/
 components/.gkrellm2/* etc/skel/.gkrellm2

@@ -1,10 +1,8 @@
 table Icon
   Caption: 
-  Command: qpdfview ~/.fluxbox/doc/mxfl-docs.pdf
-  Icon: /usr/share/icons/HighContrast/48x48/apps/help-faq.png
-  Width: 36
-  Height: 36
-  X: 39
-  Y: 29
+  Icon: /usr/share/icons/Moka/48x48/apps/winhelp.png
+  X: 100
+  Y: 60
+  Command[0]: qpdfview ~/.fluxbox/doc/mxfl-docs.pdf
+  Command[1]: mx-idesktool NoCaption22404.lnk
 end
-
