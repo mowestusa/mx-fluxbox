@@ -647,10 +647,13 @@ if [ -n "$test" ]; then
     sed -i s/Locked.*/'Locked: true'/ "${HOME}/.ideskrc"
 fi
 
+$DIALOG  --title "$TEXT5" --width 250 --height 30 \
+		 --text="$TEXT22"	\
+		 --button="OK"
+
 refresh
 
 }
-
 
 ##########################################################
 ##########################################################
