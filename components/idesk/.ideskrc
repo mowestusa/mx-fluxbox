@@ -5,18 +5,18 @@ table Config
   ToolTip.FontSize: 11
   ToolTip.FontName: gothic
   ToolTip.ForeColor: #0000FF
-  ToolTip.BackColor: pink
+  ToolTip.BackColor: #000000
   ToolTip.CaptionOnHover: true
   ToolTip.CaptionPlacement: Right
-  Locked: false
+  Locked: true
   Transparency: 100
   Shadow: true
   ShadowColor: #000000
   ShadowX: 1
   ShadowY: 1 
   Bold: true
-  ClickDelay: 300
-  IconSnap: true
+  ClickDelay: 200
+  IconSnap: false
   SnapWidth: 0
   SnapHeight: 10
   SnapOrigin: BottomRight
@@ -34,10 +34,10 @@ end
 
 table Actions
   Lock: control right doubleClk
-  Reload: middle doubleClk
-  Drag: left hold
-  EndDrag: left singleClk
+  Reload: middle singleClk
+  Drag: right hold
+  EndDrag: right singleClk
   Execute[0]: left singleClk
-  Execute[1]: left doubleClk
+  Execute[1]: right singleClk
 end
 

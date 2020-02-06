@@ -1,0 +1,8 @@
+table Icon
+  Caption: 
+  Icon: /usr/share/icons/Moka/48x48/apps/winhelp.png
+  X: 100
+  Y: 60
+  Command[0]: qpdfview ~/.fluxbox/doc/mxfl-docs.pdf
+  Command[1]: mx-idesktool NoCaption22404.lnk
+end

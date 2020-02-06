@@ -1,9 +1,0 @@
-Package: mx-fluxbox
-Version: 19.11.01
-Architecture: all
-Maintainer: dolphinoracle <dolphinoracle@gmail.com>
-Installed-Size: 2784
-Section: system
-Priority: optional
-Homepage: https://mxlinux.org
-Description: mx configuration defaults for fluxbox

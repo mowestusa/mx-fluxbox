@@ -37,11 +37,6 @@ xfce4-screensaver &
 # start a chat program -- example
 #skype &
 
-#add gtk2 variables
-gtk-theme-name="Adwaita"
-gtk-icon-theme-name="hicolor"
-gtk-font-name="Sans 12"
-
 #place network manager on the toolbar
 nm-applet &
 

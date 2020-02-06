@@ -6,7 +6,7 @@
 none Print :Exec /usr/bin/xfce4-screenshooter
 
 # open fluxbox FAQ
-none F1 :Exec xdg-open ~/.fluxbox/doc/mx-docs.pdf
+none F1 :Exec xdg-open ~/.fluxbox/doc/mxfl-docs.pdf
 
 # open a little run terminal
 none F2 :Exec fbrun
@@ -26,6 +26,9 @@ none F6 :Exec xfce4-appfinder
 # change volume with keys
 Control Up :Exec amixer -D pulse sset Master 5%+
 Control Down :Exec amixer -D pulse sset Master 5%-
+
+# close a window
+mod1 F4 :Close
 
 ------------
 ------------
@@ -117,7 +120,7 @@ Control F2 :Workspace 2
 Control F3 :Workspace 3
 
 # send the current window to a specific workspace
-Mod4 F1 :SendToWorkspace 1
+#Mod4 F1 :SendToWorkspace 1
 Mod4 F2 :SendToWorkspace 2
 Mod4 F3 :SendToWorkspace 3
 

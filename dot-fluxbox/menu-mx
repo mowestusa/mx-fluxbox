@@ -1,5 +1,5 @@
 [begin] (Fluxbox) 
-    [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mx-docs.pdf}
+    [exec] (Help  F1) {qpdfview ~/.fluxbox/doc/mxfl-docs.pdf}
     [exec] (Run  F2) {fbrun -nearmouse} 
     [submenu] (Out of sight)
     	[exec] (Conky) {killall conky}
@@ -25,6 +25,7 @@
     [submenu] (Office) 
     	[exec] (Suite) {libreoffice}
     	[exec] (PDFs) {qpdfview}
+    	[exec] (Printer) {system-config-printer}
     [end]
     [exec] (Terminal) {xfce4-terminal} 
             [separator]
@@ -88,7 +89,7 @@
 		[end]
 		[exec] (Mixer) {pavucontrol}
 		[exec] (Power) {xfce4-power-manager-settings}
-		[config] (Window and toolbar)
+		[config] (Window, slit, toolbar)
 		[exec] (Xfce) {xfce4-settings-manager}
 	[end] 
    	[submenu] (Accessories)
@@ -101,9 +102,7 @@
      	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
      [end]
      [separator]
-     [exec] (Repo) {xdg-open https://github.com/jerry3904/mx-fluxbox}  
-     [exec] (Wiki) {xdg-open https://mxlinux.org/wiki/help-files/help-mx-fluxbox/} 
-     [submenu] (Leave)
+      [submenu] (Leave)
      	[restart] (Refresh)
      	[exec] (Suspend) {sudo 'pm-suspend'}
      	[exit] (Logout) 
