@@ -52,7 +52,7 @@
 			[exec] (Make your own) {featherpad ~/.fluxbox/scripts/wml-dock-template}
 		[end]
 		[exec] (Desktop icons) {mx-idesktool}
-		[exec] (GTK theme) {lxappearance}
+		[exec] (Theme) {lxappearance}
     	[exec] (Monitors) {gkrellm}
     	[submenu] (Style)
       		[stylesdir] (/usr/share/fluxbox/styles) 
