@@ -3,22 +3,31 @@
     [exec] (Run  F2) {fbrun -nearmouse} 
     [submenu] (Out of sight)
     	[exec] (Conky) {killall conky}
-   		[exec] (iDesk icons) {killall idesk}
+   		[exec] (Desktop icons) {killall idesk}
    		[exec] (Monitors) {killall gkrellm}
    		[exec] (Slit launchers) {killall wmalauncher}
    		[exec] (Any window) {xkill}
     [end]
     [separator]
+    [submenu] (Accessories)
+       	[exec] (Calculator) {galculator}
+     	[exec] (Calendar) {orage}
+     	[exec] (Capture) {xfce4-screenshooter}
+     	[exec] (Clock) {xclock}
+     	[exec] (Editor) {geany}
+     	[exec] (Screensaver) {xfce4-screensaver-preferences}
+     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
+     [end]
     [exec] (All apps F6) {xfce4-appfinder}
-    [exec] (Browser) {firefox}
+    [exec] (Browser) {opera}
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
     		[exec] (Chat) {hexchat}
     [end]
-    [exec] (Files  F3) {thunar /home/$USER/.fluxbox} 
+    [exec] (File manager  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {clementine}
+       		[exec] (Music) {deadbeef}
     		[exec] (Video) {vlc}
     [end]
     [exec] (MX Tools F5) {mx-tools} 
@@ -43,6 +52,7 @@
 			[exec] (Make your own) {featherpad ~/.fluxbox/scripts/wml-dock-template}
 		[end]
 		[exec] (Desktop icons) {mx-idesktool}
+		[exec] (GTK theme) {lxappearance}
     	[exec] (Monitors) {gkrellm}
     	[submenu] (Style)
       		[stylesdir] (/usr/share/fluxbox/styles) 
@@ -92,17 +102,8 @@
 		[config] (Window, slit, toolbar)
 		[exec] (Xfce) {xfce4-settings-manager}
 	[end] 
-   	[submenu] (Accessories)
-       	[exec] (Calculator) {galculator}
-     	[exec] (Calendar) {orage}
-     	[exec] (Capture) {xfce4-screenshooter}
-     	[exec] (Clock) {xclock}
-     	[exec] (Editor) {geany}
-     	[exec] (Screensaver) {xfce4-screensaver-preferences}
-     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
-     [end]
      [separator]
-      [submenu] (Leave)
+     [submenu] (Leave)
      	[restart] (Refresh)
      	[exec] (Suspend) {sudo 'pm-suspend'}
      	[exit] (Logout) 
