@@ -68,7 +68,7 @@ session.slitlistFile:	~/.fluxbox/slitlist
 session.menuFile:	~/.fluxbox/menu-mx
 session.colorsPerChannel:	4
 session.configVersion:	13
-session.styleFile:	~/.fluxbox/styles/MX-Debian-dark
+session.styleFile:	~/.fluxbox/styles/MerleyKay
 session.cacheLife:	5
 session.cacheMax:	200
 session.tabPadding:	0
