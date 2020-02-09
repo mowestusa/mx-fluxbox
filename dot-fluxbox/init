@@ -58,7 +58,7 @@ session.screen0.noFocusWhileTypingDelay:	0
 session.screen0.strftimeFormat:	%I:%M  %b %d
 session.screen0.workspaces:	3
 session.screen0.rootCommand:	~/.fehbg -l
-session.forcePseudoTransparency:	false
+session.forcePseudoTransparency:	true
 session.keyFile:	~/.fluxbox/keys
 session.ignoreBorder:	false
 session.styleOverlay:	~/.fluxbox/overlay
