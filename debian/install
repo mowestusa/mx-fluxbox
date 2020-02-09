@@ -12,3 +12,8 @@ components/idesk/*.lnk etc/skel/.idesktop
 components/idesk/.ideskrc etc/skel/
 components/.fehbg  etc/skel/
 components/.gkrellm2/* etc/skel/.gkrellm2
+components/.gtkrc-2.0 etc/skel/
+components/fluxbox_badge-symbolic.svg usr/share/icons/hicolor/scalable/places
+components/settings.ini etc/skel/.config/gtk-3.0
+components/.gtkrc-2.0 root/
+components/settings.ini root/.config/gtk-3.0

@@ -35,9 +35,9 @@ case $? in
 esac
 
 #create a backup for "userlast" entry
-mkdir $HOME/.restore-fluxbox
+mkdir $HOME/.restore/fluxbox
 cd $HOME/.fluxbox	
-cp  init apps startup $HOME/.restore-fluxbox/
+cp  init apps startup $HOME/.restore/fluxbox/
 
 #set up wmalauncher 
 sed -i "s/"#wmalauncher-menu"/"wmalauncher-menu"/" $HOME/.fluxbox/startup
