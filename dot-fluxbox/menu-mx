@@ -45,7 +45,7 @@
 			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
 		[end]
 		[exec] (Conky){mx-conky}
-		[submenu] (Docks and launchers)
+		[submenu] (Docks & launchers)
 			[exec] (Small) {wml-dock3}
 			[exec] (Medium) {wml-dock5}
 			[exec] (Large) {wml-dock7}
