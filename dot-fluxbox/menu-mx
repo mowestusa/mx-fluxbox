@@ -5,7 +5,7 @@
     	[exec] (Conky) {killall conky}
    		[exec] (Desktop icons) {killall idesk}
    		[exec] (Monitors) {killall gkrellm}
-   		[exec] (Slit launchers) {killall wmalauncher}
+   		[exec] (Docks & launchers) {killall wmalauncher}
    		[exec] (Any window) {xkill}
     [end]
     [separator]
@@ -27,7 +27,7 @@
     [exec] (File manager  F3) {thunar /home/$USER/.fluxbox} 
     [submenu] (Multimedia)
         	[exec] (Image) {nomacs}
-       		[exec] (Music) {deadbeef}
+       		[exec] (Music) {clementine}
     		[exec] (Video) {vlc}
     [end]
     [exec] (MX Tools F5) {mx-tools} 

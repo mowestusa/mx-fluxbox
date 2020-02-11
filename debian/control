@@ -7,6 +7,6 @@ Standards-Version: 3.9.4
 Homepage: https://mxlinux.org
 
 Package: mx-fluxbox
-Depends: fluxbox, idesk, wmalauncher, moka-icon-theme, lxappearance
+Depends: fluxbox, idesk, wmalauncher, moka-icon-theme, lxappearance, gkrellm
 Architecture: all
 Description: mx configuration defaults for fluxbox
