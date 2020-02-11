@@ -35,7 +35,8 @@ case $? in
 esac
 
 #create a backup for "userlast" entry
-mkdir $HOME/.restore/fluxbox
+
+mkdir -p $HOME/.restore/fluxbox
 cd $HOME/.fluxbox	
 cp  init apps startup $HOME/.restore/fluxbox/
 
