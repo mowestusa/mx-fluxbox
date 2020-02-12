@@ -8,7 +8,7 @@ table Config
   ToolTip.BackColor: #000000
   ToolTip.CaptionOnHover: true
   ToolTip.CaptionPlacement: Right
-  Locked: true
+  Locked: false
   Transparency: 100
   Shadow: true
   ShadowColor: #000000
