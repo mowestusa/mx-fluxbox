@@ -45,13 +45,18 @@
 			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
 		[end]
 		[exec] (Conky){mx-conky}
-		[submenu] (Docks & launchers)
+	[submenu] (Docks & launchers)
+		[submenu] (Ready-made)
 			[exec] (Small) {wml-dock3}
 			[exec] (Medium) {wml-dock5}
 			[exec] (Large) {wml-dock7}
-			[submenu] (Make your own)
+		[end]
+		[submenu] (User-made)
+			[exec] (title of script) {launch command}
+		[end]
+		[submenu] (Make your own)
 			[exec] (Manual template) {featherpad ~/.fluxbox/scripts/wml-dock-template}
-			[exec] (Dockmaker) {mx-dockmaker}
+			[exec] (Dockmaker) {featherpad  /usr/share/doc/mx-fluxbox/other/mx-dockmaker_status}
 		[end]
 		[end]
 		[exec] (Desktop icons) {mx-idesktool}
