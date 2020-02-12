@@ -19,7 +19,7 @@
      	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
      [end]
     [exec] (All apps F6) {xfce4-appfinder}
-    [exec] (Browser) {opera}
+    [exec] (Browser) {firefox}
     [submenu] (Communicate)
     		[exec] (Email) {thunderbird}
     		[exec] (Chat) {hexchat}
@@ -49,7 +49,10 @@
 			[exec] (Small) {wml-dock3}
 			[exec] (Medium) {wml-dock5}
 			[exec] (Large) {wml-dock7}
-			[exec] (Make your own) {featherpad ~/.fluxbox/scripts/wml-dock-template}
+			[submenu] (Make your own)
+			[exec] (Manual template) {featherpad ~/.fluxbox/scripts/wml-dock-template}
+			[exec] (Dockmaker) {mx-dockmaker}
+		[end]
 		[end]
 		[exec] (Desktop icons) {mx-idesktool}
 		[exec] (Theme) {lxappearance}
