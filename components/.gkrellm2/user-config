@@ -13,7 +13,7 @@ above 0
 below 0
 track_gtk_theme_name 0
 default_track_theme "Default"
-save_position 0
+save_position 1
 chart_width 120
 update_HZ 10
 allow_multiple_instances 0

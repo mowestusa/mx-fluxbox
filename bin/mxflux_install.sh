@@ -27,6 +27,10 @@ fi
 
 #set up fluxbox
 
+if [ ! -d "$HOME/.restore/fluxbox" ]; then
+	mkdir -p "$HOME/.restore/fluxbox"
+fi
+
 if [ -d "$HOME/.fluxbox" ]; then
     mv $HOME/.fluxbox $HOME/.restore/fluxbox/fluxbox_bak_.$(date +%Y%m%H%M%S) 
 fi
@@ -46,7 +50,7 @@ if [ ! -d "$HOME/.idesktop/" ]; then
     cp $HOME/.ideskrc $HOME/.restore/fluxbox/ideskrc_.$(date +%Y%m%H%M%S)
 fi
 
-cp /usr/share/mxflux/.fluxbox/components/idesk/fluxhelp.lnk "$HOME"/.idesktop/fluxhelp.lnk
+cp /usr/share/mxflux/.fluxbox/components/idesk/*.lnk "$HOME"/.idesktop/
 
 cp /usr/share/mxflux/.fluxbox/components/idesk/.ideskrc "$HOME"/.ideskrc
 

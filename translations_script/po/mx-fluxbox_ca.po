@@ -4,8 +4,6 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# anticapitalista <anticapitalista@riseup.net>, 2020
-# Geoff Gigg <geoffgigg@hotmail.com>, 2020
 # Eduard Selma <selma@tinet.cat>, 2020
 # 
 #, fuzzy
@@ -13,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-22 19:19-0600\n"
+"POT-Creation-Date: 2020-02-08 07:54-0600\n"
 "PO-Revision-Date: 2019-12-18 03:57+0000\n"
 "Last-Translator: Eduard Selma <selma@tinet.cat>, 2020\n"
 "Language-Team: Catalan (https://www.transifex.com/anticapitalista/teams/10162/ca/)\n"
@@ -24,14 +22,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: bin/mxflux_install.sh:14
+#, sh-format
 msgid ""
 "This will install into your Home folder components that MX-flux requires in "
 "order to run.  Any existing fluxbox configuration will be backed up as "
-"<i>fluxbox_BAK</i>."
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
 msgstr ""
-"Això instal·larà al vostre directori d'usuari els components necessaris per "
-"a executar MX-flux.  Es farà còpia de seguretat de qualsevol configuració "
-"prèvia de fluxbox com a <i>fluxbox_BAK</i>."
+"Això instal·larà al vostre directori d'usuari components necessaris per al "
+"funcionament de MX-flux.  Es farà còpia de seguretat de qualsevol "
+"configuració actual de fluxbox a <i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
 
 #: bin/mxflux_install.sh:15
 msgid ""
@@ -41,233 +40,15 @@ msgstr ""
 "Per començar una sessió de fluxbox, seleccioneu <i>fluxbox</i> del menú "
 "desplegable al marge superior dret, i torneu a registrar-vos allí."
 
-#: bin/mxflux_install.sh:21 scripts/toolbar-default:9
-#: scripts/toolbar-legacy:12 scripts/toolbar-userlast:10
+#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
+#: scripts/toolbar-userlast:10
 msgid "OK to proceed?"
 msgstr "D'acord en començar?"
 
-#: bin/mxflux_install.sh:65 scripts/toolbar-default:11
-#: scripts/toolbar-legacy:14 scripts/toolbar-legacy:56
-#: scripts/toolbar-userlast:12
+#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
+#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
 msgid "All done!"
 msgstr "Ja està fet!"
-
-#: scripts/mx-idesktool:9
-msgid "ERROR: Yad not installed or not in path."
-msgstr "ERROR: Yad no està instal·lat o no té camí d'accés."
-
-#: scripts/mx-idesktool:10
-msgid "Yad found. So far so good.."
-msgstr "He trobat el Yad. Fins ara bé..."
-
-#: scripts/mx-idesktool:11
-msgid ""
-"ERROR: idesk not installed or not in path. Try "
-"http://sourceforge.net/projects/idesk/"
-msgstr ""
-"ERROR: idesk no està instal·lat o no té camí d'accés. Proveu "
-"http://sourceforge.net/projects/idesk/"
-
-#: scripts/mx-idesktool:12
-msgid "idesk found - we're on a roll :)"
-msgstr "He trobat idesk - anem bé :)"
-
-#: scripts/mx-idesktool:13
-msgid "Icon Management Tool"
-msgstr "Eina de gestió d'icones"
-
-#: scripts/mx-idesktool:14
-msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr "Títol de la icona:\\n(Deixeu en blanc si no en té)"
-
-#: scripts/mx-idesktool:15
-msgid "Back"
-msgstr "Enrere"
-
-#: scripts/mx-idesktool:16
-msgid "Cancel"
-msgstr "Cancel·la"
-
-#: scripts/mx-idesktool:17
-msgid "Next"
-msgstr "Següent"
-
-#: scripts/mx-idesktool:18
-msgid "Caption"
-msgstr "Títol"
-
-#: scripts/mx-idesktool:19
-msgid ""
-"NOTE: The default right-click command \\n\n"
-"   runs this configuration tool (recommended)."
-msgstr ""
-"NOTA: L'ordre de clic dret per omissió \\n\n"
-"   executa aquesta eina de configuració (recomanat)."
-
-#: scripts/mx-idesktool:21 scripts/mx-idesktool:59
-msgid "Left-Click Command:"
-msgstr "Ordre de Clic esquerre: "
-
-#: scripts/mx-idesktool:22
-msgid "Right-Click Command:"
-msgstr "Ordre per al Clic dret:"
-
-#: scripts/mx-idesktool:23
-msgid "Current icon"
-msgstr "Icona actual"
-
-#: scripts/mx-idesktool:24
-msgid "Oops!"
-msgstr "Ep! "
-
-#: scripts/mx-idesktool:25
-msgid "Error: Icon Image File Not Found."
-msgstr "Error: no he trobat el fitxer d'imatge per la icona."
-
-#: scripts/mx-idesktool:26
-msgid "Quit"
-msgstr "Surt"
-
-#: scripts/mx-idesktool:27
-msgid "Error: Unknown Filetype. The icon should be a png image."
-msgstr "Error: Tipus de fitxer desconegut. La icona ha de ser una imatge png."
-
-#: scripts/mx-idesktool:28
-msgid "Please choose a file"
-msgstr "Si us plau, trieu un fitxer"
-
-#: scripts/mx-idesktool:29
-msgid "Error: You need to select a valid file"
-msgstr "Error: Cal que trieu un fitxer vàlid"
-
-#: scripts/mx-idesktool:30
-msgid "Finished!"
-msgstr "Acabat! "
-
-#: scripts/mx-idesktool:31
-msgid "All done. Restarting idesk now..."
-msgstr "Completat. Reiniciant ara l'idesk..."
-
-#: scripts/mx-idesktool:32 scripts/mx-idesktool:58
-msgid "Choose a .png icon image"
-msgstr "Trieu una imatge d'icona png "
-
-#: scripts/mx-idesktool:33
-msgid "View or Edit an Icon"
-msgstr "Veu o edita una icona"
-
-#: scripts/mx-idesktool:34
-msgid "Remove an Icon"
-msgstr "Elimina una icona"
-
-#: scripts/mx-idesktool:35
-msgid "Add a New Icon"
-msgstr "Afegeix una nova icona"
-
-#: scripts/mx-idesktool:36
-msgid "Reload the Desktop"
-msgstr "Torna a carregar l'escriptori"
-
-#: scripts/mx-idesktool:37
-msgid "Edit iDesk's config file"
-msgstr "Edita el fitxer de configuració d'iDesk"
-
-#: scripts/mx-idesktool:38
-msgid "MX-idesktool Help"
-msgstr "Ajuda de MX-idesktool "
-
-#: scripts/mx-idesktool:39
-msgid "USE: double-click entry to select a management action"
-msgstr "ÚS: feu doble clic en una entrada per triar una acció de gestió "
-
-#: scripts/mx-idesktool:40
-msgid "iDesk Configuration"
-msgstr "Configuració d'iDesk"
-
-#: scripts/mx-idesktool:41
-msgid "Config. file  found - excellent!"
-msgstr "He trobat el fitxer de configuració - excel·lent!"
-
-#: scripts/mx-idesktool:42
-msgid ""
-"WARNING: No ideskrc file was found.\\nWould you like to have this "
-"file\\nadded now?"
-msgstr "ATENCIÓ: No he trobat cap fitxer ideskrc.\\nVoleu afegir-lo ara?"
-
-#: scripts/mx-idesktool:43
-msgid "No!"
-msgstr "No!"
-
-#: scripts/mx-idesktool:44
-msgid "Yes!"
-msgstr "Sí!"
-
-#: scripts/mx-idesktool:45
-msgid ""
-"\\tThe configuration file has been written. \\n\n"
-"                Drag any icons you create to the\n"
-"                desired locations and they will\n"
-"                be remembered between sessions \\n\\n \n"
-"                Would you like to run the icon wizard now?"
-msgstr ""
-"\\tS'ha escrit el fitxer de configuració. \\n\n"
-"                Arrossegueu les icones que creeu a\n"
-"                les ubicacions desitjades i se les\n"
-"                recordarà entre sessions \\n\\n \n"
-"                Voleu executar l'assistent d'icones ara?"
-
-#: scripts/mx-idesktool:50
-msgid "Properties"
-msgstr "Propietats"
-
-#: scripts/mx-idesktool:51
-msgid "Delete"
-msgstr "Esborra "
-
-#: scripts/mx-idesktool:52
-msgid "New"
-msgstr "Nou"
-
-#: scripts/mx-idesktool:53
-msgid "Refresh"
-msgstr "Refresca"
-
-#: scripts/mx-idesktool:54
-msgid "Configure"
-msgstr "Configura"
-
-#: scripts/mx-idesktool:55
-msgid "Help"
-msgstr "Ajuda "
-
-#: scripts/mx-idesktool:56
-msgid "ACTION"
-msgstr "ACCIÓ"
-
-#: scripts/mx-idesktool:57
-msgid "DESCRIPTION"
-msgstr "DESCRIPCIÓ"
-
-#: scripts/mx-idesktool:60
-msgid "Right-Click Command"
-msgstr "Ordre del clic dret"
-
-#: scripts/mx-idesktool:574
-msgid " > "
-msgstr "> "
-
-#: scripts/toolbar-default:10
-msgid ""
-"This will restore the default settings for init, startup and menu-mx. That "
-"will overwrite what is currently in your fluxbox folder."
-msgstr ""
-"Això restaurarà els paràmetres per omissió per init, startup i menu-mx. "
-"També sobreescriurà el que hi ha al directori fluxbox."
-
-#: scripts/toolbar-default:12 scripts/toolbar-legacy:15
-#: scripts/toolbar-userlast:13
-msgid "Log out and back in to complete the change."
-msgstr "Sortiu i torneu a entrar per completar els canvis."
 
 #: scripts/toolbar-legacy:13
 msgid ""
@@ -278,6 +59,10 @@ msgstr ""
 "Això farà els canvis necessaris per a la disposició de la barra d'eines. Es "
 "farà una còpia de seguretat dels vostres paràmetres, que es poden restaurar "
 "clicant Menú > Paràmetres > Eines > Userlast "
+
+#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
+msgid "Log out and back in to complete the change."
+msgstr "Sortiu i torneu a entrar per completar els canvis."
 
 #: scripts/toolbar-userlast:11
 msgid ""

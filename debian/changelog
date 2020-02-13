@@ -1,9 +1,16 @@
-mx-fluxbox (19.12.23) UNRELEASED; urgency=medium
+mx-fluxbox (20.02.02) mx; urgency=medium
 
-  * Non-maintainer upload.
-  * 
+  * adjust dockmacker status menu entry 
 
- -- jerry <jerry@mxlinux.org>  Mon, 23 Dec 2019 12:23:29 -0500
+ -- jerry <dolphin@mx>  Thu, 13 Feb 2020 16:13:19 -0500
+
+mx-fluxbox (20.02.01) mx; urgency=medium
+
+  * update translations
+  * update help file locations
+  * update mxflux_install.sh script
+
+ -- jerry <jerry@mxlinux.org>  Thu, 13 Feb 2020 01:59:12 -0500
 
 mx-fluxbox (19.12.17mx19) mx; urgency=medium
 

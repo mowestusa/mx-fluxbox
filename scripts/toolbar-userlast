@@ -32,8 +32,8 @@ case $? in
 esac
 
 #restore the archived files, clearing out the folder
-cd $HOME/.restore-fluxbox
-mv init startup $HOME/.fluxbox/
+cd $HOME/.restore/fluxbox
+mv init startup apps $HOME/.fluxbox/
 
 ##begin end_msg box
 yad --text="
