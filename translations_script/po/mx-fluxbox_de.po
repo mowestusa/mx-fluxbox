@@ -5,10 +5,6 @@
 # 
 # Translators:
 # delix02, 2019
-# Vinzenz Vietzke <vinz@vinzv.de>, 2020
-# Jerry Bond, 2020
-# q a, 2020
-# Michael Petersen <mikel-debian@online.de>, 2020
 # Taiwanoca <taiwanoca@gmail.com>, 2020
 # 
 #, fuzzy
@@ -16,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-22 19:19-0600\n"
+"POT-Creation-Date: 2020-02-08 07:54-0600\n"
 "PO-Revision-Date: 2019-12-18 03:57+0000\n"
 "Last-Translator: Taiwanoca <taiwanoca@gmail.com>, 2020\n"
 "Language-Team: German (https://www.transifex.com/anticapitalista/teams/10162/de/)\n"
@@ -27,14 +23,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: bin/mxflux_install.sh:14
+#, sh-format
 msgid ""
 "This will install into your Home folder components that MX-flux requires in "
 "order to run.  Any existing fluxbox configuration will be backed up as "
-"<i>fluxbox_BAK</i>."
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
 msgstr ""
-"Dieses Skript installierte einige Komponenten, die MX-flux zum Funktionieren"
-" benötigt, in das Home Verzeichnis.  Bereits existierende fluxbox "
-"Konfigurationen werden als <i>fluxbox_BAK</i>abgespeichert."
+"Dieses Skript installiert einige Komponenten, die MX-flux zum Funktionieren "
+"benötigt, in das Home Verzeichnis.  Bereits existierende fluxbox "
+"Konfigurationen werden als "
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>gesichert."
 
 #: bin/mxflux_install.sh:15
 msgid ""
@@ -44,238 +42,15 @@ msgstr ""
 "Zum Starten einer fluxbox Sitzung: ausloggen, <i>fluxbox</i> im Menu rechts "
 "oben in der Ecke auswählen und wieder einloggen."
 
-#: bin/mxflux_install.sh:21 scripts/toolbar-default:9
-#: scripts/toolbar-legacy:12 scripts/toolbar-userlast:10
+#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
+#: scripts/toolbar-userlast:10
 msgid "OK to proceed?"
 msgstr "Bereit zum Weitermachen ?"
 
-#: bin/mxflux_install.sh:65 scripts/toolbar-default:11
-#: scripts/toolbar-legacy:14 scripts/toolbar-legacy:56
-#: scripts/toolbar-userlast:12
+#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
+#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
 msgid "All done!"
 msgstr "Fertig !"
-
-#: scripts/mx-idesktool:9
-msgid "ERROR: Yad not installed or not in path."
-msgstr "FEHLER: Yad nicht installiert oder nicht im Pfad."
-
-#: scripts/mx-idesktool:10
-msgid "Yad found. So far so good.."
-msgstr "Yad gefunden. So weit so gut.."
-
-#: scripts/mx-idesktool:11
-msgid ""
-"ERROR: idesk not installed or not in path. Try "
-"http://sourceforge.net/projects/idesk/"
-msgstr ""
-"Fehler: idesk nicht installiert oder nicht im Pfad. Versuche "
-"http://sourceforge.net/projects/idesk/ "
-
-#: scripts/mx-idesktool:12
-msgid "idesk found - we're on a roll :)"
-msgstr "idesk gefunden - Wir haben einen Lauf :)"
-
-#: scripts/mx-idesktool:13
-msgid "Icon Management Tool"
-msgstr "Symbol Verwaltungswerkzeug"
-
-#: scripts/mx-idesktool:14
-msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr "Symbolbezeichnung:\\n(Leer lassen für keine Bezeichnung)"
-
-#: scripts/mx-idesktool:15
-msgid "Back"
-msgstr "Zurück"
-
-#: scripts/mx-idesktool:16
-msgid "Cancel"
-msgstr "Abbrechen"
-
-#: scripts/mx-idesktool:17
-msgid "Next"
-msgstr "Weiter"
-
-#: scripts/mx-idesktool:18
-msgid "Caption"
-msgstr "Bezeichnung"
-
-#: scripts/mx-idesktool:19
-msgid ""
-"NOTE: The default right-click command \\n\n"
-"   runs this configuration tool (recommended)."
-msgstr ""
-"HINWEIS: Der Standard-Rechtsklick-Befehl \\n\n"
-"   führt dieses Konfigurationswerkzeug aus (empfohlen)."
-
-#: scripts/mx-idesktool:21 scripts/mx-idesktool:59
-msgid "Left-Click Command:"
-msgstr "Linksklick-Befehl:"
-
-#: scripts/mx-idesktool:22
-msgid "Right-Click Command:"
-msgstr "Rechtsklick-Befehl:"
-
-#: scripts/mx-idesktool:23
-msgid "Current icon"
-msgstr "Aktuelles Symbol"
-
-#: scripts/mx-idesktool:24
-msgid "Oops!"
-msgstr "Hoppla!"
-
-#: scripts/mx-idesktool:25
-msgid "Error: Icon Image File Not Found."
-msgstr "Fehler: Symbolbild nicht gefunden."
-
-#: scripts/mx-idesktool:26
-msgid "Quit"
-msgstr "Beenden"
-
-#: scripts/mx-idesktool:27
-msgid "Error: Unknown Filetype. The icon should be a png image."
-msgstr "Fehler: Unbekannter Dateityp. Das Symbol muss ein png Bild sein."
-
-#: scripts/mx-idesktool:28
-msgid "Please choose a file"
-msgstr "Bitte eine Datei auswählen"
-
-#: scripts/mx-idesktool:29
-msgid "Error: You need to select a valid file"
-msgstr "Fehler: Es muss eine gültige Datei ausgewählt werden"
-
-#: scripts/mx-idesktool:30
-msgid "Finished!"
-msgstr "Fertig!"
-
-#: scripts/mx-idesktool:31
-msgid "All done. Restarting idesk now..."
-msgstr "Alles erledigt. idesk wird jetzt neu gestartet..."
-
-#: scripts/mx-idesktool:32 scripts/mx-idesktool:58
-msgid "Choose a .png icon image"
-msgstr "Ein .png Symbolbild auswählen"
-
-#: scripts/mx-idesktool:33
-msgid "View or Edit an Icon"
-msgstr "Ein Symbol anzeigen oder bearbeiten"
-
-#: scripts/mx-idesktool:34
-msgid "Remove an Icon"
-msgstr "Ein Symbol entfernen"
-
-#: scripts/mx-idesktool:35
-msgid "Add a New Icon"
-msgstr "Ein neues Symbol hinzufügen"
-
-#: scripts/mx-idesktool:36
-msgid "Reload the Desktop"
-msgstr "Den Schreibtisch neu laden"
-
-#: scripts/mx-idesktool:37
-msgid "Edit iDesk's config file"
-msgstr "Die iDesk Konfigurationsdatei bearbeiten"
-
-#: scripts/mx-idesktool:38
-msgid "MX-idesktool Help"
-msgstr "MX-idesktool Hilfe"
-
-#: scripts/mx-idesktool:39
-msgid "USE: double-click entry to select a management action"
-msgstr ""
-"NUTZUNG: Doppelt auf einen Eintrag klicken, um eine Verwaltungsaktion "
-"auszuwählen"
-
-#: scripts/mx-idesktool:40
-msgid "iDesk Configuration"
-msgstr "iDesk Konfiguration"
-
-#: scripts/mx-idesktool:41
-msgid "Config. file  found - excellent!"
-msgstr "Konfig.datei gefunden - exzellent!"
-
-#: scripts/mx-idesktool:42
-msgid ""
-"WARNING: No ideskrc file was found.\\nWould you like to have this "
-"file\\nadded now?"
-msgstr ""
-"WARNUNG: Keine ideskrc-Datei gefunden.\\nSoll diese Datei jetzt "
-"hinzugefügt\\nwerden? "
-
-#: scripts/mx-idesktool:43
-msgid "No!"
-msgstr "Nein!"
-
-#: scripts/mx-idesktool:44
-msgid "Yes!"
-msgstr "Ja!"
-
-#: scripts/mx-idesktool:45
-msgid ""
-"\\tThe configuration file has been written. \\n\n"
-"                Drag any icons you create to the\n"
-"                desired locations and they will\n"
-"                be remembered between sessions \\n\\n \n"
-"                Would you like to run the icon wizard now?"
-msgstr ""
-"\\tDie Konfigurationsdatei wurde geschrieben. \\n\n"
-"                Ziehe alle erstellten Symbole an die\n"
-"                gewünschten Stellen und sie werden\n"
-"                zwischen den Sitzungen gespeichert \\n\\n \n"
-"                Den Symbolassistenten jetzt ausführen?"
-
-#: scripts/mx-idesktool:50
-msgid "Properties"
-msgstr "Eigenschaften"
-
-#: scripts/mx-idesktool:51
-msgid "Delete"
-msgstr "Löschen"
-
-#: scripts/mx-idesktool:52
-msgid "New"
-msgstr "Neu"
-
-#: scripts/mx-idesktool:53
-msgid "Refresh"
-msgstr "Aktualisieren"
-
-#: scripts/mx-idesktool:54
-msgid "Configure"
-msgstr "Konfigurieren"
-
-#: scripts/mx-idesktool:55
-msgid "Help"
-msgstr "Hilfe"
-
-#: scripts/mx-idesktool:56
-msgid "ACTION"
-msgstr "AKTION"
-
-#: scripts/mx-idesktool:57
-msgid "DESCRIPTION"
-msgstr "BESCHREIBUNG"
-
-#: scripts/mx-idesktool:60
-msgid "Right-Click Command"
-msgstr "Rechtsklick-Befehl"
-
-#: scripts/mx-idesktool:574
-msgid " > "
-msgstr " > "
-
-#: scripts/toolbar-default:10
-msgid ""
-"This will restore the default settings for init, startup and menu-mx. That "
-"will overwrite what is currently in your fluxbox folder."
-msgstr ""
-"Dadurch werden die Standardeinstellungen für init, startup und menu-mx "
-"wiederhergestellt. Dies wird überschreiben, was sich derzeit im Fluxbox-"
-"Ordner befindet."
-
-#: scripts/toolbar-default:12 scripts/toolbar-legacy:15
-#: scripts/toolbar-userlast:13
-msgid "Log out and back in to complete the change."
-msgstr "Melde dich ab und wieder an, um die Änderung abzuschließen."
 
 #: scripts/toolbar-legacy:13
 msgid ""
@@ -287,6 +62,10 @@ msgstr ""
 "Symbolleiste erforderlich sind. Die aktuellen Einstellungen werden gesichert"
 " und können durch Klicken auf Menü > Einstellungen > Symbolleiste > Userlast"
 " wiederhergestellt werden. "
+
+#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
+msgid "Log out and back in to complete the change."
+msgstr "Melde dich ab und wieder an, um die Änderung abzuschließen."
 
 #: scripts/toolbar-userlast:11
 msgid ""
