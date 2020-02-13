@@ -3,6 +3,6 @@ table Icon
   Icon: /usr/share/icons/Moka/48x48/apps/winhelp.png
   X: 100
   Y: 60
-  Command[0]: thunar /usr/share/doc/mx-fluxbox
+  Command[0]: thunar ~/.fluxbox/doc
   Command[1]: mx-idesktool NoCaption22404.lnk
 end
