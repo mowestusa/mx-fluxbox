@@ -4,5 +4,4 @@ table Icon
   X: 100
   Y: 260
   Command[0]: thunderbird
-  Command[1]: mx-idesktool Thunderbird.lnk
 end
