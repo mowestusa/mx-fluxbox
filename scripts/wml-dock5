@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #set up slit location 
-sed -i "s/^session.screen0.slit.placement:.*/session.screen0.slit.placement: LeftCenter/" $HOME/.fluxbox/init
+sed -i "s/^session.screen0.slit.placement:.*/session.screen0.slit.placement: BottomCenter/" $HOME/.fluxbox/init
 
 fluxbox-remote restart
 
