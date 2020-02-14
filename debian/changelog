@@ -1,9 +1,10 @@
-mx-fluxbox (19.12.23) UNRELEASED; urgency=medium
+mx-fluxbox (20.02.01) mx; urgency=medium
 
-  * Non-maintainer upload.
-  * 
+  * update translations
+  * update help file locations
+  * update mxflux_install.sh script
 
- -- jerry <jerry@mxlinux.org>  Mon, 23 Dec 2019 12:23:29 -0500
+ -- jerry <jerry@mxlinux.org>  Thu, 13 Feb 2020 01:59:12 -0500
 
 mx-fluxbox (19.12.17mx19) mx; urgency=medium
 

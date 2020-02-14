@@ -4,6 +4,5 @@ table Icon
   X: 100
   Y: 160
   Command[0]: firefox
-  Command[1]: mx-idesktool firefox.lnk
 end
 
