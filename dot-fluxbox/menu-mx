@@ -55,7 +55,7 @@
 			[exec] (title of script) {launch command}
 		[end]
 		[submenu] (Create or edit)
-			[exec] (Manual template) {featherpad ~/.fluxbox/scripts/wml-dock-template}
+			[exec] (Manual template) {featherpad ~/.fluxbox/scripts/user/wml-dock-template}
 			[exec] (Dockmaker) {featherpad  /usr/share/mxflux/help/other/mx-dockmaker_status}
 		[end]
 		[end]

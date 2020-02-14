@@ -1,3 +1,9 @@
+mx-fluxbox (20.02.03) mx; urgency=medium
+
+  * adjust menu entry for template edit
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 13 Feb 2020 21:25:57 -0500
+
 mx-fluxbox (20.02.02) mx; urgency=medium
 
   * adjust dockmacker status menu entry 
