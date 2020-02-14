@@ -2,7 +2,8 @@
 
 #mx-fluxbox-install
 
-##ASSUMPTIONS##
+##ASSUMPTIONS##idesktop
+
 #1) that fluxbox and idesk have been installed
 #2) that this script has been placed in /usr/bin/mxflux/
 #3) that the tarball from https://github.com/jerry3904/mx-fluxbox has been extracted and placed in 
@@ -46,8 +47,8 @@ cp -r /usr/share/mxflux/.fluxbox "$HOME"
 if [ ! -d "$HOME/.idesktop/" ]; then
     mkdir -p "$HOME"/.idesktop/
     else 
-    cp -r $HOME/.idesktop $HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)
-    cp $HOME/.ideskrc $HOME/.restore/fluxbox/ideskrc_.$(date +%Y%m%H%M%S)
+    mv -r $HOME/.idesktop $HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)
+    mv $HOME/.ideskrc $HOME/.restore/fluxbox/ideskrc_.$(date +%Y%m%H%M%S)
 fi
 
 cp /usr/share/mxflux/.fluxbox/components/idesk/*.lnk "$HOME"/.idesktop/
