@@ -141,7 +141,7 @@ end" > "${HOME}/.ideskrc"
 newcaption()
 {
 new_caption="$($DIALOG --title "$TEXT5" \
-                       --form --text="$TEXT6" \
+                       --form --center --text="$TEXT6" \
                        --separator="" \
                        --button="$TEXT7":3 \
                        --button="$TEXT8":1 \
@@ -190,7 +190,7 @@ fi
 	                #--field="$TEXT46": "$command" \
                         #--field="$TEXT47": "mx-idesktool ${modcaption}.lnk" )"
                         
-new_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
+new_commands="$($DIALOG --form --center --separator="\n" --title "$TEXT5" \
         --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
         --field="$TEXT46": "$command")"
         
@@ -241,7 +241,7 @@ modifycaption()
 {
 
 inputbox="$($DIALOG --title "$TEXT5" \
-                    --form --text="$TEXT10" --separator="" \
+                    --form --center --text="$TEXT10" --separator="" \
                     --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
                     --field="$TEXT10" "$currentcaption" )"
 retval=$?
@@ -289,7 +289,7 @@ fi
 	                #--field="$TEXT12" "$command" \
                         #--field="$TEXT13" "mx-idesktool $modcaption.lnk")"
 
-mod_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
+mod_commands="$($DIALOG --form --center --separator="\n" --title "$TEXT5" \
                         --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
 	                --field="$TEXT12" "$command")"
                         
@@ -322,7 +322,7 @@ fi
 
 cd "${iconplaceholder%/*}"
 
-icon="$($DIALOG --width=500 --height=500 \
+icon="$($DIALOG --width=500 --height=500 --center \
                 --button="$TEXT7":3 --button="$TEXT8":1 \
                 --button="$TEXT9":0 --title "$TEXT23" \
                 --text="$TEXT14": \
@@ -358,6 +358,7 @@ if [ -e "${icon}" ]; then
         iconexists=yep
 else
         $DIALOG --title="$TEXT15"  \
+                --center \
                 --icon "./warning.xpm" \
                 --text="$TEXT16" \
                 --button="$TEXT17":1 \
@@ -377,7 +378,8 @@ if [ "${iconcheck}" = "$icon" ]; then
 else
         $DIALOG --title= \
                 --icon ./warning.xpm \
-                --text="$TEXT18"
+                --text="$TEXT18" \
+                --center
         case $? in
                 0) geticon
                    ;;
@@ -405,7 +407,7 @@ getlnkfile()
 {
 
 cd "${HOME}/.idesktop"
-currentlnkfile="$($DIALOG --width 500 --height 500 \
+currentlnkfile="$($DIALOG --width 500 --height 500 --center \
                           --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
                           --title="$TEXT19"  \
                           --file-selection --file-filter="lnk | *.lnk")"
@@ -423,7 +425,8 @@ case $retval in
            else
                   $DIALOG --title=$TEXT15 \
                           --icon ./warning.xpm \
-                          --text=$TEXT20 
+                          --text=$TEXT20 \
+                          --center
                   case $? in
                        0) fileselectedyet=no
                           getlnkfile
@@ -488,7 +491,7 @@ argyyep()
 
 firstwindow=argyyep
 
-choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 300 \
+choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 300 --center \
 					--window-icon=/usr/share/icons/mxflux.png \
                     --list \
                    --column "$TEXT43" --column "$TEXT44"\
@@ -541,7 +544,7 @@ argynope()
 
 firstwindow=argynope
 
-choice=$($DIALOG  --title "$TEXT5" --width 450 --height 300 \
+choice=$($DIALOG  --title "$TEXT5" --width 450 --height 300 --center \
 				--window-icon=/usr/share/icons/mxflux.png \
                    --list \
                    --column "$TEXT43" --column "$TEXT44" \
@@ -595,7 +598,7 @@ esac
 ##########################################################
 editconfig()
 {
-yad --title $TEXT31 --width 500 --height 600  \
+yad --title $TEXT31 --width 500 --height 600 --center \
 	--text-info --editable < <(cat "${HOME}/.ideskrc") 2>/dev/null > /tmp/editbox.txt.$$
 
 case $? in
@@ -647,7 +650,7 @@ if [ -n "$test" ]; then
     sed -i s/Locked.*/'Locked: true'/ "${HOME}/.ideskrc"
 fi
 
-$DIALOG  --title "$TEXT5" --width 250 --height 30 \
+$DIALOG  --title "$TEXT5" --width 250 --height 30 --center \
 		 --text="$TEXT22"	\
 		 --button="OK"
 
@@ -662,12 +665,12 @@ refresh
 if [ -e "${HOME}/.ideskrc" ]; then
         echo "$TEXT32"
 else
-        $DIALOG --title $TEXT31 \
+        $DIALOG --center --title $TEXT31 \
                 --text $TEXT33 \
                 --button="$TEXT34!gtk-no":1 --button="$TEXT35!gtk-yes":0
 case $? in
         0) writeconf
-           $DIALOG --title $TEXT31\
+           $DIALOG --center --title $TEXT31 \
                 --button=$TEXT34:1 --button=$TEXT35:0 \
                 --text $TEXT36 2>/dev/null
            case $? in
