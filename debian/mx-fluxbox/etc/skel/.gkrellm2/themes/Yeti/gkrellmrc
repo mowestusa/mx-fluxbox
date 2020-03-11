@@ -1,0 +1,61 @@
+author = "Yeti <yeti@physics.muni.cz>"
+
+theme_alternatives = 1
+
+frame_left_width    = 0
+frame_right_width   = 0
+frame_top_height    = 0
+frame_bottom_height = 0
+
+frame_left_border   = 0,0,0,0
+frame_right_border  = 0,0,0,0
+frame_top_border    = 0,0,0,0
+frame_bottom_border = 0,0,0,0
+
+chart_in_color = gold
+chart_in_color_grid  = goldenrod
+chart_out_color = white
+chart_out_color_grid = gray80
+
+bg_grid_mode = 1
+
+large_font   = "-adobe-helvetica-bold-r-normal-*-*-120-*-*-p-*-iso8859-1"
+normal_font  = "-adobe-helvetica-medium-r-normal-*-*-100-*-*-p-*-iso8859-1"
+small_font   = "-adobe-helvetica-medium-r-normal-*-*-80-*-*-p-*-iso8859-1"
+
+rx_led_x = -16
+rx_led_y = 8
+tx_led_x = -2
+tx_led_y = 8
+
+StyleChart *.border = 2,2,2,2
+
+StylePanel *.border = 2,2,2,4
+StylePanel cpu.border = 2,2,8,4
+StylePanel proc.border = 2,2,8,4
+StylePanel disk.border = 2,2,8,4
+StylePanel net.border = 2,2,8,4
+StylePanel *.label_position = 0
+StylePanel *.krell_x_hot = 120
+StylePanel *.krell_depth = 121
+StylePanel *.krell_yoff = 1
+StylePanel *.krell_expand = left
+
+StyleMeter *.border = 2,2,2,2
+StyleMeter clock.border = 2,2,0,4
+StyleMeter mem.border = 2,2,7,2
+StyleMeter swap.border = 2,2,7,2
+StyleMeter fs.border = 2,2,7,2
+StyleMeter apm.border = 2,2,7,2
+StyleMeter timer.border = 2,2,3,2
+StyleMeter *.label_position = 0
+StyleMeter *.krell_expand = left
+StyleMeter *.krell_x_hot = 120
+StyleMeter *.krell_depth = 121
+StylePanel *.krell_yoff = 1
+
+StyleChart *.textcolor = gold black none
+StylePanel *.textcolor = gold black none
+StyleMeter *.textcolor = gold black none
+StyleMeter *.alt_textcolor = white black none
+StyleMeter clock.textcolor = white black none

@@ -1,0 +1,10 @@
+Package: mx-fluxbox
+Version: 20.02.03
+Architecture: all
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Installed-Size: 10533
+Depends: fluxbox, idesk, wmalauncher, moka-icon-theme, lxappearance, gkrellm
+Section: system
+Priority: optional
+Homepage: https://mxlinux.org
+Description: mx configuration defaults for fluxbox

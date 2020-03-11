@@ -1,0 +1,11 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=xclock) (transient=no)
+  [Position]	(UPPERLEFT)	{2% 0%}
+  [Hidden]	{no}
+  [Sticky]	{no}
+  [Layer]	{8}
+  [Deco]  {normal}
+[end]

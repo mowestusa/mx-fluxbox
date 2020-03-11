@@ -1,0 +1,9 @@
+#! /bin/bash
+
+#set up slit location
+sed -i "s/^session.screen0.slit.placement:.*/session.screen0.slit.placement: LeftCenter/" $HOME/.fluxbox/init
+
+fluxbox-remote restart
+
+#commands for dock launchers
+wmalauncher –desktop-file NAME BACKGROUND BORDER -w SIZE -x & FREEZE
