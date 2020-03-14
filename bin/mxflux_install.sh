@@ -51,9 +51,9 @@ if [ ! -d "$HOME/.idesktop/" ]; then
     mv $HOME/.ideskrc $HOME/.restore/fluxbox/ideskrc_.$(date +%Y%m%H%M%S)
 fi
 
-cp /etc/skel/*.lnk "$HOME"/.idesktop/
+cp /etc/skel/.idesktop/*.lnk "$HOME"/.idesktop/
 
-cp /etc/skel/idesk/.ideskrc "$HOME"/.ideskrc
+cp /etc/skel/.ideskrc "$HOME"/.ideskrc
 
 cp /usr/share/mxflux/.fluxbox/components/.fehbg "$HOME"/.fehbg
 
