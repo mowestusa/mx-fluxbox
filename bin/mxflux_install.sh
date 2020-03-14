@@ -47,7 +47,7 @@ cp -r /usr/share/mxflux/.fluxbox "$HOME"
 if [ ! -d "$HOME/.idesktop/" ]; then
     mkdir -p "$HOME"/.idesktop/
     else 
-    mv -r $HOME/.idesktop $HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)
+    mv $HOME/.idesktop $HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)
     mv $HOME/.ideskrc $HOME/.restore/fluxbox/ideskrc_.$(date +%Y%m%H%M%S)
 fi
 
