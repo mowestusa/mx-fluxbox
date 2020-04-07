@@ -8,7 +8,7 @@ fluxbox-remote restart
 #commands for dock launchers
 wmalauncher --command  xfce4-appfinder --icon /home/jb/Pictures/icons/mxfcelogo-rounded_48.png --background-color black --border-color black --window-size 48 -x & sleep 0.1
 wmalauncher --desktop-file thunar.desktop --background-color black --border-color black --window-size 48 -x & sleep 0.1
-wmalauncher --desktop-file deadbeef.desktop --background-color black --border-color black --window-size 48 -x & sleep 0.1
+wmalauncher --desktop-file clementine.desktop --background-color black --border-color black --window-size 48 -x & sleep 0.1
 wmalauncher --desktop-file thunderbird.desktop --background-color black --border-color black --window-size 48 -x & sleep 0.1
 wmalauncher --desktop-file xfce4-terminal.desktop --background-color black --border-color black --window-size 48 -x & sleep 0.1
 wmalauncher --desktop-file firefox.desktop --background-color black --border-color black --window-size 48 -x & sleep 0.1
