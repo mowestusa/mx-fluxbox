@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '/usr/share/backgrounds/mxlinuxwine_by_ant_ony-1080p-fb.png' 
+feh --no-fehbg --bg-scale '/home/jb/.fluxbox/backgrounds/mxfb-blueblocks.png' 
