@@ -39,7 +39,6 @@ translations_script/mo/id/mx-fluxbox.mo     /usr/share/locale/id/LC_MESSAGES
 translations_script/mo/is/mx-fluxbox.mo     /usr/share/locale/is/LC_MESSAGES
 translations_script/mo/it/mx-fluxbox.mo     /usr/share/locale/it/LC_MESSAGES
 translations_script/mo/ja/mx-fluxbox.mo     /usr/share/locale/ja/LC_MESSAGES
-translations_script/mo/ja_JP/mx-fluxbox.mo     /usr/share/locale/ja_JP/LC_MESSAGES
 translations_script/mo/kk/mx-fluxbox.mo     /usr/share/locale/kk/LC_MESSAGES
 translations_script/mo/ko/mx-fluxbox.mo     /usr/share/locale/ko/LC_MESSAGES
 translations_script/mo/lt/mx-fluxbox.mo     /usr/share/locale/lt/LC_MESSAGES
