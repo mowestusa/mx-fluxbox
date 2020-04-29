@@ -19,7 +19,7 @@ wmalauncher --desktop-file mx-tools.desktop --tooltip-text "MX Tools" $TTIPS  --
 wmalauncher --desktop-file thunar.desktop --tooltip-text "File manager" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --desktop-file clementine.desktop --tooltip-text "Music player" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --desktop-file libreoffice-startcenter.desktop --tooltip-text "Office suite" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --command thunar /usr/share/mxflux/help/ --icon /usr/share/icons/Moka/48x48/apps/wine-help.png --tooltip-text "MX-Fluxbox documentation" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
+wmalauncher --command thunar /usr/share/mxflux/help/ --icon /usr/share/icons/Moka/48x48/apps/wine-help.png --tooltip-text "Documentation" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --desktop-file xfce4-terminal.desktop --tooltip-text "Terminal" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --desktop-file thunderbird.desktop --tooltip-text "Email" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --desktop-file firefox.desktop --tooltip-text "Browser" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
