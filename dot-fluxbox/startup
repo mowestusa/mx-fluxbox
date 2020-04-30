@@ -31,7 +31,7 @@ export QT_PLATFORM_PLUGIN=gtk2
 conky -p 5 -c $HOME/.conky/MX-Conkyglass/conkys &
 
 #set the default dock
-$HOME/.fluxbox/scripts/DefaultDock
+$HOME/.fluxbox/scripts/DefaultDock.mxdk
 
 # provide a screensaver
 xfce4-screensaver-command &
