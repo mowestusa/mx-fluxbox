@@ -8,6 +8,9 @@ none Print :Exec /usr/bin/xfce4-screenshooter
 # open fluxbox FAQ
 none F1 :Exec thunar /usr/share/mxflux/help
 
+#alternative for FAQ
+alt F1 :Exec thunar /usr/share/mxflux/help
+
 # open a little run terminal
 none F2 :Exec fbrun
 

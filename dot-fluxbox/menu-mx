@@ -1,88 +1,38 @@
 [begin] (Fluxbox) 
-    [exec] (Help  F1) {thunar /usr/share/mxflux/help}
-    [exec] (Run  F2) {fbrun -nearmouse} 
-    [submenu] (Out of sight)
-    	[exec] (Conky) {killall conky}
-   		[exec] (Desktop icons) {killall idesk}
-   		[exec] (Monitors) {killall gkrellm}
-   		[exec] (Docks & launchers) {killall wmalauncher}
-   		[exec] (Any window) {xkill}
-    [end]
-    [separator]
-    [submenu] (Accessories)
-       	[exec] (Calculator) {galculator}
-     	[exec] (Calendar) {orage}
-     	[exec] (Capture) {xfce4-screenshooter}
-     	[exec] (Clock) {xclock}
-     	[exec] (Editor) {geany}
-     	[exec] (Screensaver) {xfce4-screensaver-preferences}
-     	[exec] (Touchpad) {/opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator}
-     [end]
-    [exec] (All apps F6) {xfce4-appfinder}
+    [exec] (All apps) {xfce4-appfinder}
     [exec] (Browser) {firefox}
-    [submenu] (Communicate)
-    		[exec] (Email) {thunderbird}
-    		[exec] (Chat) {hexchat}
-    [end]
-    [exec] (File manager  F3) {thunar /home/$USER/.fluxbox} 
-    [submenu] (Multimedia)
-        	[exec] (Image) {nomacs}
-       		[exec] (Music) {clementine}
-    		[exec] (Video) {vlc}
-    [end]
-    [exec] (MX Tools F5) {mx-tools} 
-    [submenu] (Office) 
-    	[exec] (Suite) {libreoffice}
-    	[exec] (PDFs) {qpdfview}
-    	[exec] (Printer) {system-config-printer}
-    [end]
+    [exec] (Email) {thunderbird}
+    [exec] (File manager ) {thunar $HOME/.fluxbox} 
+    [exec] (Help ) {thunar /usr/share/mxflux/help}
+    [exec] (Music) {clementine}
+    [exec] (Run ) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
-            [separator]
+    [separator]
     [submenu] (Look) 
        [submenu] (Background)
 			[wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
 			[separator]
 			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
 		[end]
-		[exec] (Conky){mx-conky}
-	[submenu] (Docks & launchers)
-		[submenu] (Ready-made)
-			[exec] (Small) {wml-dock3}
-			[exec] (Medium) {wml-dock5}
-			[exec] (Large) {wml-dock7}
-		[end]
-		[submenu] (User-made)
-			[exec] (title of script) {launch command}
-		[end]
-		[submenu] (Create or edit)
-			[exec] (Manual template) {featherpad ~/.fluxbox/scripts/user/wml-dock-template}
-			[exec] (Dockmaker) {featherpad  /usr/share/mxflux/help/other/mx-dockmaker_status}
-		[end]
+		[exec] (Conky){conky-manager2}
+	[submenu] (Docks)
+			[exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
+			[separator]
+			[exec] (Dockmaker) {mx-dockmaker}
 		[end]
 		[exec] (Desktop icons) {mx-idesktool}
-		[exec] (Theme) {lxappearance}
-    	[exec] (Monitors) {gkrellm}
+		[exec] (Monitors) {gkrellm}
     	[submenu] (Style)
+    		[stylesdir] (~/.fluxbox/styles)
+    		[separator]
       		[stylesdir] (/usr/share/fluxbox/styles) 
-      		[stylesdir] (~/.fluxbox/styles)
-     	[end]
+      	[end]
+		[exec] (Theme) {lxappearance}
 		[submenu] (Toolbar)
 			[exec] (Legacy) {toolbar-legacy}
 			[exec] (User last) {toolbar-userlast}
 		[end]
    	[end]
-	[submenu] (System)
-		[exec] (Bluetooth) {blueman-manager}
-		  		[submenu] (Disks)
-     		[exec] (Manage) {/usr/sbin/gparted}
-     		[exec] (Mount) {su-to-root -X -c /usr/sbin/disk-manager}
-     	[end]
-     [submenu] (Packages)
-     		[exec] (Package Installer) {su-to-root -X -c mx-packageinstaller}
-     		[exec] (Synaptic) {synaptic-pkexec}
-    [end]
-    [exec] (Processes) {xfce4-taskmanager}
- 	[end]
     [submenu] (Settings)
      	[submenu] (Configure)
      		[exec] (Apps) {featherpad ~/.fluxbox/apps}
@@ -93,7 +43,6 @@
        		[exec] (Startup) {featherpad ~/.fluxbox/startup}
      		[exec] (Styles) {thunar ~/.fluxbox/styles/}
      	[end]
-     	[exec] (Default) {toolbar-default}
      	[submenu] (Keyboard)
 			[exec] (DE) {setxkbmap de}
 			[exec] (ES) {setxkbmap es} 
@@ -105,12 +54,21 @@
 			[exec] (RU) {setxkbmap ru}
 			[exec] (US) {setxkbmap us}
 		[end]
-		[exec] (Mixer) {pavucontrol}
-		[exec] (Power) {xfce4-power-manager-settings}
+		[exec] (Traditional look) {toolbar-default}
 		[config] (Window, slit, toolbar)
 		[exec] (Xfce) {xfce4-settings-manager}
 	[end] 
      [separator]
+     [submenu] (Out of sight)
+   		[exec] (Kill docks) {killall wmalauncher}
+   		[exec] (Kill window) {xkill}
+   		[separator]
+   		[exec] (Toggle conky) {conkytoggle.sh}
+   		[exec] (Toggle desktop icons) {toggle-mx idesk}
+   		[exec] (Toggle monitors) {toggle-mx gkrellm}
+   		[separator]
+   		[exec] (Disable default dock) {killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill}
+    [end]
      [submenu] (Leave)
      	[restart] (Refresh)
      	[exec] (Suspend) {sudo 'pm-suspend'}
@@ -119,6 +77,3 @@
 		[exec] (Shutdown) {sudo /sbin/halt}
      [end]
 [end]
-
-
-
