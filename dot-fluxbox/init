@@ -13,7 +13,7 @@ session.screen0.toolbar.placement:	TopCenter
 session.screen0.toolbar.layer:	Dock
 session.screen0.toolbar.widthPercent:	66
 session.screen0.toolbar.onhead:	1
-session.screen0.toolbar.height:	25
+session.screen0.toolbar.height:	30
 session.screen0.toolbar.autoHide:	false
 session.screen0.toolbar.visible:	true
 session.screen0.clientMenu.usePixmap:	true

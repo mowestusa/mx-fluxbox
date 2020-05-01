@@ -16,7 +16,7 @@
 #add system monitors 
 #gkrellm &
 
-# add FAQ icon to desktop
+# add desktop icons
 idesk &
 
 # export Qt variables
@@ -27,9 +27,6 @@ export QT_PLATFORM_PLUGIN=gtk2
 # add root access
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
-# start a conky -- example
-conky -p 5 -c $HOME/.conky/MX-Conkyglass/conkys &
-
 #set the default dock
 $HOME/.fluxbox/scripts/DefaultDock.mxdk
 
@@ -37,8 +34,10 @@ $HOME/.fluxbox/scripts/DefaultDock.mxdk
 xfce4-screensaver-command &
 xfce4-screensaver &
 
-# start a chat program -- example
-#skype &
+#start conky
+if [ -f "$HOME/.conky/conky-startup.sh" ]; then
+     sh "$HOME/.conky/conky-startup.sh" &
+fi
 
 #place network manager on the toolbar
 nm-applet &

@@ -1,7 +1,0 @@
-#! /bin/bash
-
-#disable the default conky
-
-sed -i 's/conky -p/#conky -p/' $HOME/.fluxbox/startup
-
-exit

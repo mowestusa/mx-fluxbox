@@ -16,7 +16,7 @@
 		[end]
 		[exec] (Conky){conky-manager2}
 	[submenu] (Docks)
-			[exec] (Default) {DefaultDock.mxdk}
+			[exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
 			[separator]
 			[exec] (Dockmaker) {mx-dockmaker}
 		[end]
