@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/jb/.fluxbox/backgrounds/mxfb-blueblocks.png' 
+feh --no-fehbg --bg-scale '/usr/share/backgrounds/mxfb-pinkwave.png' 
