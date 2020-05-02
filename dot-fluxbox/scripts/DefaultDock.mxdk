@@ -3,7 +3,7 @@
 #set up slit location
 sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: BottomCenter/' $HOME/.fluxbox/init
 
-fluxbox-remote restart
+fluxbox-remote restart; sleep 1
 
 # TOOLTIPS
 TTIPS+=" --tooltip-show-delay       250"
