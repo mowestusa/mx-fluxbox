@@ -61,7 +61,7 @@
      [separator]
      [submenu] (Out of sight)
    		[exec] (Kill docks) {killall wmalauncher}
-   		[exec] (Kill window) {xkill}
+   		[exec] (Kill a window) {xkill}
    		[separator]
    		[exec] (Toggle conky) {conkytoggle.sh}
    		[exec] (Toggle desktop icons) {toggle-mx idesk}

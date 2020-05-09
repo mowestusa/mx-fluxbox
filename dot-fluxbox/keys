@@ -72,8 +72,8 @@ OnTitlebar Move1  :StartMoving
 # middle click on the titlebar to lower
 OnTitlebar Mouse2 :Lower
 
-# right click on the titlebar for a menu of options
-OnTitlebar Mouse3 :WindowMenu
+# middle click on the titlebar for a menu of options
+OnTitlebar Mouse2 :WindowMenu
 
 # alt-tab
 Mod1 Tab :NextWindow {groups} (workspace=[current])
@@ -99,9 +99,9 @@ Mod1 F2 :Exec xterm
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset Master,0 1+
-174 :Exec amixer sset Master,0 1-
-160 :Exec amixer sset Master,0 toggle
+#176 :Exec amixer sset Master,0 1+
+#174 :Exec amixer sset Master,0 1-
+#160 :Exec amixer sset Master,0 toggle
 
 # current window commands
 Mod4 F4 :Close
