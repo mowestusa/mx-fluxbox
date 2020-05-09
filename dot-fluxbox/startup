@@ -17,7 +17,7 @@
 #gkrellm &
 
 # add desktop icons
-idesk &
+#idesk &
 
 # export Qt variables
 export QT_QPA_PLATFORMTHEME=gtk2
@@ -34,10 +34,8 @@ $HOME/.fluxbox/scripts/DefaultDock.mxdk
 xfce4-screensaver-command &
 xfce4-screensaver &
 
-#start conky
-if [ -f "$HOME/.conky/conky-startup.sh" ]; then
-     sh "$HOME/.conky/conky-startup.sh" &
-fi
+#conky to follow conky toggle settings
+$HOME/.fluxbox/scripts/conkystart
 
 #place network manager on the toolbar
 nm-applet &
