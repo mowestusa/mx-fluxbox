@@ -60,7 +60,7 @@
 	[end] 
      [separator]
      [submenu] (Out of sight)
-   		[exec] (Kill docks) {killall wmalauncher}
+   		[exec] (Kill dock) {killall wmalauncher}
    		[exec] (Kill a window) {xkill}
    		[separator]
    		[exec] (Toggle conky) {conkytoggle.sh}
