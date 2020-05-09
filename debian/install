@@ -7,7 +7,7 @@ pixmaps/*	usr/share/icons
 bin/* 		usr/bin
 #*.desktop   usr/share/applications
 backgrounds/* usr/share/backgrounds
-scripts/*   usr/bin
+#scripts/*   usr/bin
 components/.fehbg  etc/skel/
 components/.gkrellm2/* etc/skel/.gkrellm2
 components/.gtkrc-2.0 etc/skel/
