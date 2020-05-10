@@ -41,7 +41,7 @@ $HOME/.fluxbox/scripts/conkystart
 nm-applet &
 
 #place a volumeicon on the toolbar
-volumeicon &
+volumeicon -c volumeicon-fluxbox &
 
 #place clipboard on the toolbar
 clipit &

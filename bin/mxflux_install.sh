@@ -59,6 +59,11 @@ cp /etc/skel/.ideskrc "$HOME"/.ideskrc
 
 cp /usr/share/mxflux/.fluxbox/components/.fehbg "$HOME"/.fehbg
 
+#install volumeicon file
+#only replace if it doesn't exist
+if [ ! -e "$HOME/.config/volumeicon/volumeicon-fluxbox" ]; then
+	cp /etc/skel/.config/volumeicon/volumeicon-fluxbox "$HOME/.config/volumeicon/"
+fi
 
 
 #set up the system monitors

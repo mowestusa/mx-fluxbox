@@ -1,3 +1,9 @@
+mx-fluxbox (20.05.03) mx; urgency=medium
+
+  * volumeicon configuration added 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 10 May 2020 18:56:37 -0400
+
 mx-fluxbox (20.05.02) mx; urgency=medium
 
   * mx-fluxbox 2.1 revised 
