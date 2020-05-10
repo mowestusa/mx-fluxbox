@@ -45,7 +45,7 @@ cp -r /usr/share/mxflux/.fluxbox "$HOME"
 #set up idesk
 
 if [ -d "$HOME/.idesktop/" ]; then
-    cp -r "$HOME/.idesktop" "$HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)"
+    mv "$HOME/.idesktop" "$HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)"
     mv $HOME/.ideskrc $HOME/.restore/fluxbox/ideskrc_.$(date +%Y%m%H%M%S)
 fi
 
