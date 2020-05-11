@@ -6,7 +6,7 @@ components/.gkrellm2/* usr/share/mxflux/.fluxbox/components/.gkrellm2
 pixmaps/*	usr/share/icons
 bin/* 		usr/bin
 volumeicon/* /etc/skel/.config/volumeicon
-#*.desktop   usr/share/applications
+*.desktop   usr/share/applications
 backgrounds/* usr/share/backgrounds
 #scripts/*   usr/bin
 components/.fehbg  etc/skel/
