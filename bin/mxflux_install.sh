@@ -45,7 +45,7 @@ cp -r /usr/share/mxflux/.fluxbox "$HOME"
 #set up idesk
 
 if [ -d "$HOME/.idesktop/" ]; then
-    cp -r "$HOME/.idesktop" "$HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)"
+    mv "$HOME/.idesktop" "$HOME/.restore/fluxbox/idesktop_.$(date +%Y%m%H%M%S)"
     mv $HOME/.ideskrc $HOME/.restore/fluxbox/ideskrc_.$(date +%Y%m%H%M%S)
 fi
 
@@ -59,6 +59,11 @@ cp /etc/skel/.ideskrc "$HOME"/.ideskrc
 
 cp /usr/share/mxflux/.fluxbox/components/.fehbg "$HOME"/.fehbg
 
+#install volumeicon file
+#only replace if it doesn't exist
+if [ ! -e "$HOME/.config/volumeicon/volumeicon-fluxbox" ]; then
+	cp /etc/skel/.config/volumeicon/volumeicon-fluxbox "$HOME/.config/volumeicon/"
+fi
 
 
 #set up the system monitors
