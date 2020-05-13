@@ -50,7 +50,10 @@ clipit &
 xfce4-power-manager &
 
 #put apt-notifier on the toolbar
-ionice -c3 nice -n19 python /usr/bin/apt-notifier.py& disown -h; deartifact-xfce-systray-icons 30 2>&1 1>/dev/null &
+ionice -c3 nice -n19 nohup python /usr/bin/apt-notifier.py  2>&1 1>/dev/null &
+
+# start user accessibility bus - if not already running
+/usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
 
 #start fehbg to get last background selected
 ~/.fehbg
