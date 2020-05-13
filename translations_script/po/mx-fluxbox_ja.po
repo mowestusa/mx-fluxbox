@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# user green, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-08 07:54-0600\n"
 "PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"Last-Translator: user green, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/anticapitalista/teams/10162/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,22 +28,25 @@ msgid ""
 "order to run.  Any existing fluxbox configuration will be backed up as "
 "<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
 msgstr ""
+"これにより、MX-flux の実行に必要なコンポーネントがホームフォルダにインストールされます。 既存の fluxbox "
+"設定は、<i>$HOME/.restore/fluxbox/fluxbox_BAK</i> としてバックアップされます。"
 
 #: bin/mxflux_install.sh:15
 msgid ""
 "To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
 "down menu in the upper right corner, and log back in."
 msgstr ""
+"<i>Fluxbox</i> のセッションを開始するには：ログアウトし、右上のプルダウンメニューからフラックスボックスを選択し、再度ログインします。"
 
 #: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
 #: scripts/toolbar-userlast:10
 msgid "OK to proceed?"
-msgstr ""
+msgstr "続行してもいいですか？"
 
 #: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
 #: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
 msgid "All done!"
-msgstr ""
+msgstr "全て終了！"
 
 #: scripts/toolbar-legacy:13
 msgid ""
@@ -47,13 +54,15 @@ msgid ""
 "settings will be backed up and can be restored by clicking Menu > Settings >"
 " Toolbar > Userlast"
 msgstr ""
+"これにより、レガシーツールバーのレイアウトに必要な変更が行われます。現在の設定はバックアップされ、メニュー > 設定 > ツールバー > "
+"Userlast をクリックすることで復元できます。"
 
 #: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
 msgid "Log out and back in to complete the change."
-msgstr ""
+msgstr "この変更を完了するには、一度ログアウトした後で戻ってください。"
 
 #: scripts/toolbar-userlast:11
 msgid ""
 "This will restore the settings that were in place when you selected a legacy"
 " toolbar layout."
-msgstr ""
+msgstr "これにより、レガシーツールバー・レイアウトを選択したときの設定が復元されます。"
