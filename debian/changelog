@@ -1,3 +1,9 @@
+mx-fluxbox (20.05.05) mx; urgency=medium
+
+  * revised startup script 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 13 May 2020 19:18:34 -0400
+
 mx-fluxbox (20.05.04) mx; urgency=medium
 
   * revise theme files
