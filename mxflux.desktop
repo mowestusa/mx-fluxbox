@@ -98,6 +98,6 @@ Comment[zh_TW]=MX Fluxbox Setup
 Exec=mxflux_install.sh
 Icon=mxflux
 NoDisplay=false
-Terminal=true
+Terminal=false
 Categories=System;
 Type=Application
