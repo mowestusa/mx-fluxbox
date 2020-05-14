@@ -1,3 +1,10 @@
+mx-fluxbox (20.05.06) mx; urgency=medium
+
+  * revised menu and desktop file
+  * final for 2.1 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 14 May 2020 19:26:49 -0400
+
 mx-fluxbox (20.05.05) mx; urgency=medium
 
   * revised startup script 
