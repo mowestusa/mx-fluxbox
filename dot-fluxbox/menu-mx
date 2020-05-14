@@ -9,12 +9,7 @@
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
     [submenu] (Look) 
-       [submenu] (Background)
-			[wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
-			[separator]
-			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
-		[end]
-		[exec] (Conky){conky-manager2}
+	[exec] (Conky){conky-manager2}
 	[submenu] (Docks)
 			[exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
 			[separator]
@@ -31,6 +26,11 @@
 		[submenu] (Toolbar)
 			[exec] (Legacy) {toolbar-legacy}
 			[exec] (User last) {toolbar-userlast}
+		[end]
+		[submenu] (Wallpaper)
+			[wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+			[separator]
+			[wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
 		[end]
    	[end]
     [submenu] (Settings)
