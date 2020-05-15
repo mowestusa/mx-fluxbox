@@ -66,6 +66,7 @@
    		[exec] (Toggle conky) {conkytoggle.sh}
    		[exec] (Toggle desktop icons) {toggle-mx idesk}
    		[exec] (Toggle autohide dock) {$HOME/.fluxbox/scripts/toggledock}
+   		[exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
    		[exec] (Toggle monitors) {toggle-mx gkrellm}
    		[separator]
    		[exec] (Disable default dock) {killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill}
