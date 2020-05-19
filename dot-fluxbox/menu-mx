@@ -48,6 +48,8 @@
 			[exec] (ES) {setxkbmap es} 
 			[exec] (FR) {setxkbmap fr}
 			[exec] (GB) {setxkbmap gb}
+			[exec] (GR) {setxkbmap gr}
+			[exec] (JA) {setxkbmap ja}
 			[exec] (IT) {setxkbmap it}
 			[exec] (PL) {setxkbmap pl}
 			[exec] (PT) {setxkbmap pt}
