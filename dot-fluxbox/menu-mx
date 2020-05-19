@@ -47,10 +47,10 @@
 			[exec] (DE) {setxkbmap de}
 			[exec] (ES) {setxkbmap es} 
 			[exec] (FR) {setxkbmap fr}
-			[exec] (GB) {setxkbmap gb|
+			[exec] (GB) {setxkbmap gb}
 			[exec] (IT) {setxkbmap it}
-			[exec] (PL) {setxkbmap pl|
-			[exec] (PT) {setxkbmap pt|
+			[exec] (PL) {setxkbmap pl}
+			[exec] (PT) {setxkbmap pt}
 			[exec] (RU) {setxkbmap ru}
 			[exec] (US) {setxkbmap us}
 		[end]

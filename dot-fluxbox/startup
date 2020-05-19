@@ -49,6 +49,9 @@ clipit &
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
 
+#tool to set and preserve screen resolution, if necessary
+#arandr
+
 #put apt-notifier on the toolbar
 ionice -c3 nice -n19 nohup python /usr/bin/apt-notifier.py  2>&1 1>/dev/null &
 
