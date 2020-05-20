@@ -17,7 +17,7 @@
 #gkrellm &
 
 # add desktop icons
-#idesk &
+idesktoggle idesk on 1>/dev/null 2>&1 &
 
 # export Qt variables
 export QT_QPA_PLATFORMTHEME=gtk2
@@ -53,7 +53,7 @@ xfce4-power-manager &
 #arandr
 
 #put apt-notifier on the toolbar
-ionice -c3 nice -n19 nohup python /usr/bin/apt-notifier.py  2>&1 1>/dev/null &
+ionice -c3 nice -n19 nohup python /usr/bin/apt-notifier.py 1>/dev/null 2>&1  &
 
 # start user accessibility bus - if not already running
 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
