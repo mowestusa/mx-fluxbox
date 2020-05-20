@@ -17,6 +17,7 @@ components/settings.ini etc/skel/.config/gtk-3.0
 components/.gtkrc-2.0 root/
 components/settings.ini root/.config/gtk-3.0
 help/* usr/share/mxflux/help
+menu/out-of-sight usr/share/mxflux/menu/out-of-sight
 translations_script/mo/am/mx-fluxbox.mo     /usr/share/locale/am/LC_MESSAGES
 translations_script/mo/ar/mx-fluxbox.mo     /usr/share/locale/ar/LC_MESSAGES
 translations_script/mo/bg/mx-fluxbox.mo     /usr/share/locale/bg/LC_MESSAGES
