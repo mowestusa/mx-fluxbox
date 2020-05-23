@@ -35,12 +35,12 @@
     [end]
     [submenu] (Settings)
         [submenu] (Configure)
-            [exec] (Apps) {featherpad ~/.fluxbox/apps}
-            [exec] (Init) {featherpad ~/.fluxbox/init}
-            [exec] (Keys) {featherpad ~/.fluxbox/keys}
-            [exec] (Menu) {featherpad ~/.fluxbox/menu-mx}
-            [exec] (Overlay) {featherpad ~/.fluxbox/overlay}
-            [exec] (Startup) {featherpad ~/.fluxbox/startup}
+            [exec] (Apps) {xdg-open ~/.fluxbox/apps}
+            [exec] (Init) {xdg-open ~/.fluxbox/init}
+            [exec] (Keys) {xdg-open ~/.fluxbox/keys}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
+            [exec] (Startup) {xdg-open ~/.fluxbox/startup}
             [exec] (Styles) {thunar ~/.fluxbox/styles/}
         [end]
         [submenu] (Keyboard)
