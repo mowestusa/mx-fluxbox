@@ -1,50 +1,50 @@
 #menu-mx_de
 [begin] (Fluxbox) 
-    [exec] (All apps) {xfce4-appfinder}
+    [exec] (Alle Anwendungen) {xfce4-appfinder}
     [exec] (Browser) {firefox}
-    [exec] (Email) {thunderbird}
-    [exec] (File manager ) {thunar $HOME/.fluxbox} 
-    [exec] (Help ) {thunar /usr/share/mxflux/help}
-    [exec] (Music) {clementine}
-    [exec] (Run ) {fbrun} 
+    [exec] (E-Mail) {thunderbird}
+    [exec] (Datei-Manager) {thunar $HOME/.fluxbox} 
+    [exec] (Hilfe) {thunar /usr/share/mxflux/help}
+    [exec] (Musik) {clementine}
+    [exec] (Führen Sie  aus.) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Look) 
+    [submenu] (Aussehen) 
         [exec] (Conky){conky-manager2}
         [submenu] (Docks)
-            [exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
+            [exec] (Standardmäßig) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
             [exec] (Dockmaker) {mx-dockmaker}
         [end]
-        [exec] (Desktop icons) {mx-idesktool}
-        [exec] (Monitors) {gkrellm}
-        [submenu] (Style)
+        [exec] (Desktop-Symbole) {mx-idesktool}
+        [exec] (Überwacht) {gkrellm}
+        [submenu] (Stil)
             [stylesdir] (~/.fluxbox/styles)
             [separator]
             [stylesdir] (/usr/share/fluxbox/styles) 
         [end]
-        [exec] (Theme) {lxappearance}
-        [submenu] (Toolbar)
-            [exec] (Legacy) {toolbar-legacy}
-            [exec] (User last) {toolbar-userlast}
+        [exec] (Thema) {lxappearance}
+        [submenu] (Symbolleiste)
+            [exec] (Vermächtnis) {toolbar-legacy}
+            [exec] (Benutzer zuletzt) {toolbar-userlast}
         [end]
-        [submenu] (Wallpaper)
+        [submenu] (Bildschirmhintergrund)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
         [end]
     [end]
-    [submenu] (Settings)
-        [submenu] (Configure)
-            [exec] (Apps) {xdg-open ~/.fluxbox/apps}
+    [submenu] (Einstellungen)
+        [submenu] (Konfigurieren Sie)
+            [exec] (Anwendungen) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
-            [exec] (Keys) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Startup) {featherpad ~/.fluxbox/startup}
-            [exec] (Styles) {thunar ~/.fluxbox/styles/}
+            [exec] (Schlüssel) {xdg-open ~/.fluxbox/keys}
+            [exec] (Menü) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Überlagerung) {xdg-open ~/.fluxbox/overlay}
+            [exec] (Neugründung) {featherpad ~/.fluxbox/startup}
+            [exec] (Stile) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] (Keyboard)
+        [submenu] (Tastatur)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -57,19 +57,19 @@
 			      [exec] (RU) {setxkbmap ru}
 			      [exec] (US) {setxkbmap us}
         [end]
-        [exec] (Traditional look) {toolbar-default}
-        [config] (Window, slit, toolbar)
+        [exec] (Traditionelles Aussehen) {toolbar-default}
+        [config] (Fenster, Schlitz, Symbolleiste)
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] (Out of sight)
+    [submenu] (Außer Sichtweite)
         [include] (/usr/share/mxflux/menu/out-of-sight)
     [end]
-    [submenu] (Leave)
-        [exec] (Refresh ) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] (Suspend ) {sudo 'pm-suspend'}
-        [exit] (Logout  ) 
-        [exec] (Reboot  ) {sudo /sbin/reboot} 
-        [exec] (Shutdown) {sudo /sbin/halt}
+    [submenu] (Verlassen Sie)
+        [exec] (Aktualisieren Sie) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (aussetzen) {sudo 'pm-suspend'}
+        [exit] (Abmeldung) 
+        [exec] (Neustart) {sudo /sbin/reboot} 
+        [exec] (Herunterfahren) {sudo /sbin/halt}
     [end]
 [end]
