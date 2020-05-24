@@ -61,7 +61,7 @@ nm-applet &
 volumeicon -c volumeicon-fluxbox &
 
 #place clipboard on the toolbar
-clipit &
+#clipit &
 
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
