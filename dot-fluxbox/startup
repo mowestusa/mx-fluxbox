@@ -7,6 +7,23 @@
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 
+#setup default translated mx-fluxbox menu
+#only do on first setup of new user
+#upgrades are handled by mxflux_install.sh script
+
+if [ ! -e "$HOME/.fluxbox/menu-chkd" ]; then
+
+    FILE="$HOME/.fluxbox/menu-translations/menu-mx"
+    FILE2="$HOME/.fluxbox/menu-mx"
+    lang_check=$(echo $LANG|cut -d_ -f1)
+    FILE=$FILE"_"$lang_check
+
+    if [ -e "$FILE" ]; then
+        cp "$FILE" "$FILE2"
+    fi
+    touch "$HOME/.fluxbox/menu-chkd"
+fi
+
 #start a compositor if using complicated conkies
 #compton &
 
