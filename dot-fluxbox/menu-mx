@@ -40,7 +40,7 @@
             [exec] (Keys) {xdg-open ~/.fluxbox/keys}
             [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
             [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Startup) {xdg-open ~/.fluxbox/startup}
+            [exec] (Startup) {featherpad ~/.fluxbox/startup}
             [exec] (Styles) {thunar ~/.fluxbox/styles/}
         [end]
         [submenu] (Keyboard)
