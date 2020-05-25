@@ -1,4 +1,3 @@
-#menu-mx_de
 [begin] (Fluxbox) 
     [exec] (Toutes les applications) {xfce4-appfinder}
     [exec] (Navigateur) {firefox}
