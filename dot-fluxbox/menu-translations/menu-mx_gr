@@ -63,7 +63,17 @@
     [end] 
     [separator]
     [submenu] (Κρυμμένα)
-        [include] (/usr/share/mxflux/menu/out-of-sight)
+            [exec] (Τερματισμός dock) { killall wmalauncher               }
+    [exec] (Τερματισμός παραθύρου) { xkill                             }
+    [separator]
+    [exec] (Εναλλαγή conky) { conkytoggle.sh                    }
+    [exec] (Εναλλαγή iDesk) { idesktoggle idesk                 }
+    [exec] (Εναλλαγή εικονιδίων) { idesktoggle icons                 }
+    [exec] (Εναλλαγή autohide dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Εναλλαγή autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Εναλλαγή monitors) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Απενεργοποίηση προεπιλεγμένο dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
     [submenu] (Εξοδος)
         [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }

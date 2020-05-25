@@ -1,6 +1,6 @@
 
 
-BASE_FILE <- "menu-mx_de"
+BASE_FILE <- "menu-mx_template"
 TRANSLATIONS <- "MenuTransItems.csv"
 
 mappings <- read.csv(TRANSLATIONS)
