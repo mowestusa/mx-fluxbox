@@ -9,7 +9,7 @@
     [exec] (Voer de campagne  uit.) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Uiterlijk) 
+    [submenu] (Kijk op) 
         [exec] (Conky){conky-manager2}
         [submenu] (Dokken)
             [exec] (Standaard) {~/.fluxbox/scripts/DefaultDock.mxdk}
@@ -63,7 +63,17 @@
     [end] 
     [separator]
     [submenu] (Uit het zicht)
-        [include] (/usr/share/mxflux/menu/out-of-sight)
+            [exec] (Dodendok) { killall wmalauncher               }
+    [exec] (Dood een venster) { xkill                             }
+    [separator]
+    [exec] (Schakelen tussen conky) { conkytoggle.sh                    }
+    [exec] (Schakel iDesk) { idesktoggle idesk                 }
+    [exec] (Schakelen tussen pictogrammen) { idesktoggle icons                 }
+    [exec] (Schakelaar voor autodokker) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Schakel de autohide-werkbalk in) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Schakelen tussen de monitoren) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Standaard dok uitschakelen) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
     [submenu] (Verlaat)
         [exec] (Vernieuwen) { fluxbox-remote restart; idesktoggle idesk refresh }

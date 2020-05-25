@@ -9,7 +9,7 @@
     [exec] (Führen Sie  aus.) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Aussehen) 
+    [submenu] (Siehe) 
         [exec] (Conky){conky-manager2}
         [submenu] (Docks)
             [exec] (Standardmäßig) {~/.fluxbox/scripts/DefaultDock.mxdk}
@@ -63,7 +63,17 @@
     [end] 
     [separator]
     [submenu] (Außer Sichtweite)
-        [include] (/usr/share/mxflux/menu/out-of-sight)
+            [exec] (Killdock) { killall wmalauncher               }
+    [exec] (Ein Fenster töten) { xkill                             }
+    [separator]
+    [exec] (Umschalten conky) { conkytoggle.sh                    }
+    [exec] (iDesk umschalten) { idesktoggle idesk                 }
+    [exec] (Symbole umschalten) { idesktoggle icons                 }
+    [exec] (Autohide-Dock umschalten) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Umschalten der Autohide-Werkzeugleiste) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Monitore umschalten) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Standard-Dock deaktivieren) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
     [submenu] (Verlassen Sie)
         [exec] (Aktualisieren Sie) { fluxbox-remote restart; idesktoggle idesk refresh }

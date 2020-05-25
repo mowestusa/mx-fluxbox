@@ -9,7 +9,7 @@
     [exec] (Запустить) {fbrun} 
     [exec] (Терминал) {xfce4-terminal} 
     [separator]
-    [submenu] (внешний вид) 
+    [submenu] (Посмотреть) 
         [exec] (Конки){conky-manager2}
         [submenu] (Доки)
             [exec] (По умолчанию) {~/.fluxbox/scripts/DefaultDock.mxdk}
@@ -63,7 +63,17 @@
     [end] 
     [separator]
     [submenu] (С глаз долой)
-        [include] (/usr/share/mxflux/menu/out-of-sight)
+            [exec] (док-убийца) { killall wmalauncher               }
+    [exec] (Убить окно) { xkill                             }
+    [separator]
+    [exec] (Тугл-конки) { conkytoggle.sh                    }
+    [exec] (Toggle iDesk) { idesktoggle idesk                 }
+    [exec] (переключающиеся иконки) { idesktoggle icons                 }
+    [exec] (Тоггл-автохидный док) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Переключить автоматическую панель инструментов) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Тумблерные мониторы) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Отключить стандартную док-станцию) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
     [submenu] (Оставить)
         [exec] (Обновить) { fluxbox-remote restart; idesktoggle idesk refresh }
