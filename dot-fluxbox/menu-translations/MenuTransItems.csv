@@ -1,0 +1,51 @@
+EN,DE,ES,FR,IT,NL,PL,PT,RU
+Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox
+All apps,Alle Anwendungen,Todas las aplicaciones,Toutes les applications,Tutte le applicazioni,Alle apps,Wszystkie aplikacje,Todas as aplicações,Все приложения
+Browser,Browser,Navegador,Navigateur,Browser,Browser,Browser,Browser,Браузер
+Email,E-Mail,Correo electrónico,Courriel,Invia un'e-mail a,E-mail,Email,Email,Email
+File manager ,Datei-Manager ,Gestor de archivos ,Gestionnaire de fichiers ,File manager ,Bestandsmanager ,Menedżer plików ,Gestor de ficheiros ,Менеджер файлов 
+Help ,Hilfe ,Ayuda ,Aide ,Aiuto ,Help ,Pomoc ,Ajuda ,Помощь 
+Music,Musik,Música,Musique,Musica,Muziek,Muzyka,Música,Музыка
+Run ,Führen Sie  aus. ,Corre ,Courir ,Esegui ,Voer de campagne  uit. ,Biegnij ,Corre ,Запустить 
+Terminal,Terminal,Terminal,Terminal,Terminale,Terminal,Terminal,Terminal,Терминал
+Look,Siehe,Mira,Regardez,Guarda,Kijk op,Spójrz na,Veja,Посмотреть
+Conky,Conky,Conky,Conky,Conky,Conky,Conky,Conky,Конки
+Docks,Docks,Muelles,Docks,Darsene,Dokken,Doki,Docas,Доки
+Default,Standardmäßig,Por defecto,Par défaut,Predefinito,Standaard,Domyślnie,Por defeito,По умолчанию
+Dockmaker,Dockmaker,Dockmaker,Dockmaker,Dockmaker,Dockmaker,Dockmaker,Dockmaker,Докмейкер
+Desktop icons,Desktop-Symbole,Iconos de escritorio,Icônes de bureau,Icone da tavolo,Bureaupictogrammen,Ikony na pulpicie,Ícones do ambiente de trabalho,Иконки рабочего стола
+Monitors,Überwacht,Monitores,Surveille,Monitor,Monitoren,Monitory,Monitores,Мониторы
+Style,Stil,Estilo,Style,Stile,Stijl,Styl,Estilo,Стиль
+Theme,Thema,Tema,Thème,Tema,Thema,Temat,Tema,Тема
+Toolbar,Symbolleiste,Barra de herramientas,Barre d'outils,Barra degli strumenti,Werkbalk,Pasek narzędzi,Barra de ferramentas,Панель инструментов
+Legacy,Vermächtnis,Legado,Héritage,Eredità,Legacy,Dziedzictwo,Legado,Наследие
+User last,Benutzer zuletzt,El último usuario,Dernier utilisateur,Ultimo utente,De gebruiker blijft,Ostatni użytkownik,Último utilizador,Последний пользователь
+Wallpaper,Bildschirmhintergrund,Fondo de pantalla,Fond d'écran,Carta da parati,Behang,Tapeta,Wallpaper,Обои
+Settings,Einstellungen,Ajustes,Paramètres,Impostazioni,Instellingen,Ustawienia,Definições,Настройки
+Configure,Konfigurieren Sie,Configurar,Configurer,Configurare,Configureer,Konfiguracja,Configurar,Настройка
+Apps,Anwendungen,Aplicaciones,Apps,Applicazioni,Apps,Apps,Apps,Приложения
+Init,Init,Init,Init,Init,Init,Init,Init,Ините
+Keys,Schlüssel,Llaves,Clés,Tasti,Toetsen,Klucze,Chaves,Ключи
+Menu,Menü,Menú,Menu,Menu,Menu,Menu,Menu,Меню
+Overlay,Überlagerung,Superposición,Superposition,Sovrapposizione,Overlay,Nakładka,Overlay,Наложение
+Startup,Neugründung,Inicio,Startup,Avvio,Opstarten,Startup,Arranque,Запуск
+Styles,Stile,Estilos,Styles,Stili,Stijlen,Style,Estilos,Стили
+Keyboard,Tastatur,Teclado,Clavier,Tastiera,Toetsenbord,Keyboard,Teclado,Клавиатура
+Traditional look,Traditionelles Aussehen,Aspecto tradicional,Aspect traditionnel,Look tradizionale,Traditionele uitstraling,Tradycyjny wygląd,Aspecto tradicional,Традиционный вид
+"Window, slit, toolbar","Fenster, Schlitz, Symbolleiste","Ventana, rendija, barra de herramientas","Fenêtre, fente, barre d'outils","Finestra, fessura, barra degli strumenti","Venster, spleet, werkbalk","Okno, szczelina, pasek narzędzi","Janela, fenda, barra de ferramentas","Окно, щель, панель инструментов"
+Out of sight,Außer Sichtweite,Fuera de la vista,A l'abri des regards,Lontano dagli occhi,Uit het zicht,Poza zasięgiem wzroku,Fora de vista,С глаз долой
+Kill dock            ,Killdock            ,Muelle de la muerte            ,Quai d'extinction            ,Kill dock            ,Dodendok            ,Kill dock            ,Cais da matança            ,док-убийца            
+Kill a window        ,Ein Fenster töten        ,Matar una ventana        ,Tuer une fenêtre        ,Uccidere una finestra        ,Dood een venster        ,Zabić okno        ,Matar uma janela        ,Убить окно        
+Toggle conky         ,Umschalten conky         ,Cambiar conky...         ,Toggle conky         ,Attivare e disattivare il conky         ,Schakelen tussen conky         ,Kostka do przełączania         ,Alternar conky         ,Тугл-конки         
+Toggle iDesk         ,iDesk umschalten         ,Cambiar el iDesk         ,Basculer l'iDesk         ,Attivare e disattivare l'iDesk         ,Schakel iDesk         ,Przełączanie iDesk         ,Toggle iDesk         ,Toggle iDesk         
+Toggle icons         ,Symbole umschalten         ,Iconos de conmutación         ,Icônes de basculement         ,Icone a levetta         ,Schakelen tussen pictogrammen         ,Ikony do przełączania         ,Alternar ícones         ,переключающиеся иконки         
+Toggle autohide dock ,Autohide-Dock umschalten ,Cambiar el muelle de auto-ocultación ,Basculer le quai autohide ,Attivare il dock autohide ,Schakelaar voor autodokker ,Przełączyć autohide dok ,Alternar a doca de autoculto ,Тоггл-автохидный док 
+Toggle autohide toolbar,Umschalten der Autohide-Werkzeugleiste,Cambiar la barra de herramientas de auto-ocultación,Barre d'outils de masquage automatique,Attivare e disattivare la barra degli strumenti autohide,Schakel de autohide-werkbalk in,"Przełączany, automatyczny pasek narzędzi",Alternar a barra de ferramentas de autoculto,Переключить автоматическую панель инструментов
+Toggle monitors      ,Monitore umschalten      ,Cambiar los monitores...      ,Basculer les moniteurs      ,Monitor a levetta      ,Schakelen tussen de monitoren      ,Monitory przełączające      ,Monitores Toggle      ,Тумблерные мониторы      
+Disable default dock ,Standard-Dock deaktivieren ,Deshabilitar el acoplamiento por defecto ,Désactiver le dock par défaut ,Disattivare il dock di default ,Standaard dok uitschakelen ,Wyłączenie domyślnego doku ,Desactivar a doca por defeito ,Отключить стандартную док-станцию 
+Leave,Verlassen Sie,Deje,Quitter,Lascia,Verlaat,Wyjdź,Sair,Оставить
+Refresh,Aktualisieren Sie,Actualizar,Rafraîchir,Aggiorna,Vernieuwen,Odświeżyć,Actualização,Обновить
+Suspend,aussetzen,Suspender,Suspendre,Sospendi,Schorsen,Zawiesić,Suspendam,Приостановить
+Logout,Abmeldung,Cierre de sesión,Déconnexion,Logout,Uitloggen,Logout,Sair,Выход из системы
+Reboot,Neustart,Reiniciar,Redémarrer,Riavvio,Herstart,Reboot,Reinicialização,Перезагрузить
+Shutdown,Herunterfahren,Apagado,Fermeture,Spegnimento,Uitschakeling,Zamknięcie,Encerramento,Отключение
