@@ -2,6 +2,7 @@
 
 BASE_FILE <- "menu-mx_template"
 TRANSLATIONS <- "MenuTransItems.csv"
+OUT_FILE <- "menu-mx" 
 
 mappings <- read.csv(TRANSLATIONS)
 base <- readLines(BASE_FILE)
@@ -39,7 +40,7 @@ for(i in seq_along(mappings)) {
       message("\tNo translation provided for ", term)
     }
     
-    outfile <- paste(BASE_FILE, lang, sep = "_")
+    outfile <- paste(OUT_FILE, lang, sep = "_")
     message("Translated ", trcount, " terms")
     message("Writing ", outfile)
     writeLines(trans, outfile)
