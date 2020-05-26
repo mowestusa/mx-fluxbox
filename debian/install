@@ -4,6 +4,7 @@ components/*  usr/share/mxflux/.fluxbox/components
 components/.fehbg  usr/share/mxflux/.fluxbox/components
 components/.gkrellm2/* usr/share/mxflux/.fluxbox/components/.gkrellm2
 pixmaps/*	usr/share/icons
+menu-translations/* usr/share/mxflux/menu-translations
 bin/* 		usr/bin
 volumeicon/* /etc/skel/.config/volumeicon
 *.desktop   usr/share/applications
