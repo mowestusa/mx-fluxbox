@@ -44,7 +44,7 @@ cp -r /usr/share/mxflux/.fluxbox "$HOME"
 
 #setup default translated mx-fluxbox menu
 
-FILE="$HOME/.fluxbox/menu-translations/menu-mx"
+FILE="/usr/share/mxflux/.fluxbox/menu-translations/menu-mx"
 FILE2="$HOME/.fluxbox/menu-mx"
 lang_check=$(echo $LANG|cut -d_ -f1)
 FILE=$FILE"_"$lang_check
