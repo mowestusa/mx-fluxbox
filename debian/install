@@ -12,9 +12,11 @@ backgrounds/* usr/share/backgrounds
 components/.fehbg  etc/skel/
 components/.gkrellm2/* etc/skel/.gkrellm2
 components/.gtkrc-2.0 etc/skel/
+components/.gtkrc-2.0-mine etc/skel/
 components/fluxbox_badge-symbolic.svg usr/share/icons/hicolor/scalable/places
 components/settings.ini etc/skel/.config/gtk-3.0
 components/.gtkrc-2.0 root/
+components/.gtkrc-2.0-mine root/
 components/settings.ini root/.config/gtk-3.0
 help/* usr/share/mxflux/help
 menu/out-of-sight usr/share/mxflux/menu/out-of-sight
