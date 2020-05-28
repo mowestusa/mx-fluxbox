@@ -4,7 +4,7 @@ components/*  usr/share/mxflux/.fluxbox/components
 components/.fehbg  usr/share/mxflux/.fluxbox/components
 components/.gkrellm2/* usr/share/mxflux/.fluxbox/components/.gkrellm2
 pixmaps/*	usr/share/icons
-menu-translations/* usr/share/mxflux/menu-translations
+#menu-translations/* usr/share/mxflux/menu-translations
 bin/* 		usr/bin
 volumeicon/* /etc/skel/.config/volumeicon
 *.desktop   usr/share/applications
@@ -19,7 +19,7 @@ components/settings.ini etc/skel/.config/gtk-3.0
 components/.gtkrc-2.0 root/
 components/.gtkrc-2.0-mine root/
 components/settings.ini root/.config/gtk-3.0
-help/* usr/share/mxflux/help
+#help/* usr/share/mxflux/help
 menu/out-of-sight usr/share/mxflux/menu/out-of-sight
 translations_script/mo/am/mx-fluxbox.mo     /usr/share/locale/am/LC_MESSAGES
 translations_script/mo/ar/mx-fluxbox.mo     /usr/share/locale/ar/LC_MESSAGES
