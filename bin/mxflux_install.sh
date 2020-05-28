@@ -44,16 +44,7 @@ cp -r /usr/share/mxflux/.fluxbox "$HOME"
 
 #setup default translated mx-fluxbox menu
 
-FILE="/usr/share/mxflux/menu-translations/menu-mx"
-FILE2="$HOME/.fluxbox/menu-mx"
-lang_check=$(echo $LANG|cut -d_ -f1)
-FILE=$FILE"_"$lang_check
-
-if [ -e "$FILE" ]; then
-    cp "$FILE" "$FILE2"
-fi
-
-
+localize_fluxbox_menu-mx
 
 #set up idesk
 

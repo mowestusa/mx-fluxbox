@@ -12,6 +12,8 @@
 #upgrades are handled by mxflux_install.sh script
 
 # localize fluxbox menu
+# to reset default localized menu configuration, delete ~/.fluxbox/menu-chkd
+# logout, then log back in to fluxbox session
 localize_fluxbox_menu-mx
 
 #start a compositor if using complicated conkies
