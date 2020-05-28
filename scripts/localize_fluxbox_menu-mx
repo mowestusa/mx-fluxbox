@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# localize fluxbox menu 
+# 
+
+# fluxbox init file
+INIT="$HOME/.fluxbox/init"
+# default menu for all none-translated locale
+DFLT=.fluxbox/menu-mx
+# directory of localized menus 
+L10N=.fluxbox/menu-translations
+
+# trim region code from LANG
+LC="${LANG%%_*}"
+# in case LC is empty do nothing
+[ x"$LC" = "x" ] && exit 1
+#
+# default menu is in English
+if [ "$LC" != "en" ] && [ -r "$HOME"/$L10N/menu-mx_$LC ]; then
+   MENU="$L10N/menu-mx_$LC" 
+else 
+   MENU="$DFLT"
+fi
+
+if ! grep -sq -E "^session.menuFile:[[:space:]]*(~|$HOME)/$MENU[[:space:]]*$" "$INIT"; then
+    
+    sed -i -r "/^(session.menuFile:[[:space:]]*).*/s::\1 ~/$MENU:"  "$INIT

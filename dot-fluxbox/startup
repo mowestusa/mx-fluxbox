@@ -11,18 +11,8 @@
 #only do on first setup of new user
 #upgrades are handled by mxflux_install.sh script
 
-if [ ! -e "$HOME/.fluxbox/menu-chkd" ]; then
-
-    FILE="/usr/share/mxflux/menu-translations/menu-mx"
-    FILE2="$HOME/.fluxbox/menu-mx"
-    lang_check=$(echo $LANG|cut -d_ -f1)
-    FILE=$FILE"_"$lang_check
-
-    if [ -e "$FILE" ]; then
-        cp "$FILE" "$FILE2"
-    fi
-    touch "$HOME/.fluxbox/menu-chkd"
-fi
+# localize fluxbox menu
+localize_fluxbox_menu-mx
 
 #start a compositor if using complicated conkies
 #compton &
@@ -61,7 +51,7 @@ nm-applet &
 volumeicon -c volumeicon-fluxbox &
 
 #place clipboard on the toolbar
-#clipit &
+clipit &
 
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
