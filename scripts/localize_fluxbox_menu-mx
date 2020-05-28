@@ -10,7 +10,7 @@ fi
 # fluxbox init file
 INIT="$HOME/.fluxbox/init"
 # default menu for all none-translated locale
-DFLT=.fluxbox/menu-mx_template
+DFLT="/usr/share/mxflux/menu-translations/menu-mx_template"
 # directory of localized menus 
 L10N="/usr/share/mxflux/menu-translations"
 
