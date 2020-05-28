@@ -20,7 +20,7 @@ LC="${LANG%%_*}"
 [ x"$LC" = "x" ] && exit 1
 #
 # default menu is in English
-if [ "$LC" != "en" ] && [ -r "$HOME"/$L10N/menu-mx_$LC ]; then
+if [ "$LC" != "en" ] && [ -r "$L10N"/menu-mx_$LC ]; then
    MENU="$L10N/menu-mx_$LC" 
 else 
    MENU="$DFLT"
