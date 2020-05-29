@@ -1,3 +1,10 @@
+mx-fluxbox (20.05.10) mx; urgency=medium
+
+  * new localization menu routine, misc. adjustments
+  * rename default wallpaper
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 28 May 2020 19:22:02 -0400
+
 mx-fluxbox (20.05.09) mx; urgency=medium
 
   * update mxflux_install.sh to pull translations from /usr/share rather than $HOME 
