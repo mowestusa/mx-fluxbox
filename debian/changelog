@@ -1,3 +1,9 @@
+mx-fluxbox (20.05.12) mx; urgency=medium
+
+  * change to install script 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 30 May 2020 14:42:43 -0400
+
 mx-fluxbox (20.05.11) mx; urgency=medium
 
   * revisions to localize menu script 

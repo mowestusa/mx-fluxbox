@@ -41,6 +41,7 @@ if [ ! "$?" = "0" ]; then
 fi
 
 cp -r /usr/share/mxflux/.fluxbox "$HOME"
+ln -nsf /usr/share/backgrounds/mxfb*.png ~/.fluxbox/backgrounds
 
 #setup default translated mx-fluxbox menu
 
