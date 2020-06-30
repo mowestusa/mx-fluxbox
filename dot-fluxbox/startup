@@ -49,8 +49,10 @@ $HOME/.fluxbox/scripts/conkystart
 #place network manager on the toolbar
 nm-applet &
 
-#place a volumeicon on the toolbar
-volumeicon -c volumeicon-fluxbox &
+#start pulseaudio before volumeicon so unmute works
+start-pulseaudio-x11 &
+sleep 2
+volumeicon -c volumeicon-fluxbox & 
 
 #place clipboard on the toolbar
 clipit &
