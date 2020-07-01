@@ -1,3 +1,10 @@
+mx-fluxbox (20.06.01) mx; urgency=medium
+
+  * misc. updates
+  * logout bar script 
+
+ -- Dolphin Oracle <dolphin@littlebyte>  Tue, 30 Jun 2020 21:24:34 -0400
+
 mx-fluxbox (20.05.12) mx; urgency=medium
 
   * change to install script 
