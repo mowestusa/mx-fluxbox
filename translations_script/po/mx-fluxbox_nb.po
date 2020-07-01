@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-08 07:54-0600\n"
 "PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"Last-Translator: Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2020\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/anticapitalista/teams/10162/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,22 +28,27 @@ msgid ""
 "order to run.  Any existing fluxbox configuration will be backed up as "
 "<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
 msgstr ""
+"Dette vil installere alle komponenter som MX-flux trenger til hjemmemappa "
+"di. Eksisterende fluxbox-oppsett vil reservekopieres til "
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>"
 
 #: bin/mxflux_install.sh:15
 msgid ""
 "To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
 "down menu in the upper right corner, and log back in."
 msgstr ""
+"Gjør følgende for å starte en fluxbox-økt: Logg ut, velg <i>fluxbox</i> fra "
+"nedtrekksmenyen i øvre høyre hjørne og logg inn igjen."
 
 #: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
 #: scripts/toolbar-userlast:10
 msgid "OK to proceed?"
-msgstr ""
+msgstr "Vil du fortsette?"
 
 #: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
 #: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
 msgid "All done!"
-msgstr ""
+msgstr "Fullført."
 
 #: scripts/toolbar-legacy:13
 msgid ""
@@ -47,13 +56,18 @@ msgid ""
 "settings will be backed up and can be restored by clicking Menu > Settings >"
 " Toolbar > Userlast"
 msgstr ""
+"Dette vil utføre de nødvendige endringene for å ta i bruk foreldet layout av"
+" verktøylinje. Gjeldende oppsett vil reservekopieres, og kan gjenopprettes "
+"ved å velge Meny > Innstillinger > Verktøylinje > Brukers forrige."
 
 #: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
 msgid "Log out and back in to complete the change."
-msgstr ""
+msgstr "Logg ut og inn igjen for å fullføre endringen."
 
 #: scripts/toolbar-userlast:11
 msgid ""
 "This will restore the settings that were in place when you selected a legacy"
 " toolbar layout."
 msgstr ""
+"Dette vil gjenopprette oppsettet som var i bruk før du valgte foreldet "
+"layout av verktøylinje."
