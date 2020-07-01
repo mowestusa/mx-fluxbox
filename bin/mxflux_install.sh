@@ -33,7 +33,7 @@ if [ ! -d "$HOME/.restore/fluxbox" ]; then
 fi
 
 if [ -d "$HOME/.fluxbox" ]; then
-    mv $HOME/.fluxbox $HOME/.restore/fluxbox/fluxbox_bak_.$(date +%Y%m%H%M%S) 
+    mv $HOME/.fluxbox $HOME/.restore/fluxbox/fluxbox_bak_.$(date +%Y%m%d%H%M%S) 
 fi
 
 if [ ! "$?" = "0" ]; then
