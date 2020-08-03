@@ -9,10 +9,10 @@ none Print :Exec /usr/bin/xfce4-screenshooter
 none F1 :Exec thunar /usr/share/mxflux/help
 
 #alternative for FAQ
-alt F1 :Exec thunar /usr/share/mxflux/help
+alt F1 :Exec mx-manual
 
 # open a little run terminal
-none F2 :Exec fbrun
+none F2 :Exec rofi -show run
 
 # open a file manager
 none F3 :Exec thunar /home/$USER/.fluxbox
@@ -123,7 +123,7 @@ Control F2 :Workspace 2
 Control F3 :Workspace 3
 
 # send the current window to a specific workspace
-#Mod4 F1 :SendToWorkspace 1
+Mod4 F1 :SendToWorkspace 1
 Mod4 F2 :SendToWorkspace 2
 Mod4 F3 :SendToWorkspace 3
 

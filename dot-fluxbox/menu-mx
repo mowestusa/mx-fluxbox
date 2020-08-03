@@ -5,7 +5,7 @@
     [exec] (File manager ) {thunar $HOME/.fluxbox} 
     [exec] (Help ) {thunar /usr/share/mxflux/help}
     [exec] (Music) {clementine}
-    [exec] (Run ) {fbrun} 
+    [exec] (Run ) {rofi -show run} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
     [submenu] (Appearance) 
