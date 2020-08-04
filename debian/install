@@ -4,6 +4,7 @@ components/*  usr/share/mxflux/.fluxbox/components
 components/.fehbg  usr/share/mxflux/.fluxbox/components
 components/.gkrellm2/* usr/share/mxflux/.fluxbox/components/.gkrellm2
 components/rofi/ etc/skel/.config
+components/mxfb_version /etc
 pixmaps/mx*.png  usr/share/icons
 pixmaps/system*.png  usr/local/share/icons
 #menu-translations/* usr/share/mxflux/menu-translations
