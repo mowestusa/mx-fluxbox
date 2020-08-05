@@ -25,13 +25,13 @@ localize_fluxbox_menu-mx
 #add system monitors 
 #gkrellm &
 
-# add desktop icons
-idesktoggle idesk on 1>/dev/null 2>&1 &
-
 # export Qt variables
 export QT_QPA_PLATFORMTHEME=gtk2
 export QT_PLATFORMTHEME=gtk2
 export QT_PLATFORM_PLUGIN=gtk2
+
+# add desktop icons
+idesktoggle idesk on 1>/dev/null 2>&1 &
 
 # add root access
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
