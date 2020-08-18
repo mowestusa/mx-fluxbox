@@ -33,6 +33,9 @@ Control Down :Exec amixer -D pulse sset Master 5%-
 # close a window
 mod1 F4 :Close
 
+#Minimize all windows on the current workspace
+Mod1 d :ShowDesktop
+
 ------------
 ------------
 # hide menus

@@ -1,5 +1,8 @@
 [begin] (Fluxbox) 
-    [exec] (All apps) {xfce4-appfinder}
+	[submenu] (All Apps)
+		[exec] (Update Menu) {mmaker fluxbox -f}
+		[include] (~/.fluxbox/menu)
+	[end]
     [exec] (Browser) {firefox}
     [exec] (Email) {thunderbird}
     [exec] (File manager ) {thunar $HOME/.fluxbox} 
@@ -45,16 +48,16 @@
         [end]
         [submenu] (Keyboard)
             [exec] (DE) {setxkbmap de}
-			      [exec] (ES) {setxkbmap es} 
-			      [exec] (FR) {setxkbmap fr}
-			      [exec] (GB) {setxkbmap gb}
-			      [exec] (GR) {setxkbmap gr}
-			      [exec] (JA) {setxkbmap ja}
-			      [exec] (IT) {setxkbmap it}
-			      [exec] (PL) {setxkbmap pl}
-			      [exec] (PT) {setxkbmap pt}
-			      [exec] (RU) {setxkbmap ru}
-			      [exec] (US) {setxkbmap us}
+			[exec] (ES) {setxkbmap es} 
+	        [exec] (FR) {setxkbmap fr}
+		    [exec] (GB) {setxkbmap gb}
+		    [exec] (GR) {setxkbmap gr}
+	        [exec] (JA) {setxkbmap ja}
+   	        [exec] (IT) {setxkbmap it}
+			[exec] (PL) {setxkbmap pl}
+			[exec] (PT) {setxkbmap pt}
+			[exec] (RU) {setxkbmap ru}
+			[exec] (US) {setxkbmap us}
         [end]
         [exec] (Traditional look) {toolbar-default}
         [config] (Window, slit, toolbar)
@@ -71,4 +74,5 @@
         [exec] (Reboot  ) {sudo /sbin/reboot} 
         [exec] (Shutdown) {sudo /sbin/halt}
     [end]
+	[exec] (About) {about-mx-fluxbox}
 [end]
