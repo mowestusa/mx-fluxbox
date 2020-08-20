@@ -1,4 +1,5 @@
-[begin] (Fluxbox) 
+[begin] (Fluxbox)
+	[exec] (About) {about-mx-fluxbox} 
 	[submenu] (All Apps)
 		[exec] (Update Menu) {mmaker fluxbox -f}
 		[include] (~/.fluxbox/menu)
@@ -74,5 +75,4 @@
         [exec] (Reboot  ) {sudo /sbin/reboot} 
         [exec] (Shutdown) {sudo /sbin/halt}
     [end]
-	[exec] (About) {about-mx-fluxbox}
 [end]
