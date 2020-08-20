@@ -41,7 +41,7 @@ window.label.unfocus.textColor: #BBBBBB
 ****rounded corners****
 menu.roundCorners: TopRight TopLeft BottomRight BottomLeft
 window.roundCorners: TopRight TopLeft BottomRight BottomLeft
-toolbar.shaped: true
+toolbar.shaped: false
 
 window.title.focus:             Flat Solid Horizontal
 window.title.focus.color:       #000000
