@@ -1,6 +1,6 @@
 configuration {
 
-	modi: "run,calc:qalc,window,drun,ssh";
+	modi: "run,calc:qalc,window";
 	width: 25;
 	show-icons: true;
 	icon-theme: "papirus";
