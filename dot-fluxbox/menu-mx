@@ -28,8 +28,8 @@
         [end]
         [exec] (Theme) {lxappearance}
         [submenu] (Toolbar)
-            [exec] (Legacy) {toolbar-legacy}
-            [exec] (User last) {toolbar-userlast}
+            [exec] (Fluxbox) {toggletint2}
+            [exec] (Traditional) {toggletint2}
         [end]
         [submenu] (Wallpaper)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
@@ -60,8 +60,7 @@
 			[exec] (RU) {setxkbmap ru}
 			[exec] (US) {setxkbmap us}
         [end]
-        [exec] (Traditional look) {toolbar-default}
-        [config] (Window, slit, toolbar)
+        [config] (Fluxbox)
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
@@ -69,7 +68,7 @@
         [include] (/usr/share/mxflux/menu/out-of-sight)
     [end]
     [submenu] (Leave)
-        [exec] (Refresh ) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Refresh) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Suspend ) {sudo 'pm-suspend'}
         [exit] (Logout  ) 
         [exec] (Reboot  ) {sudo /sbin/reboot} 
