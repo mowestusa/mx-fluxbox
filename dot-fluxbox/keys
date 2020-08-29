@@ -9,7 +9,7 @@ none Print :Exec /usr/bin/xfce4-screenshooter
 none F1 :Exec thunar /usr/share/mxflux/help
 
 #alternative for FAQ
-alt F1 :Exec mx-manual
+mod1 F1 :Exec mx-manual
 
 # open a little run terminal
 none F2 :Exec rofi -show drun
@@ -97,8 +97,8 @@ Mod4 7 :Tab 7
 Mod4 8 :Tab 8
 Mod4 9 :Tab 9
 
-# open a terminal
-Mod1 F2 :Exec xterm
+# open a run box
+Mod1 F2 :Exec fbrun
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes

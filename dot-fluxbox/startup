@@ -22,8 +22,14 @@ localize_fluxbox_menu-mx
 # add launcher for legacy toolbar
 #wmalauncher-menu
 
+#start Xfce panel
+#xfce4-panel &
+
 #add system monitors 
 #gkrellm &
+
+# use tint2 panel
+#tint2 &
 
 # export Qt variables
 export QT_QPA_PLATFORMTHEME=gtk2
