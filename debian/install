@@ -6,6 +6,7 @@ components/.gkrellm2/* usr/share/mxflux/.fluxbox/components/.gkrellm2
 components/rofi/ etc/skel/.config
 components/mxfb_version /etc
 components/tint2/ etc/skel/.config
+components/toggle* usr/local/bin/
 pixmaps/mx*.png  usr/share/icons
 pixmaps/system*.png  usr/local/share/icons
 #menu-translations/* usr/share/mxflux/menu-translations
