@@ -3,9 +3,11 @@ mx-fluxbox (20.06.01+nmu1) mx; urgency=medium
   * Non-maintainer upload.
   * traditional toolbar now provided by tint2
   * run function (menu and F2) switched to rofi
-  * simple switch between Fluxbox and tradiaional toolbars
-  * About added to menu for version, release and changelog
-  * rounded corner style now default
+  * simple switch between Fluxbox and traditional toolbars
+  * About added for version, release and changelog
+  * rounded corners  made default
+  * full app listing added to rootMenu with menumaker
+  * updated documentation
 
  -- j b <jb@X1Cmx>  Sun, 30 Aug 2020 06:00:04 -0400
 
