@@ -1,4 +1,4 @@
-mx-fluxbox (20.06.01+nmu1) mx; urgency=medium
+mx-fluxbox (20.08.30+nmu1) mx; urgency=medium
 
   * Non-maintainer upload.
   * traditional toolbar now provided by tint2
