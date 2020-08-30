@@ -1,5 +1,5 @@
 [begin] (Fluxbox)
-	[exec] (About) {about-mx-fluxbox} 
+	[exec] (About) {about-mx-fluxbox}
 	[submenu] (All Apps)
 		[exec] (Update Menu) {mmaker fluxbox -f}
 		[include] (~/.fluxbox/menu)
