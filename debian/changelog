@@ -1,3 +1,9 @@
+mx-fluxbox (20.08.30+nmu2) mx; urgency=medium
+
+  *added missing toolbar toggle scripts 
+
+ -- j b <jb@X1Cmx>  Sun, 30 Aug 2020 16:27:22 -0400
+
 mx-fluxbox (20.08.30+nmu1) mx; urgency=medium
 
   * Non-maintainer upload.
