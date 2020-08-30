@@ -1,0 +1,84 @@
+#! /bin/bash
+
+# toggletint2 - script to switch between fluxbox-toolbar and tint2-panel
+# fehlix, 28. Aug. 2020
+# 30. Aug. 2020 - adjusted togglerefresh call
+  
+FLBINIT="$HOME/.fluxbox/init"
+REFRESH="togglerefresh"
+STARTUP="$HOME/.fluxbox/startup"
+BACKDIR="$HOME/.restore/fluxbox"
+INITBAK="$BACKDIR/init.$(date +%Y%m%d_%H%M%S).bak"
+STRTBAK="$BACKDIR/startup.$(date +%Y%m%d_%H%M%S).bak"
+
+# make backup dir
+if [ ! -d "$BACKDIR" ]; then
+	mkdir -p "$BACKDIR"
+fi
+
+# check tint2 is running
+if pgrep -x tint2 >/dev/null; then
+
+	# stop tint2
+	pkill -x tint2 2>/dev/null
+    
+    # disable tint2 autostart
+    if grep -sq -E '^[[:space:]]*(/usr/bin/)?tint2' "$STARTUP"; then
+	   cp "$STARTUP" "$STRTBAK"
+	   sed  -i -r '\!^[[:space:]]*((/usr/bin/)?tint2.*)!s::#\1:' "$STARTUP"
+	fi
+	
+	# toogle toolbar on: enable systray and make visible
+	#
+	# check we have 2 marker lines starting with '#toggled-off#'
+	if grep -sq  -E '^#toggled-off#session.screen[0-9].toolbar.tools'   "$FLBINIT" && \
+	   grep -sq  -E '^#toggled-off#session.screen[0-9].toolbar.visible' "$FLBINIT";
+	then
+		cp "$FLBINIT" "$INITBAK"
+		sed -i -r '/session.screen[0-9].toolbar.(tools|visible)/{
+	               /^[^#]/d; 
+	               s/^#toggled-off#//;
+	               }' "$FLBINIT"
+		
+		# refresh fluxbox
+		"$REFRESH"
+	fi
+
+else
+    # enable tint2 autostart
+    cp "$STARTUP" "$STRTBAK"
+    if grep -sq -E '^[[:space:]#]*(/usr/bin/)?tint2' "$STARTUP"; then
+	   # uncomment tint2 startup line 
+	   sed -i -r '\!^[[:space:]#]*((/usr/bin/)?tint2.*)!s::\1:' "$STARTUP"
+	else
+       # inject tint2 startup line after "export QT_PLATFORM_PLUGIN" line
+	   sed -i -e '/export QT_PLATFORM_PLUGIN/a\\n#add tint2 panel\ntint2 & 1>/dev/null 2>/dev/null' "$STARTUP"
+	fi
+	# prepare tint2
+	#
+	# check for 2 marker lines starting with '#toggled-off#'
+	if grep -sq  -E '^#toggled-off#session.screen[0-9].toolbar.tools'   "$FLBINIT" && \
+	   grep -sq  -E '^#toggled-off#session.screen[0-9].toolbar.visible' "$FLBINIT";
+	then
+	    # do nothing if marker lines found 
+		:
+	else
+		cp "$FLBINIT" "$INITBAK"
+		sed -i -r '/^session.screen[0-9].toolbar.(tools|visible)/{ 
+		           h; 
+		           s/^/#toggled-off#/;
+		           p; 
+		           x; 
+		           /tools/s/[[:space:]]*systemtray[[:space:]]*,//; 
+		           /visible/s/true/false/;
+		           }' "$FLBINIT" 
+
+		# refresh fluxbox
+		"$REFRESH"
+		
+		# add tiint2 panel
+		tint2 2>/dev/null >/dev/null & disown
+	fi
+fi
+exit 0
+
