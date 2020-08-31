@@ -1,3 +1,11 @@
+mx-fluxbox (20.08.30+nmu3) UNRELEASED; urgency=medium
+
+  * replaced the tint2 toggles with latest version
+  * changed the "All apps" menu entry to use rofi instead
+  * deleted menumaker from the control file
+
+ -- j b <jb@X1Cmx>  Mon, 31 Aug 2020 16:43:10 -0400
+
 mx-fluxbox (20.08.30+nmu2) mx; urgency=medium
 
   *added missing toolbar toggle scripts 

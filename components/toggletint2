@@ -2,9 +2,10 @@
 
 # toggletint2 - script to switch between fluxbox-toolbar and tint2-panel
 # fehlix, 28. Aug. 2020
+# 30. Aug. 2020 - adjusted togglerefresh call
   
 FLBINIT="$HOME/.fluxbox/init"
-REFRESH="$HOME/.fluxbox/scripts/togglerefresh"
+REFRESH="togglerefresh"
 STARTUP="$HOME/.fluxbox/startup"
 BACKDIR="$HOME/.restore/fluxbox"
 INITBAK="$BACKDIR/init.$(date +%Y%m%d_%H%M%S).bak"
