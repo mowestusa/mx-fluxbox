@@ -1,9 +1,6 @@
 [begin] (Fluxbox)
 	[exec] (About) {about-mx-fluxbox}
-	[submenu] (All Apps)
-		[exec] (Update Menu) {mmaker fluxbox -f}
-		[include] (~/.fluxbox/menu)
-	[end]
+	[exec] (All Apps) {rofi -show drun}
     [exec] (Browser) {firefox}
     [exec] (Email) {thunderbird}
     [exec] (File manager ) {thunar $HOME/.fluxbox} 
