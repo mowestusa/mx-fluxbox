@@ -1,0 +1,10 @@
+The plugin gkrellweather is available in the repos. Once installed and enabled, however, data are not shown because of an error in the location of the config file. To fix it:
+
+--quit gkrellm
+--navigate to ~/.gkrellm2/ and open user-config
+--look for the line "gkrellweather command /usr/local/share/gkrellm/GrabWeather" followed, if already selected, with the airport code you want.
+--edit the line by removing "local/" so that the result reads:
+
+gkrellweather command /usr/share/gkrellm/GrabWeather 
+
+--save and close, and relaunch gkrellm. 

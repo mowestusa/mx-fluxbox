@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#released June 2020 by MX Devs and users under GPL3
+#creates icon group of exit options
+    
+yad --form --columns 1 --width=100 --height=250 --center --borders=12 --skip-taskbar --undecorated --timeout=3 \
+	--field="<span font='Monospace'></span>!/usr/local/share/icons/system-lock-mxfb.png":fbtn "dm-tool switch-to-greeter" \
+    --field="<span font='Monospace'></span>!/usr/local/share/icons/system-log-out.png":fbtn "fluxbox-remote 'Exit' || killall fluxbox" \
+    --field="<span font='Monospace'></span>!/usr/local/share/icons/system-sleep.png":fbtn "sudo 'pm-suspend' " \
+    --field="<span font='Monospace'></span>!/usr/local/share/icons/system-restart.png":fbtn "sudo reboot" \
+    --field="<span font='Monospace'></span>!/usr/local/share/icons/system-shutdown.png":fbtn "sudo poweroff" \
+    --no-buttons
+
+exit 0
+
