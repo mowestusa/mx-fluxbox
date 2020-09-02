@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #this script was published August 2020 by MX Linux Devs
-#its purpose is to edit default entries in the existing menu-mx file or the with changes from MX-Fluxbox 2.2
+#its purpose is to edit default entries in the existing menu-mx file with changes from MX-Fluxbox 2.2
 #changes
 #fehlix, 2020.09.01 : All Apps to call rofi -show drun
 
