@@ -31,6 +31,9 @@
 ./components/tint2
 ./components/togglerefresh
 ./components/toggletint2
+./components/toolbar-default
+./components/toolbar-legacy
+./components/toolbar-userlast
 ./components/.fehbg
 ./components/.gkrellm2/data
 ./components/.gkrellm2/gkrellweather
@@ -43,6 +46,9 @@
 ./components/tint2/
 ./components/togglerefresh
 ./components/toggletint2
+./components/toolbar-default
+./components/toolbar-legacy
+./components/toolbar-userlast
 ./pixmaps/mxflux.png
 ./pixmaps/system-lock-mxfb.png
 ./pixmaps/system-log-out.png
@@ -52,6 +58,7 @@
 ./bin/mxflux_install.sh
 ./volumeicon/volumeicon-fluxbox
 ./mxflux.desktop
+./xfce4-appfinder-mxfb.desktop
 ./scripts/exit-options
 ./scripts/localize_fluxbox_menu-mx
 ./scripts/menu-migrate
