@@ -1,3 +1,9 @@
+mx-fluxbox (20.09.02) UNRELEASED; urgency=medium
+
+  * uploaded replacement desktop file for tint2 start
+
+ -- j b <jb@X1Cmx>  Wed, 02 Sep 2020 20:19:05 -0400
+
 mx-fluxbox (20.08.30+nmu4) mx; urgency=medium
 
   * replaced the tint2 toggles with latest version
