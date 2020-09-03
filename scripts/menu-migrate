@@ -43,6 +43,20 @@ for FILE in menu-mx menu-mx_*; do
         $FILE
 done
 
+#install tint2 config file
+#only replace if it doesn't exist
+if [ ! -e "$HOME/.config/tint2/tint2rc" ]; then
+	mkdir $HOME/.config/tint2
+	cp /etc/skel/.config/tint2/tint2rc "$HOME/.config/tint2/tint2rc"
+fi
+
+#install rofi config file
+#only replace if it doesn't exist
+if [ ! -e "$HOME/.config/rofi/config.rasi" ]; then
+	mkdir $HOME/.config/rofi
+	cp /etc/skel/.config/rofi/config.rasi "$HOME/.config/rofi/config.rasi"
+fi
+
 fluxbox-remote restart
 
 idesktoggle idesk refresh
