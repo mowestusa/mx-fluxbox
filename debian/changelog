@@ -1,6 +1,10 @@
-mx-fluxbox (20.09.02) UNRELEASED; urgency=medium
+mx-fluxbox (20.09.02) mx; urgency=medium
 
   * uploaded replacement desktop file for tint2 start
+  * changed default wallpaper
+  * restored deprecated toolbar scripts
+  * updated mxfb-version
+  * this is rc2
 
  -- j b <jb@X1Cmx>  Wed, 02 Sep 2020 20:19:05 -0400
 
