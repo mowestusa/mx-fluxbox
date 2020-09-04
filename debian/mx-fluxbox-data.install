@@ -13,7 +13,8 @@ pixmaps/system*.png  usr/local/share/icons
 #menu-translations/* usr/share/mxflux/menu-translations
 bin/* 		usr/bin
 volumeicon/* /etc/skel/.config/volumeicon
-*.desktop   usr/share/applications
+mxflux.desktop   usr/share/applications
+xfce4-appfinder-mxfb.desktop usr/share/mxflux/
 scripts/*   usr/bin
 components/.fehbg  etc/skel/
 components/.gkrellm2/* etc/skel/.gkrellm2
