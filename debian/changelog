@@ -1,3 +1,10 @@
+mx-fluxbox (20.09.05) mx; urgency=medium
+
+  * corrected style in init
+  * this is Final
+
+ -- j b <jb@X1Cmx>  Fri, 04 Sep 2020 06:41:19 -0400
+
 mx-fluxbox (20.09.04) mx; urgency=medium
 
   * corrected dependency name
