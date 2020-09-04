@@ -1,3 +1,9 @@
+mx-fluxbox (20.09.04) mx; urgency=medium
+
+  * corrected dependency name
+
+ -- j b <jb@X1Cmx>  Fri, 04 Sep 2020 06:00:24 -0400
+
 mx-fluxbox (20.09.02) mx; urgency=medium
 
   * uploaded replacement desktop file for tint2 start
