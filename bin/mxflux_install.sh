@@ -33,7 +33,7 @@ if [ ! -d "$HOME/.restore/fluxbox" ]; then
 fi
 
 if [ -d "$HOME/.fluxbox" ]; then
-    mv $HOME/.fluxbox $HOME/.restore/fluxbox/fluxbox_bak_.$(date +%Y%m%d%H%M%S) 
+    mv $HOME/.fluxbox $HOME/.restore/fluxbox/fluxbox_bak_.$(date +%Y%m%H%M%S) 
 fi
 
 if [ ! "$?" = "0" ]; then
@@ -70,6 +70,19 @@ if [ ! -e "$HOME/.config/volumeicon/volumeicon-fluxbox" ]; then
 	cp /etc/skel/.config/volumeicon/volumeicon-fluxbox "$HOME/.config/volumeicon/"
 fi
 
+#set up rofi and tint2 configs
+
+if [ -d "$HOME/.config/rofi" ]; then
+    mv $HOME/.config/rofi $HOME/.restore/fluxbox/rofi_.$(date +%Y%m%H%M%S) 
+fi
+
+if [ -d "$HOME/.config/tint2" ]; then
+    mv $HOME/.config/tint2 $HOME/.restore/fluxbox/tint2.$(date +%Y%m%H%M%S) 
+fi
+
+cp -r /etc/skel/.config/rofi "$HOME"/.config
+
+cp -r /etc/skel/.config/tint2 "$HOME"/.config
 
 #set up the system monitors
 cp -r /usr/share/mxflux/.fluxbox/components/.gkrellm2 "$HOME"/.gkrellm2
