@@ -209,7 +209,7 @@ clock_padding = 1 0
 clock_background_id = 0
 clock_tooltip = 
 clock_tooltip_timezone = 
-clock_lclick_command = yad --calendar --no-buttons --undecorated
+clock_lclick_command = yad --calendar  --button=gtk-cancel --undecorated
 clock_rclick_command = orage
 clock_mclick_command = 
 clock_uwheel_command = 
