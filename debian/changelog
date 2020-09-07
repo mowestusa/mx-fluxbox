@@ -1,3 +1,10 @@
+mx-fluxbox (20.09.07) mx; urgency=medium
+
+  * adjust toggle toolbar handling in toggletint2
+  * timing adjustment for apt-notifier restart in togglerefresh
+
+ -- fehlix <fehlix@mxlinux.org>  Mon, 07 Sep 2020 02:18:50 +0200
+
 mx-fluxbox (20.09.06) mx; urgency=medium
 
   * updated tint2config for Final
