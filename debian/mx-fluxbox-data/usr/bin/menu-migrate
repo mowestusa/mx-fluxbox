@@ -1,0 +1,71 @@
+#! /bin/bash
+
+#this script was published August 2020 by MX Linux Devs
+#its purpose is to edit default entries in the existing menu-mx file with changes from MX-Fluxbox 2.2
+#changes
+#fehlix, 2020.09.01 : All Apps to call rofi -show drun
+
+TITLE1=$"OK to proceed?"
+MSG=$"This will update a few important default menu entries currently in your menu:\n \n
+--> Add an About entry\n 
+--> Change command for All apps \n 
+--> Improve switch between toolbar types\n \n
+Your current menu will be backed up to ~/.restore/fluxbox/ "
+
+TITLE2=$"All done!"
+#END_MSG=$"Log out and back in to complete the change."
+END_MSG=$"The menu entries have been updated."
+
+##begin msg box
+yad --center --text="
+
+
+<b>$MSG</b>" --title="$TITLE1" --window-icon=/usr/share/icons/mxflux.png --geometry=400x30 --text-align=center --button=gtk-cancel:1 --button=gtk-yes:0
+[ $? != 0 ] && exit 1
+
+##end message box
+
+[ ! -d ~/.restore/fluxbox ] && mkdir -p ~/.restore/fluxbox
+
+cd ~/.fluxbox
+
+for FILE in menu-mx menu-mx_*; do
+    [ ! -f "$FILE" ] && continue
+    cp $FILE ~/.restore/fluxbox/$(basename $FILE).$(date +%Y%m%d_%H%M%S.bak)
+
+    sed -i -r -e '
+        s/fbrun/rofi -show run/;
+        /toolbar-legacy/s/([[]exec[]])(.*)/\1 (Fluxbox) {toggletint2}/;
+        /toolbar-userlast/s/([[]exec[]])(.*)/\1 (Traditional) {toggletint2}/;
+        /toolbar-default/{N; s/([[]config[]])(.*)/\1 (Fluxbox)/;D}' \
+        -e '/xfce4-appfinder/a\    [exec] (All Apps) {rofi -show drun}' \
+        -e '/xfce4-appfinder/s/([[]exec[]])(.*)/\1 (About) {about-mx-fluxbox}/' \
+        $FILE
+done
+
+#install tint2 config file
+#only replace if it doesn't exist
+if [ ! -e "$HOME/.config/tint2/tint2rc" ]; then
+	mkdir $HOME/.config/tint2
+	cp /etc/skel/.config/tint2/tint2rc "$HOME/.config/tint2/tint2rc"
+fi
+
+#install rofi config file
+#only replace if it doesn't exist
+if [ ! -e "$HOME/.config/rofi/config.rasi" ]; then
+	mkdir $HOME/.config/rofi
+	cp /etc/skel/.config/rofi/config.rasi "$HOME/.config/rofi/config.rasi"
+fi
+
+fluxbox-remote restart
+
+idesktoggle idesk refresh
+
+##start end_msg box
+yad --center --text="
+
+
+<b>$END_MSG</b>" --title="$TITLE2" --window-icon=/usr/share/icons/mxflux.png --geometry=400x40 --text-align=center
+##end end_msg box
+exit
+

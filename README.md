@@ -1,15 +1,4 @@
-# mx-fluxbox
+# MX-Fluxbox
 
-This fluxbox version is a Window Manager designed to be used on MX Linux. It is fully integrated with Xfce4, creating an easily configurable product. 
+Fluxbox is a Window Manager that has existed since 2001. This version is a fully integrated overlay for MX Linux versions 17 and later. The integration with both MX and Xfce4 creates an easily configurable product. 
 
-STATUS: beta
-
-DEPENDENCIES: idesk
-
-INSTALLATION: it will eventually be available as a deb file installed via MX Package Installer. These interim directions are valid for users of any version of MX-Linux. 
-
-##
-
-install fluxbox and idesk
-
-run mxfb_install.sh

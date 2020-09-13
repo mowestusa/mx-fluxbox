@@ -1,0 +1,188 @@
+mx-fluxbox (20.09.07) mx; urgency=medium
+
+  * adjust toggle toolbar handling in toggletint2
+  * timing adjustment for apt-notifier restart in togglerefresh
+
+ -- fehlix <fehlix@mxlinux.org>  Mon, 07 Sep 2020 02:18:50 +0200
+
+mx-fluxbox (20.09.06) mx; urgency=medium
+
+  * updated tint2config for Final
+
+ -- j b <jb@X1Cmx>  Sat, 05 Sep 2020 10:28:02 -0400
+
+mx-fluxbox (20.09.05) mx; urgency=medium
+
+  * corrected style in init
+  * this is Final
+
+ -- j b <jb@X1Cmx>  Fri, 04 Sep 2020 06:41:19 -0400
+
+mx-fluxbox (20.09.04) mx; urgency=medium
+
+  * corrected dependency name
+
+ -- j b <jb@X1Cmx>  Fri, 04 Sep 2020 06:00:24 -0400
+
+mx-fluxbox (20.09.02) mx; urgency=medium
+
+  * uploaded replacement desktop file for tint2 start
+  * changed default wallpaper
+  * restored deprecated toolbar scripts
+  * updated mxfb-version
+  * this is rc2
+
+ -- j b <jb@X1Cmx>  Wed, 02 Sep 2020 20:19:05 -0400
+
+mx-fluxbox (20.08.30+nmu4) mx; urgency=medium
+
+  * replaced the tint2 toggles with latest version
+  * changed the "All apps" menu entry to use rofi instead
+  * deleted menumaker from the control file
+  * added info to menu-migrate
+  * switched to straight appfinder.desktop
+  * added key for Super > drun
+  * cleaned out a couple of old files
+  * this is RC1
+
+ -- j b <jb@X1Cmx>  Tue, 01 Sep 2020 20:03:35 -0400
+
+mx-fluxbox (20.08.30+nmu2) mx; urgency=medium
+
+  *added missing toolbar toggle scripts 
+
+ -- j b <jb@X1Cmx>  Sun, 30 Aug 2020 16:27:22 -0400
+
+mx-fluxbox (20.08.30+nmu1) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * traditional toolbar now provided by tint2
+  * run function (menu and F2) switched to rofi
+  * simple switch between Fluxbox and traditional toolbars
+  * About added for version, release and changelog
+  * rounded corners  made default
+  * full app listing added to rootMenu with menumaker
+  * updated documentation
+
+ -- j b <jb@X1Cmx>  Sun, 30 Aug 2020 06:00:04 -0400
+
+mx-fluxbox (20.06.01) mx; urgency=medium
+
+  * misc. updates
+  * logout bar script 
+
+ -- Dolphin Oracle <dolphin@littlebyte>  Tue, 30 Jun 2020 21:24:34 -0400
+
+mx-fluxbox (20.05.12) mx; urgency=medium
+
+  * change to install script 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 30 May 2020 14:42:43 -0400
+
+mx-fluxbox (20.05.11) mx; urgency=medium
+
+  * revisions to localize menu script 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 29 May 2020 17:26:19 -0400
+
+mx-fluxbox (20.05.10) mx; urgency=medium
+
+  * new localization menu routine, misc. adjustments
+  * rename default wallpaper
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 28 May 2020 19:22:02 -0400
+
+mx-fluxbox (20.05.09) mx; urgency=medium
+
+  * update mxflux_install.sh to pull translations from /usr/share rather than $HOME 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 26 May 2020 18:57:52 -0400
+
+mx-fluxbox (20.05.08) mx; urgency=medium
+
+  * menu translations
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 24 May 2020 21:31:36 -0400
+
+mx-fluxbox (20.05.07) mx; urgency=medium
+
+  * menu adjustments 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 24 May 2020 07:13:13 -0400
+
+mx-fluxbox (20.05.06) mx; urgency=medium
+
+  * revised menu and desktop file
+  * final for 2.1 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 14 May 2020 19:26:49 -0400
+
+mx-fluxbox (20.05.05) mx; urgency=medium
+
+  * revised startup script 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 13 May 2020 19:18:34 -0400
+
+mx-fluxbox (20.05.04) mx; urgency=medium
+
+  * revise theme files
+  * add desktop file 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 11 May 2020 18:59:45 -0400
+
+mx-fluxbox (20.05.03) mx; urgency=medium
+
+  * volumeicon configuration added 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 10 May 2020 18:56:37 -0400
+
+mx-fluxbox (20.05.02) mx; urgency=medium
+
+  * mx-fluxbox 2.1 revised 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 09 May 2020 12:31:29 -0400
+
+mx-fluxbox (20.05.01) mx; urgency=medium
+
+  * mx-flubox 2.1 settings 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 01 May 2020 19:51:28 -0400
+
+mx-fluxbox (20.03.01) mx; urgency=medium
+
+  * seperate mx-idesktool to its own package
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 14 Mar 2020 19:24:21 -0400
+
+mx-fluxbox (20.02.03) mx; urgency=medium
+
+  * adjust menu entry for template edit
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 13 Feb 2020 21:25:57 -0500
+
+mx-fluxbox (20.02.02) mx; urgency=medium
+
+  * adjust dockmacker status menu entry 
+
+ -- jerry <dolphin@mx>  Thu, 13 Feb 2020 16:13:19 -0500
+
+mx-fluxbox (20.02.01) mx; urgency=medium
+
+  * update translations
+  * update help file locations
+  * update mxflux_install.sh script
+
+ -- jerry <jerry@mxlinux.org>  Thu, 13 Feb 2020 01:59:12 -0500
+
+mx-fluxbox (19.12.17mx19) mx; urgency=medium
+
+  * Adjust various packages to match the MX defaults.
+
+ -- Steven Pusser <stevep@mxlinux.org>  Tue, 17 Dec 2019 16:08:36 -0800
+
+mx-fluxbox (19.11.01) mx; urgency=medium
+
+  * Initial release
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 27 Nov 2019 15:34:19 -0500
+ 

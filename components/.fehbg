@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '/usr/share/backgrounds/mxlinuxwine_by_ant_ony-1080p.png' 
+feh --no-fehbg --bg-scale '/usr/share/backgrounds/mxfb-seedheads_bw.jpg' 
